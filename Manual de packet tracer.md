@@ -5,45 +5,45 @@ Este manual cubre los aspectos básicos para comenzar a trabajar con Cisco Packe
 
 La interfaz gráfica de Cisco Packet Tracer se divide en varias áreas principales:
 
-- **Área de Trabajo:** Es el espacio grande en el centro de la pantalla donde se diseñan y visualizan las redes.![[src/img/Pasted image 20240207154633.png]]
+- **Área de Trabajo:** Es el espacio grande en el centro de la pantalla donde se diseñan y visualizan las redes.![Texto alternativo]src/img/Pasted image 20240207154633.png
 ---
 - **Dispositivos y Componentes:** abajo al lado izquierdo, encontrarás la lista de dispositivos y componentes que puedes arrastrar al área de trabajo. Estos están organizados en categorías como Routers, Switches, Dispositivos finales, etc.
-![[src/img/Pasted image 20240207154717.png]]
+![Texto alternativo]src/img/Pasted image 20240207154717.png
 - **Propiedades del dispositivo:** Al hacer clic en un dispositivo, se muestra la vista de interfaces que tiene el dispositivo
-![[src/img/Pasted image 20240207154830.png]]
+![Texto alternativo]src/img/Pasted image 20240207154830.png
 ---
 
 - **Barra de Herramientas:** En la parte superior, se encuentra la barra de herramientas que ofrece acceso rápido a funciones como guardar, abrir, copiar, pegar, deshacer, entre otras.
-![[src/img/Pasted image 20240207154857.png]]
+![Texto alternativo]src/img/Pasted image 20240207154857.png
 ---
 
 - **Modos de Simulación y Tiempo Real:** En la esquina inferior derecha, puedes cambiar entre los modos de simulación y tiempo real.
-	![[src/img/Pasted image 20240208214929.png]]
+	![Texto alternativo]src/img/Pasted image 20240208214929.png
 ---
 ### 2. Conectar Dos Equipos Usando Cables de Red Adecuados
 
 Para conectar dos equipos (por ejemplo, un PC con un switch o dos PCs directamente):
 
 1. Selecciona el cable adecuado que se ubica en la sección de abajo a mano  izquierda, 
-	![[src/img/Pasted image 20240207155214.png]]
+	![Texto alternativo]src/img/Pasted image 20240207155214.png
 2. normalmente se selecciona un cable de par trenzado  para conectar dispositivos diferentes (PC a switch) o un cable cruzado para dispositivos iguales (PC a PC) tambien existe cable serial , fibra optica que estos no lo vamos a usar de momento
-	![[src/img/Pasted image 20240207155244.png]]
+	![Texto alternativo]src/img/Pasted image 20240207155244.png
 1. Haz clic en el primer dispositivo, elige el puerto (Normalmente Fastethernet 0).
-![[src/img/Pasted image 20240207155306.png]]
+![Texto alternativo]src/img/Pasted image 20240207155306.png
 3. Haz clic en el segundo dispositivo y selecciona el puerto (los mas bajo(1,2,3,4,5) se utiliza para los ordenador y dispositvos varios y los mas altos para conectar router y switch (20,21,22,23,24) ).
-	![[src/img/Pasted image 20240207155336.png]]
+	![Texto alternativo]src/img/Pasted image 20240207155336.png
 4. Resultado Final
-	![[src/img/Pasted image 20240207155651.png]]
+	![Texto alternativo]src/img/Pasted image 20240207155651.png
 ---
 
 ### 3. Diferenciar Entre Realtime y Simulation
 
 - **Realtime:** En este modo, la red opera en tiempo real. Las modificaciones en la configuración de los dispositivos tienen efecto inmediatamente. Es útil para probar y observar el comportamiento de la red en condiciones normales de operación.
-	![[src/img/Pasted image 20240207155941.png]]
+	![Texto alternativo]src/img/Pasted image 20240207155941.png
 ---
 - **Simulation:** Permite observar cómo los datos se mueven a través de la red y cómo se procesan los protocolos en cada paso. Es ideal para fines educativos y para entender detalladamente el funcionamiento de las redes.
-	![[src/img/Pasted image 20240207160047.png]]
-	![[src/img/Pasted image 20240207161456.png]]
+	![Texto alternativo]src/img/Pasted image 20240207160047.png
+	![Texto alternativo]src/img/Pasted image 20240207161456.png
 ---
 # 4. Abreviaturas y trucos variados - Por ampliar 
 
@@ -66,7 +66,7 @@ NOTA: Existen mas abreviaturas pero os he colocado las mas usadas
 Tabulacion:
 
 para completar un comando como linux podemos usar el tabulador
-![[src/img/Pasted image 20240207163142.png]]
+![Texto alternativo]src/img/Pasted image 20240207163142.png
 ---
 
 ### 4. Cómo Entrar al Modo Configurador global de un Switch y un Router
@@ -74,15 +74,15 @@ para completar un comando como linux podemos usar el tabulador
 #### Switch o Router:
 
 1. Haz clic en el dispositivo.
-![[src/img/Pasted image 20240207162211.png]]
+![Texto alternativo]src/img/Pasted image 20240207162211.png
 2. Selecciona la pestaña "CLI" para acceder al modo de línea de comandos.
-![[src/img/Pasted image 20240207162222.png]]
+![Texto alternativo]src/img/Pasted image 20240207162222.png
 3. Puede que necesites presionar "Enter" para activar el prompt de comandos.
-![[src/img/Pasted image 20240207162236.png]]
+![Texto alternativo]src/img/Pasted image 20240207162236.png
 4. Escribir la palabra "enable" para entrar al modo administrador
-![[src/img/Pasted image 20240207162249.png]]
+![Texto alternativo]src/img/Pasted image 20240207162249.png
 5. Escribir el comando "Configure terminal" para empezar a configurar cosas varias del dispositivo .
-![[src/img/Pasted image 20240207162334.png]]
+![Texto alternativo]src/img/Pasted image 20240207162334.png
 
 
 
@@ -93,7 +93,7 @@ para completar un comando como linux podemos usar el tabulador
 3. Accede a la interfaz específica con el comando `interface [tipo de interfaz][número de interfaz]`. Por ejemplo, `interface FastEthernet0/0`.
 4. Asigna la dirección IP con el comando `ip address [dirección IP] [máscara de subred]`. Por ejemplo, `ip address 192.168.1.1 255.255.255.0`.
 5. Activa la interfaz con el comando `no shutdown`.
-![[src/img/Pasted image 20240207163030.png]]
+![Texto alternativo]src/img/Pasted image 20240207163030.png
 
 ### 6. Crear un DHCP en un Router
 #### **Nota: Asignar IPS Antes de TODO**
@@ -110,7 +110,7 @@ para completar un comando como linux podemos usar el tabulador
     - 
 1. **Excluir Direcciones IP:**
     - Para evitar conflictos de direcciones IP, puedes excluir direcciones IP específicas dentro del rango configurado con el comando `ip dhcp excluded-address [primera_dirección_IP] [última_dirección_IP]`. Esto es útil para direcciones IP que están estáticamente asignadas y no deben ser entregadas por el DHCP.
-	    ![[src/img/Pasted image 20240207170945.png]]
+	    ![Texto alternativo]src/img/Pasted image 20240207170945.png
 7. Comandos usados - (por si quereis copiar y pegar)
 ```
 service dhcp - Usamos el servicio DHCP
@@ -128,7 +128,7 @@ exit
 ```
 
 8. **Resultado Final**
-	![[src/img/Pasted image 20240207171144.png]]
+	![Texto alternativo]src/img/Pasted image 20240207171144.png
 #### Parámetros Opcionales:
 
 **NOTA: Puede caer o no en el examen porque estos son parametros de un servidor dhcp, estas opciones se ven el segundo año del modulo mejor con mas tiempo y mejores herramientas.**
@@ -147,7 +147,7 @@ exit
 Los routers necesitan conocer cómo llegar a distintas redes que no están directamente conectadas a ellos para poder enviar y recibir tráfico hacia y desde esas redes.s
 
 Para visualizar las rutas del router se usa este comado: show ip route
-![[src/img/Pasted image 20240207212212.png]] (NOTA en este ejemplo del comando se usa rutas estaticas)
+![Texto alternativo]src/img/Pasted image 20240207212212.png (NOTA en este ejemplo del comando se usa rutas estaticas)
 ## Dinámico
 
 Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:
@@ -187,7 +187,7 @@ Estos pasos se deben repetir en cada uno de los routers que participan en el enr
 
 #### Resultado final de los comandos
 he escogido el router con la red 172.16.0.0 como ejemplo de los comandos que hay que poner 
-![[src/img/Pasted image 20240207204212.png]]
+![Texto alternativo]src/img/Pasted image 20240207204212.png
 
 ## Estático
 
@@ -208,9 +208,9 @@ El enrutamiento estático, a diferencia del dinámico, requiere que se configure
 3. **Guardar la Configuración:**
    - Guarda la configuración al salir del modo de configuración y usar el comando `copy running-config startup-config`.
    Supongamos que quiero enrutar 8 router pues repetir todas estas tablas entre si:
-   ![[src/img/Pasted image 20240207211745.png]]
+   ![Texto alternativo]src/img/Pasted image 20240207211745.png
    Resultado final:
-   ![[src/img/Pasted image 20240207214404.png]]Los resquest timed out son porque tiene que hacer el protocolo ARP en las redes donde este el dispositivo conectado.
+   ![Texto alternativo]src/img/Pasted image 20240207214404.pngLos resquest timed out son porque tiene que hacer el protocolo ARP en las redes donde este el dispositivo conectado.
 
 
 
