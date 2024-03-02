@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 02 Mar 2024 20:32:41 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 02 Mar 2024 20:32:38 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Pasted]]></title><description><![CDATA[ 
+ ]]></description><link>manual-de-packet-tracer\src\img\pasted.html</link><guid isPermaLink="false">Manual de packet tracer/src/img/Pasted.md</guid><pubDate>Fri, 09 Feb 2024 18:10:18 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
+ <br><br>LECTURA OBLIGATORIA<br>
+Se recomienda tener conocimientos previos de subnetting.<br>
+<br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" rel="noopener" class="external-link" href="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" target="_blank">Subnetting IPv4 explicación en español</a>
+<br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=SHbBso63X38&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" rel="noopener" class="external-link" href="https://www.youtube.com/watch?v=SHbBso63X38&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" target="_blank">Cómo hacer subnetting rápido y fácil</a>
+<br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=sLWYpqjT0_Y&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" rel="noopener" class="external-link" href="https://www.youtube.com/watch?v=sLWYpqjT0_Y&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" target="_blank">Subnetting desde cero</a>
+<br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=kceWXMaJsew&amp;list=PLINy58Bvq5_L2WfuQeZ4t77EEhj-sG675" rel="noopener" class="external-link" href="https://www.youtube.com/watch?v=kceWXMaJsew&amp;list=PLINy58Bvq5_L2WfuQeZ4t77EEhj-sG675" target="_blank">Curso de Subnetting de Elizer de León</a>
+<br>NOTA: He incluido estos enlaces porque Juan Diego se saltó la parte de subnetting y se adentró directamente en Packet Tracer, omitiendo esta parte que considero muy importante.<br><br>Este manual cubre los aspectos básicos para comenzar a trabajar con Cisco Packet Tracer. Para una comprensión más profunda y para casos de uso más avanzados, se recomienda consultar la documentación oficial de Cisco y otros recursos educativos especializados, como la academia online Cisco Skills for All.<br><br><br>La interfaz gráfica de Cisco Packet Tracer se divide en varias áreas principales:<br>
+<br>Área de Trabajo: Es el espacio grande en el centro de la pantalla donde se diseñan y visualizan las redes.<img alt="src/img/Pasted image 20240207154633.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png">
+<br><br>
+<br>Dispositivos y Componentes: abajo al lado izquierdo, encontrarás la lista de dispositivos y componentes que puedes arrastrar al área de trabajo. Estos están organizados en categorías como Routers, Switches, Dispositivos finales, etc.<br>
+<img alt="src/img/Pasted image 20240207154717.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207154717.png">
+<br>Propiedades del dispositivo: Al hacer clic en un dispositivo, se muestra la vista de interfaces que tiene el dispositivo<br>
+<img alt="src/img/Pasted image 20240207154830.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207154830.png">
+<br><br>
+<br>Barra de Herramientas: En la parte superior, se encuentra la barra de herramientas que ofrece acceso rápido a funciones como guardar, abrir, copiar, pegar, deshacer, entre otras.<br>
+<img alt="src/img/Pasted image 20240207154857.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207154857.png">
+<br><br>
+<br>Modos de Simulación y Tiempo Real: En la esquina inferior derecha, puedes cambiar entre los modos de simulación y tiempo real.<br>
+<img alt="src/img/Pasted image 20240208214929.png" src="manual-de-packet-tracer\src\img\pasted-image-20240208214929.png">
+<br><br><br><br>Acceder a la Configuración del Ordenador (con clic izquierdo):<br>
+<img alt="src/img/Pasted image 20240213094539.png" src="manual-de-packet-tracer\src\img\pasted-image-20240213094539.png"><br>
+Selecciona la pestaña "Desktop" (Escritorio).<br>
+<img alt="src/img/Pasted image 20240213094609.png" src="manual-de-packet-tracer\src\img\pasted-image-20240213094609.png"><br><br>Dentro de la pestaña "Desktop", encuentra y selecciona "IP Configuration" (Configuración IP).<br>
+Ingresa una dirección IP, máscara de subred, y puerta de enlace predeterminada (gateway) adecuadas para la red a la que estás conectando el ordenador.<br>
+<img alt="src/img/Pasted image 20240213095033.png" src="manual-de-packet-tracer\src\img\pasted-image-20240213095033.png"><br><br>Usar el Comando Ping:<br>
+Todavía en la pestaña "Desktop", selecciona "Command Prompt" (Símbolo del sistema).<br>
+Para verificar la conectividad con otro dispositivo en la red, se usa el comando ping seguido de la dirección IP del dispositivo destino. Por ejemplo: ping 192.168.1.1.<br>
+<img alt="src/img/Pasted image 20240213095153.png" src="manual-de-packet-tracer\src\img\pasted-image-20240213095153.png"><br><br><br>Para conectar dos equipos (por ejemplo, un PC con un switch o dos PCs directamente):<br>
+<br>Selecciona el cable adecuado que se ubica en la sección de abajo a mano &nbsp;izquierda,
+<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155214.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207155214.png"><br>
+<br>normalmente se selecciona un cable de par trenzado &nbsp;para conectar dispositivos diferentes (PC a switch) o un cable cruzado para dispositivos iguales (PC a PC) tambien existe cable serial , fibra optica que estos no lo vamos a usar de momento
+<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155244.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207155244.png"><br>
+<br>Haz clic en el primer dispositivo, elige el puerto (Normalmente Fastethernet 0).
+<br><img alt="Pasted image 20240207155306.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207155306.png"><br>
+<br>Haz clic en el segundo dispositivo y selecciona el puerto (los mas bajo(1,2,3,4,5) se utiliza para los ordenador y dispositvos varios y los mas altos para conectar router y switch (20,21,22,23,24) ).
+<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155336.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207155336.png"><br>
+<br>Resultado Final
+<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155651.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207155651.png"><br><br><br><br>
+<br>Realtime: En este modo, la red opera en tiempo real. Las modificaciones en la configuración de los dispositivos tienen efecto inmediatamente. Es útil para probar y observar el comportamiento de la red en condiciones normales de operación.<br>
+<img alt="src/img/Pasted image 20240207155941.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207155941.png">
+<br><br>
+<br>Simulation: Permite observar cómo los datos se mueven a través de la red y cómo se procesan los protocolos en cada paso. Es ideal para fines educativos y para entender detalladamente el funcionamiento de las redes.<br>
+<img alt="src/img/Pasted image 20240207160047.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207160047.png"><br>
+<img alt="src/img/Pasted image 20240207161456.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207161456.png">
+<br><br><br><br>*Existen comandos que no funcionan en el modo configurador que se usan en el modo normal (en el CLI tal cual sin enable)<br><br>NOTA: Existen mas abreviaturas pero os he colocado las mas usadas<br>Tabulacion:<br>para completar un comando como linux podemos usar el tabulador<br>
+<img alt="src/img/Pasted image 20240207163142.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207163142.png"><br><br><br><br>Estos comandos son universales<br><br>
+<br>Haz clic en el dispositivo.<br>
+<img alt="src/img/Pasted image 20240207162211.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207162211.png">
+<br>Selecciona la pestaña "CLI" para acceder al modo de línea de comandos.<br>
+<img alt="src/img/Pasted image 20240207162222.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207162222.png">
+<br>Puede que necesites presionar "Enter" para activar el prompt de comandos.<br>
+<img alt="src/img/Pasted image 20240207162236.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207162236.png">
+<br>Escribir la palabra "enable" para entrar al modo administrador<br>
+<img alt="src/img/Pasted image 20240207162249.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207162249.png">
+<br>Escribir el comando "Configure terminal" para empezar a configurar cosas varias del dispositivo .<br>
+<img alt="src/img/Pasted image 20240207162334.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207162334.png">
+<br><br>
+<br>Accede al modo de configuración del router (CLI).
+<br>Entra en el modo de configuración global con el comando enable seguido de configure terminal (Visto anteriormente no realizar capturas)
+<br>Accede a la interfaz específica con el comando interface [tipo de interfaz][número de interfaz]. Por ejemplo, interface FastEthernet0/0.
+<br>Asigna la dirección IP con el comando ip address [dirección IP] [máscara de subred]. Por ejemplo, ip address 192.168.1.1 255.255.255.0.
+<br>Activa la interfaz con el comando no shutdown.<br>
+<img alt="src/img/Pasted image 20240207163030.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207163030.png">
+<br><br><br><br>
+<br>Entrar al Modo de Configuración Global:
+<br>Activar el Servicio DHCP:
+<br>
+<br>Habilita el servicio DHCP en el router con el comando service dhcp.
+<br>
+<br>Crear un Pool de DHCP:
+<br>
+<br>Define un pool de DHCP utilizando el comando ip dhcp pool [nombre_del_pool], donde [nombre_del_pool] es un identificador para el pool de direcciones IP que estás creando.
+<br>
+<br>Especificar el Rango de Direcciones IP:
+<br>
+<br>Configura el rango de direcciones IP que será asignado a los clientes DHCP con el comando network [dirección_de_red] [máscara_de_subred]. Este comando define la red y la máscara de subred disponibles para los clientes DHCP.
+<br>
+<br>Establecer el Router Predeterminado:
+<br>
+<br>Asigna el router predeterminado (puerta de enlace) para los clientes DHCP usando el comando default-router [dirección_IP_del_router]. Esto les dice a los clientes DHCP cuál es su puerta de enlace predeterminada.
+<br>
+<br>
+<br>Excluir Direcciones IP:
+<br>
+<br>Para evitar conflictos de direcciones IP, puedes excluir direcciones IP específicas dentro del rango configurado con el comando ip dhcp excluded-address [primera_dirección_IP] [última_dirección_IP]. Esto es útil para direcciones IP que están estáticamente asignadas y no deben ser entregadas por el DHCP.<br>
+<img alt="src/img/Pasted image 20240207170945.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207170945.png">
+<br>
+<br>Comandos usados - (por si quereis copiar y pegar)
+<br>service dhcp - Usamos el servicio DHCP
+ip dhcp pool andared - Creamos la POOL de IPS
+network 192.168.90.0 255.255.255.0 - Especificamos la red de la POOL del DHCP
+
+default-router 192.168.90.1 - Especificamos la puerta de enlace
+ip dhcp excluded-address 192.168.90.127 192.168.90.254 - Indicamos al dhcp que no queremos que asigne esas ips
+
+
+"Esto es para configurar un DHCP-DNS"
+ip dhcp pool andared
+dns-server 192.168.90.1
+exit
+Copiar<br>
+<br>Resultado Final<br>
+<img alt="src/img/Pasted image 20240207171144.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207171144.png">
+<br><br>NOTA: Puede caer o no en el examen porque estos son parametros de un servidor dhcp, estas opciones se ven el segundo año del modulo mejor con mas tiempo y mejores herramientas.<br>
+<br>Especificar Servidores DNS:
+<br>
+<br>Para que los clientes DHCP puedan resolver nombres de dominio, especifica la dirección IP de uno o más servidores DNS con dns-server [dirección_IP_del_DNS]. Puedes especificar múltiples servidores DNS separándolos con espacios.
+<br>
+<br>Establecer el Dominio Predeterminado:
+<br>
+<br>Define el dominio predeterminado que se asignará a los clientes DHCP con el comando domain-name [nombre_del_dominio].
+<br>
+<br>Asignar una Dirección IP Específica:
+<br>
+<br>Para reservar una dirección IP para un dispositivo específico, usa el comando ip dhcp pool [nombre_del_pool] seguido de host [dirección_IP_deseada] [máscara_de_subred] y luego especifica la dirección MAC del dispositivo con client-identifier [dirección_MAC] o hardware-address [dirección_MAC] ethernet.
+<br>
+<br>Configurar el Tiempo de Asignación (Lease Time):
+<br>
+<br>Configura el tiempo de asignación de las direcciones IP con lease [días] [horas] [minutos]. Esto define cuánto tiempo un cliente puede mantener una dirección IP antes de que tenga que renovarla.
+<br><br>Los routers necesitan conocer cómo llegar a distintas redes que no están directamente conectadas a ellos para poder enviar y recibir tráfico hacia y desde esas redes.
+Copiar<br>Para visualizar las rutas del router se usa este comado: show ip route<br>
+<img alt="src/img/Pasted image 20240207212212.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207212212.png"> (NOTA en este ejemplo del comando se usa rutas estaticas)<br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
+<br>172.16.0.0/16
+<br>172.17.0.0/16
+<br>172.18.0.0/16
+<br>172.19.0.0/16
+<br>172.20.0.0/16
+<br>172.21.0.0/16
+<br>172.22.0.0/16
+<br>172.23.0.0/16
+<br>Cada router tendrá una dirección IP dentro del bloque 10.0.0.0/8, que se utilizará para el enrutamiento entre ellos.<br><br>Para configurar RIP versión 2 en un router de cisco (Recordemos que packet tracer es de cisco) y facilitar el enrutamiento entre las redes anteriormente mencionadas, sigue los siguientes pasos:<br>
+<br>
+Usa el comando configure terminal para entrar al modo de configuración.
+
+<br>
+Habilitar RIP versión 2:
+Router(config)# router rip
+Router(config-router)# version 2
+Copiar
+
+<br>
+Anunciar Redes:<br>
+Anuncia cada red que el router debe conocer. Debes hacer esto para todas las redes directamente conectadas al router.
+Router(config-router)# network 172.16.0.0
+Router(config-router)# network 10.0.0.0
+
+Copiar
+Repite el comando network "Direccion de red" en cada uno de los routers 
+
+<br>Estos pasos se deben repetir en cada uno de los routers que participan en el enrutamiento, asegurándose de anunciar solo las redes directamente conectadas a cada router.<br><br>he escogido el router con la red 172.16.0.0 como ejemplo de los comandos que hay que poner<br>
+<img alt="src/img/Pasted image 20240207204212.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207204212.png"><br><br>El enrutamiento estático, a diferencia del dinámico, requiere que se configure manualmente cada ruta hacia las redes destino. Esto implica especificar explícitamente, en cada router, cómo alcanzar cada red no directamente conectada. A continuación, se describe cómo configurar enrutamiento estático para una red. (en la actualidad no se utiliza esto porque existen muchas redes y imaginate )<br><br>
+<br>
+Entrar al Modo de Configuración Global:
+
+<br>Usa el comando configure terminal para entrar al modo de configuración.
+
+
+<br>
+Configurar una Ruta Estática:
+
+<br>Para agregar una ruta estática, utiliza el comando ip route, seguido de la red destino, la máscara de subred, y el siguiente salto o interfaz de salida.
+Router(config)# ip route 172.16.0.0 255.255.0.0 10.0.0.2
+Copiar
+
+<br>Repite este paso para cada red destino, especificando el adecuado siguiente salto o interfaz de salida.
+
+
+<br>
+Guardar la Configuración:
+
+<br>Guarda la configuración al salir del modo de configuración y usar el comando copy running-config startup-config.<br>
+Supongamos que quiero enrutar 8 router pues repetir todas estas tablas entre si:<br>
+<img alt="src/img/Pasted image 20240207211745.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207211745.png">
+
+
+<img alt="src/img/Pasted image 20240207214404.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207214404.png">Los resquest timed out son porque tiene que hacer el protocolo ARP en las redes donde este el dispositivo conectado.
+
+<br><br><br>¿Que es una VLAN?
+Copiar<br>Una VLAN (Virtual Local Area Network) es un método que se utiliza para crear redes independiente (Capa 2 - Modelo OSI)  dentro de una misma red física (Capa 1 - Modelo OSI), permitiendo segmentar grupos de dispositivos aunque estén interconectados físicamente. Las VLANs se utiliza para crear varias redes dentro de un mismo.<br>"Una VLAN SE CONSIDERA UNA INTERFAZ CONFIGURABLE"<br><br><br>
+<br>
+Entrar al Modo de Configuración Global:
+Switch&gt; enable
+Switch# configure terminal
+Copiar
+
+<br>
+Crear la VLAN:<br>
+Suponiendo que el "numerito que se te antoje" es 10, para crear la VLAN 10, ejecuta:
+Switch(config)# vlan 10
+Switch(config-vlan)# name Mi_VLAN
+Copiar
+
+<br>
+Asignar Puertos a la VLAN:<br>
+Para asignar un puerto al switch a la VLAN 10, primero debes entrar a la configuración del puerto y luego asignarlo a la VLAN. Por ejemplo, para el puerto FastEthernet 0/1:
+Switch(config)# interface fastEthernet 0/1
+Switch(config-if)# switchport mode access - (Por defecto esto no hace falta pero no viene mal ponerlo )
+Switch(config-if)# switchport access vlan 10
+Copiar
+
+<br>Resultado Final<br>
+<img alt="src/img/Pasted image 20240209112446.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209112446.png"><br>Resultado Final - Alternativo<br>
+<img alt="src/img/Pasted image 20240209112053.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209112053.png"><br>
+Nota: Si no existe la VLAN creada en el switch la crea <br><br>¿Que es un puerto trunk?<br>
+Un puerto trunk en una red de área local (LAN) es una interfaz de switch configurada para transportar tráfico de varias VLANs a través de un único enlace físico(Capa 1 - Fisica) entre dos dispositivos de red. (En router no hace falta truncarlo)<br>Para configurar un puerto como trunk (esto permite que el puerto transporte tráfico de múltiples VLANs), sigue estos pasos:<br>
+<br>
+Seleccionar el Puerto:<br>
+Accede a la configuración del puerto que deseas configurar como trunk. Por ejemplo, FastEthernet 0/24 - (Se usan los puertos mas bajos y incluso se puede usar los puertos gigabit del switch):
+Switch(config)# interface fastEthernet 0/24
+Copiar
+
+<br>
+Configurar el Puerto como Trunk:
+Switch(config-if)# switchport mode trunk
+Copiar
+
+<br>Resultado Final.<br>
+<img alt="src/img/Pasted image 20240209122010.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209122010.png"><br>
+3. Especificar VLANs Permitidas (opcional - No cae en examen pero lo pongo por si las moscas):<br>
+Puedes especificar qué VLANs están permitidas a través del trunk:<br>Switch(config-if)# switchport trunk allowed vlan add 10
+Copiar<br>   Si omites este paso, el puerto permitirá todas las VLANs por defecto.<br><br><br>Para configurar subinterfaces en un router (permitiendo que una interfaz física maneje múltiples VLANs), sigue estos pasos:<br>
+<br>
+Entrar al Modo de Configuración Global:
+Router&gt; enable
+Router# configure terminal
+Copiar
+
+<br>
+Crear Subinterfaces:<br>
+Por cada VLAN, crea una subinterfaz en la interfaz física del router. Supongamos que la interfaz es GigabitEthernet 0/0 y queremos configurar para la VLAN 10:
+Router(config)# interface GigabitEthernet 0/0.10
+Router(config-subif)# encapsulation dot1Q 10
+Copiar
+
+<br>Resultado Final<br>
+<img alt="src/img/Pasted image 20240209123527.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209123527.png"><br><br>Después de habilitar las VLANs en las subinterfaces, debes asignar una dirección IP a cada subinterfaz para permitir la comunicación entre las VLANs:<br>
+<br>Asignar Dirección IP:<br>
+Continuando con el ejemplo de la VLAN 10 en la subinterfaz GigabitEthernet 0/0.10:
+Router(config-subif)# ip address 192.168.10.1 255.255.255.0
+Copiar
+Repite este proceso para cada VLAN/subinterfaz, asegurándote de utilizar direcciones IP y máscaras de subred adecuadas para cada segmento de red.
+<br>Resultado Final<br>
+<img alt="src/img/Pasted image 20240209123851.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209123851.png"><br>
+2. Activar la Interfaz Física:<br>
+No olvides activar la interfaz física principal si aún no está activa:<br>Router(config)# interface GigabitEthernet 0/0/0
+Router(config-if)# no shutdown
+Copiar]]></description><link>manual-de-packet-tracer\manual-de-packet-tracer.html</link><guid isPermaLink="false">Manual de packet tracer/Manual de packet tracer.md</guid><pubDate>Sat, 02 Mar 2024 20:31:31 GMT</pubDate><enclosure url="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual-de-packet-tracer\src\img\pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
