@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 14 Mar 2024 15:40:48 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 14 Mar 2024 15:40:46 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Pasted]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 14 Mar 2024 21:07:47 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 14 Mar 2024 21:07:45 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Pasted]]></title><description><![CDATA[ 
  ]]></description><link>manual-de-packet-tracer\src\img\pasted.html</link><guid isPermaLink="false">Manual de packet tracer/src/img/Pasted.md</guid><pubDate>Fri, 09 Feb 2024 18:10:18 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
  <br><br>LECTURA OBLIGATORIA<br>
 Se recomienda tener conocimientos previos de subnetting.<br>
@@ -44,7 +44,20 @@ Para verificar la conectividad con otro dispositivo en la red, se usa el comando
 <br>Simulation: Permite observar cómo los datos se mueven a través de la red y cómo se procesan los protocolos en cada paso. Es ideal para fines educativos y para entender detalladamente el funcionamiento de las redes.<br>
 <img alt="src/img/Pasted image 20240207160047.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207160047.png"><br>
 <img alt="src/img/Pasted image 20240207161456.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207161456.png">
-<br><br><br><br>*Existen comandos que no funcionan en el modo configurador que se usan en el modo normal (en el CLI tal cual sin enable)<br><br>NOTA: Existen mas abreviaturas pero os he colocado las mas usadas<br>Tabulacion:<br>para completar un comando como linux podemos usar el tabulador<br>
+<br><br><br>En Cisco Packet Tracer, un switch o router pueden ser configurado en varios modos para realizar tareas de configuración y administración. Estos modos incluyen:<br>
+<br>
+User EXEC Mode (Modo EXEC de Usuario): Modo por defecto al iniciar sesión en el switch, identificado por el prompt "&gt;". Permite ejecutar comandos de visualización básicos.
+
+<br>
+Privileged EXEC Mode (Modo EXEC con Privilegios): Se accede ingresando "enable" desde el modo User EXEC. Identificado por el prompt "#", permite ejecutar comandos de configuración y visualización avanzados.
+
+<br>
+Global Configuration Mode (Modo de Configuración Global): Accesible desde el modo Privileged EXEC con "configure terminal" o "conf t". Permite configurar parámetros globales del switch como interfaces, VLANs, protocolos de enrutamiento, etc.
+
+<br>
+Interface Configuration Mode (Modo de Configuración de Interfaz): Se accede desde el modo Global Configuration con "interface [interface-id]". Permite configurar parámetros específicos de una interfaz, como direcciones IP, velocidad, duplex, etc.
+
+<br>Estos son los modos básicos en un switch o router de Cisco de Packet Tracer, pudiendo existir modos adicionales o variantes según la versión del software y las características del dispositivo.<br><br>Existen comandos específicos para diferentes modos en el CLI de Cisco. Algunas abreviaturas y trucos comunes son:<br><br>Nota: Existen más abreviaturas, pero se han listado las más utilizadas.<br>Tabulación: Al igual que en Linux, se puede usar el tabulador para completar un comando.<br>
 <img alt="src/img/Pasted image 20240207163142.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207163142.png"><br><br><br><br>Estos comandos son universales<br><br>
 <br>Haz clic en el dispositivo.<br>
 <img alt="src/img/Pasted image 20240207162211.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207162211.png">
@@ -160,14 +173,13 @@ Entrar al Modo de Configuración Global:
 Configurar una Ruta Estática:
 
 <br>Para agregar una ruta estática, utiliza el comando ip route, seguido de la red destino, la máscara de subred, y el siguiente salto o interfaz de salida.
-Router(config)# ip route 172.16.0.0 255.255.0.0 10.0.0.2
-Copy
 
+
+<br>Router(config)# ip route 172.16.0.0 255.255.0.0 10.0.0.2
+Copy<br>
 <br>Repite este paso para cada red destino, especificando el adecuado siguiente salto o interfaz de salida.
-
-
 <br>
-Guardar la Configuración:
+<br>Guardar la Configuración:
 
 <br>Guarda la configuración al salir del modo de configuración y usar el comando copy running-config startup-config.<br>
 Supongamos que quiero enrutar 8 router pues repetir todas estas tablas entre si:<br>
@@ -175,7 +187,6 @@ Supongamos que quiero enrutar 8 router pues repetir todas estas tablas entre si:
 
 
 <img alt="src/img/Pasted image 20240207214404.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207214404.png">Los resquest timed out son porque tiene que hacer el protocolo ARP en las redes donde este el dispositivo conectado.
-
 <br><br><br>¿Que es una VLAN?
 Copy<br>Una VLAN (Virtual Local Area Network) es un método que se utiliza para crear redes independiente (Capa 2 - Modelo OSI)  dentro de una misma red física (Capa 1 - Modelo OSI), permitiendo segmentar grupos de dispositivos aunque estén interconectados físicamente. Las VLANs se utiliza para crear varias redes dentro de un mismo.<br>"Una VLAN SE CONSIDERA UNA INTERFAZ CONFIGURABLE"<br><br><br>
 <br>
@@ -245,4 +256,147 @@ Repite este proceso para cada VLAN/subinterfaz, asegurándote de utilizar direcc
 2. Activar la Interfaz Física:<br>
 No olvides activar la interfaz física principal si aún no está activa:<br>Router(config)# interface GigabitEthernet 0/0/0
 Router(config-if)# no shutdown
-Copy]]></description><link>manual-de-packet-tracer\manual-de-packet-tracer.html</link><guid isPermaLink="false">Manual de packet tracer/Manual de packet tracer.md</guid><pubDate>Sat, 02 Mar 2024 20:55:45 GMT</pubDate><enclosure url="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual-de-packet-tracer\src\img\pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+Copy<br><br><br><br>En este ejemplo se utiliza una red de clase B:<br>Paso 1: Configurar el Router (Servidor PPPoE)<br>
+<br>Acceder al Router: Haz doble clic en el router y abre la CLI (Interfaz de Línea de Comandos).
+<br>Configuración Básica:
+
+<br>Configura la interfaz de red con una dirección IP. Por ejemplo:
+
+
+<br>enable
+configure terminal
+interface GigabitEthernet0/0/0
+ip address 172.16.0.1 255.255.0.0
+no shutdown
+exit
+Copy<br>
+<br>Crear el Pool de Direcciones IP:
+
+<br>Crea un pool de direcciones IP para los clientes PPPoE:
+
+
+<br>ip local pool pppoepool 172.16.128.1 172.16.128.254
+Copy<br>
+<br>Configurar el Grupo BBA:
+
+<br>Configura el grupo PPPoE (BBA) y asocia una plantilla virtual:
+
+
+<br>bba-group pppoe global
+virtual-template 1
+Copy<br>
+<br>Crear la Plantilla Virtual:
+
+<br>Crea y configura la plantilla virtual para la conexión PPPoE:
+
+
+<br>interface Virtual-Template1
+ip unnumbered GigabitEthernet0/0/0
+peer default ip address pool pppoepool
+encapsulation ppp
+ppp authentication pap
+exit
+Copy<br>
+<br>Configurar Usuario y Contraseña:
+
+<br>Configura las credenciales del cliente PPPoE:
+
+
+<br>username [username] password [password]
+Copy<br>Sustituye [username] y [password] con las credenciales solicitadas en el examen o las que tu quieras.<br>
+<br>Activar PPPoE en la Interfaz:
+
+<br>Activa PPPoE en la interfaz Ethernet del router:
+
+
+<br>interface GigabitEthernet0/0/0
+pppoe enable group global
+exit
+Copy<br><br>vpdn-group GROUP
+accept-dialin
+ virtual-template 1
+username pepe password 0 pepe2000
+
+bba-group pppoe global
+ virtual-template 1
+
+interface Virtual-Template1
+peer default ip address pool pppoepool
+ip unnumbered GigabitEthernet0/0/0
+
+encapsulation ppp
+ppp authentication pap
+
+interface GigabitEthernet0/0/0
+no shu
+ip address 172.16.0.1 255.255.0.0
+pppoe enable group global
+duplex auto
+speed auto
+
+
+ip local pool pppoepool 172.16.128.1 172.16.128.254
+Copy<br><br>Con el comando -<br>show pppoe session<br>
+<img alt="src/img/Pasted image 20240314220017.png" src="manual-de-packet-tracer\src\img\pasted-image-20240314220017.png"><br><br><br><br>
+<br>Acceso al PC Cliente:
+
+<br>Haz doble clic en el PC que actuará como cliente PPPoE.
+
+
+<br><br>
+<br>Establecimiento de la Conexión PPPoE:
+
+<br>Accede a "Desktop" &gt; "PPPoE".
+<br>Ingresa el nombre de usuario y contraseña establecidos en el servidor PPPoE.
+<br>Haz clic en "Connect" para iniciar la conexión.
+
+
+<br><br>
+<br>Comprobación del Estado de Conexión:
+
+<br>Abre el "Command Prompt".
+<br>Utiliza ipconfig para verificar la asignación de IP.
+<br>Emplea ping para probar la conectividad.
+
+
+<br><br><br>
+<br>Acceso al Router Cliente:
+
+<br>Haz doble clic en el router cliente y abre la CLI.
+
+
+<br><br>
+<br>Perfil del Cliente PPPoE:
+
+<br>Define el perfil PPPoE y configura la autenticación.
+
+
+<br>interface Dialer1
+ip address negotiated
+encapsulation ppp
+dialer pool 1
+ppp pap sent-username [username] password [password]
+Copy<br>
+<br>Donde [username] es el usuario con el que se nos autenticamos en el servidor PPPOE
+<br>Donde [password] es la contraseña con la que se nos autenticamos en el servidor PPPOE
+<br><br>
+<br>Preparación de la Interfaz:
+
+<br>Configura la interfaz que se usará para la conexión PPPoE.
+
+
+<br>enable
+configure terminal
+interface GigabitEthernet0/0
+	 pppoe-client dial-pool-number 1
+no ip address
+no shutdown
+exit
+Copy<br><br>
+<br>Comprobación del Estado de Conexión:
+
+<br>Usa show pppoe session 
+<br>puedes usar  otros comandos para verificar la conexión o un dispositivo conectado al router .
+
+
+]]></description><link>manual-de-packet-tracer\manual-de-packet-tracer.html</link><guid isPermaLink="false">Manual de packet tracer/Manual de packet tracer.md</guid><pubDate>Thu, 14 Mar 2024 21:07:03 GMT</pubDate><enclosure url="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual-de-packet-tracer\src\img\pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
