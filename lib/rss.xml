@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 14 Mar 2024 21:07:47 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 14 Mar 2024 21:07:45 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Pasted]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 15 Mar 2024 09:19:31 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 15 Mar 2024 09:19:26 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Pasted]]></title><description><![CDATA[ 
  ]]></description><link>manual-de-packet-tracer\src\img\pasted.html</link><guid isPermaLink="false">Manual de packet tracer/src/img/Pasted.md</guid><pubDate>Fri, 09 Feb 2024 18:10:18 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
  <br><br>LECTURA OBLIGATORIA<br>
 Se recomienda tener conocimientos previos de subnetting.<br>
@@ -48,14 +48,26 @@ Para verificar la conectividad con otro dispositivo en la red, se usa el comando
 <br>
 User EXEC Mode (Modo EXEC de Usuario): Modo por defecto al iniciar sesión en el switch, identificado por el prompt "&gt;". Permite ejecutar comandos de visualización básicos.
 
+<br>Foto de ejemplo real:<img alt="src/img/Pasted image 20240315093145.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315093145.png">
+
+
 <br>
 Privileged EXEC Mode (Modo EXEC con Privilegios): Se accede ingresando "enable" desde el modo User EXEC. Identificado por el prompt "#", permite ejecutar comandos de configuración y visualización avanzados.
+
+<br>Foto de ejemplo real:<img alt="src/img/Pasted image 20240315093221.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315093221.png">
+
 
 <br>
 Global Configuration Mode (Modo de Configuración Global): Accesible desde el modo Privileged EXEC con "configure terminal" o "conf t". Permite configurar parámetros globales del switch como interfaces, VLANs, protocolos de enrutamiento, etc.
 
+<br>Foto de ejemplo real: <img alt="src/img/Pasted image 20240315093307.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315093307.png">
+
+
 <br>
 Interface Configuration Mode (Modo de Configuración de Interfaz): Se accede desde el modo Global Configuration con "interface [interface-id]". Permite configurar parámetros específicos de una interfaz, como direcciones IP, velocidad, duplex, etc.
+
+<br>Foto de ejemplo real:<img alt="src/img/Pasted image 20240315093444.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315093444.png">
+
 
 <br>Estos son los modos básicos en un switch o router de Cisco de Packet Tracer, pudiendo existir modos adicionales o variantes según la versión del software y las características del dispositivo.<br><br>Existen comandos específicos para diferentes modos en el CLI de Cisco. Algunas abreviaturas y trucos comunes son:<br><br>Nota: Existen más abreviaturas, pero se han listado las más utilizadas.<br>Tabulación: Al igual que en Linux, se puede usar el tabulador para completar un comando.<br>
 <img alt="src/img/Pasted image 20240207163142.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207163142.png"><br><br><br><br>Estos comandos son universales<br><br>
@@ -113,7 +125,7 @@ ip dhcp excluded-address 192.168.90.127 192.168.90.254 - Indicamos al dhcp que n
 ip dhcp pool andared
 dns-server 192.168.90.1
 exit
-Copy<br>
+Copiar<br>
 <br>Resultado Final<br>
 <img alt="src/img/Pasted image 20240207171144.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207171144.png">
 <br><br>NOTA: Puede caer o no en el examen porque estos son parametros de un servidor dhcp, estas opciones se ven el segundo año del modulo mejor con mas tiempo y mejores herramientas.<br>
@@ -133,7 +145,7 @@ Copy<br>
 <br>
 <br>Configura el tiempo de asignación de las direcciones IP con lease [días] [horas] [minutos]. Esto define cuánto tiempo un cliente puede mantener una dirección IP antes de que tenga que renovarla.
 <br><br>Los routers necesitan conocer cómo llegar a distintas redes que no están directamente conectadas a ellos para poder enviar y recibir tráfico hacia y desde esas redes.<br>Para visualizar las rutas del router se usa este comado: show ip route<br>
-<img alt="src/img/Pasted image 20240207212212.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207212212.png"> (NOTA en este ejemplo del comando se usa rutas estaticas)<br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
+<img alt="src/img/Pasted image 20240207212212.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207212212.png"> (NOTA en este ejemplo del comando se usa rutas estaticas tambien son validas para rutas dinamicas)<br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
 <br>172.16.0.0/16
 <br>172.17.0.0/16
 <br>172.18.0.0/16
@@ -143,25 +155,16 @@ Copy<br>
 <br>172.22.0.0/16
 <br>172.23.0.0/16
 <br>Cada router tendrá una dirección IP dentro del bloque 10.0.0.0/8, que se utilizará para el enrutamiento entre ellos.<br><br>Para configurar RIP versión 2 en un router de cisco (Recordemos que packet tracer es de cisco) y facilitar el enrutamiento entre las redes anteriormente mencionadas, sigue los siguientes pasos:<br>
-<br>
-Usa el comando configure terminal para entrar al modo de configuración.
-
-<br>
-Habilitar RIP versión 2:
-Router(config)# router rip
+<br>Usa el comando configure terminal para entrar al modo de configuración.
+<br>Habilitar RIP versión 2:
+<br>Router(config)# router rip
 Router(config-router)# version 2
-Copy
-
-<br>
-Anunciar Redes:<br>
+Copiar<br>
+<br>Anunciar Redes:<br>
 Anuncia cada red que el router debe conocer. Debes hacer esto para todas las redes directamente conectadas al router.
-Router(config-router)# network 172.16.0.0
+<br>Router(config-router)# network 172.16.0.0
 Router(config-router)# network 10.0.0.0
-
-Copy
-Repite el comando network "Direccion de red" en cada uno de los routers 
-
-<br>Estos pasos se deben repetir en cada uno de los routers que participan en el enrutamiento, asegurándose de anunciar solo las redes directamente conectadas a cada router.<br><br>he escogido el router con la red 172.16.0.0 como ejemplo de los comandos que hay que poner<br>
+Copiar<br>   Repite el comando network "Direccion de red" en cada uno de los routers <br>Estos pasos se deben repetir en cada uno de los routers que participan en el enrutamiento, asegurándose de anunciar solo las redes directamente conectadas a cada router.<br><br>he escogido el router con la red 172.16.0.0 como ejemplo de los comandos que hay que poner<br>
 <img alt="src/img/Pasted image 20240207204212.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207204212.png"><br><br>El enrutamiento estático, a diferencia del dinámico, requiere que se configure manualmente cada ruta hacia las redes destino. Esto implica especificar explícitamente, en cada router, cómo alcanzar cada red no directamente conectada. A continuación, se describe cómo configurar enrutamiento estático para una red. (en la actualidad no se utiliza esto porque existen muchas redes y imaginate )<br><br>
 <br>
 Entrar al Modo de Configuración Global:
@@ -176,7 +179,7 @@ Configurar una Ruta Estática:
 
 
 <br>Router(config)# ip route 172.16.0.0 255.255.0.0 10.0.0.2
-Copy<br>
+Copiar<br>
 <br>Repite este paso para cada red destino, especificando el adecuado siguiente salto o interfaz de salida.
 <br>
 <br>Guardar la Configuración:
@@ -188,75 +191,56 @@ Supongamos que quiero enrutar 8 router pues repetir todas estas tablas entre si:
 
 <img alt="src/img/Pasted image 20240207214404.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207214404.png">Los resquest timed out son porque tiene que hacer el protocolo ARP en las redes donde este el dispositivo conectado.
 <br><br><br>¿Que es una VLAN?
-Copy<br>Una VLAN (Virtual Local Area Network) es un método que se utiliza para crear redes independiente (Capa 2 - Modelo OSI)  dentro de una misma red física (Capa 1 - Modelo OSI), permitiendo segmentar grupos de dispositivos aunque estén interconectados físicamente. Las VLANs se utiliza para crear varias redes dentro de un mismo.<br>"Una VLAN SE CONSIDERA UNA INTERFAZ CONFIGURABLE"<br><br><br>
-<br>
-Entrar al Modo de Configuración Global:
-Switch&gt; enable
+Copiar<br>Una VLAN (Virtual Local Area Network) es un método que se utiliza para crear redes independiente (Capa 2 - Modelo OSI)  dentro de una misma red física (Capa 1 - Modelo OSI), permitiendo segmentar grupos de dispositivos aunque estén interconectados físicamente. Las VLANs se utiliza para crear varias redes dentro de un mismo.<br>"Una VLAN SE CONSIDERA UNA INTERFAZ CONFIGURABLE"<br><br><br>
+<br>Entrar al Modo de Configuración Global:
+<br>Switch&gt; enable
 Switch# configure terminal
-Copy
-
-<br>
-Crear la VLAN:<br>
+Copiar<br>
+<br>Crear la VLAN:<br>
 Suponiendo que el "numerito que se te antoje" es 10, para crear la VLAN 10, ejecuta:
-Switch(config)# vlan 10
+<br>Switch(config)# vlan 10
 Switch(config-vlan)# name Mi_VLAN
-Copy
-
-<br>
-Asignar Puertos a la VLAN:<br>
+Copiar<br>
+<br>Asignar Puertos a la VLAN:<br>
 Para asignar un puerto al switch a la VLAN 10, primero debes entrar a la configuración del puerto y luego asignarlo a la VLAN. Por ejemplo, para el puerto FastEthernet 0/1:
-Switch(config)# interface fastEthernet 0/1
+<br>Switch(config)# interface fastEthernet 0/1
 Switch(config-if)# switchport mode access - (Por defecto esto no hace falta pero no viene mal ponerlo )
 Switch(config-if)# switchport access vlan 10
-Copy
-
-<br>Resultado Final<br>
+Copiar<br>Resultado Final<br>
 <img alt="src/img/Pasted image 20240209112446.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209112446.png"><br>Resultado Final - Alternativo<br>
 <img alt="src/img/Pasted image 20240209112053.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209112053.png"><br>
 Nota: Si no existe la VLAN creada en el switch la crea <br><br>¿Que es un puerto trunk?<br>
 Un puerto trunk en una red de área local (LAN) es una interfaz de switch configurada para transportar tráfico de varias VLANs a través de un único enlace físico(Capa 1 - Fisica) entre dos dispositivos de red. (En router no hace falta truncarlo)<br>Para configurar un puerto como trunk (esto permite que el puerto transporte tráfico de múltiples VLANs), sigue estos pasos:<br>
-<br>
-Seleccionar el Puerto:<br>
+<br>Seleccionar el Puerto:<br>
 Accede a la configuración del puerto que deseas configurar como trunk. Por ejemplo, FastEthernet 0/24 - (Se usan los puertos mas bajos y incluso se puede usar los puertos gigabit del switch):
-Switch(config)# interface fastEthernet 0/24
-Copy
-
-<br>
-Configurar el Puerto como Trunk:
-Switch(config-if)# switchport mode trunk
-Copy
-
-<br>Resultado Final.<br>
+<br>Switch(config)# interface fastEthernet 0/24
+Copiar<br>
+<br>Configurar el Puerto como Trunk:
+<br>Switch(config-if)# switchport mode trunk
+Copiar<br>Resultado Final.<br>
 <img alt="src/img/Pasted image 20240209122010.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209122010.png"><br>
 3. Especificar VLANs Permitidas (opcional - No cae en examen pero lo pongo por si las moscas):<br>
 Puedes especificar qué VLANs están permitidas a través del trunk:<br>Switch(config-if)# switchport trunk allowed vlan add 10
-Copy<br>   Si omites este paso, el puerto permitirá todas las VLANs por defecto.<br><br><br>Para configurar subinterfaces en un router (permitiendo que una interfaz física maneje múltiples VLANs), sigue estos pasos:<br>
-<br>
-Entrar al Modo de Configuración Global:
-Router&gt; enable
+Copiar<br>   Si omites este paso, el puerto permitirá todas las VLANs por defecto.<br><br><br>Para configurar subinterfaces en un router (permitiendo que una interfaz física maneje múltiples VLANs), sigue estos pasos:<br>
+<br>Entrar al Modo de Configuración Global:
+<br>Router&gt; enable
 Router# configure terminal
-Copy
-
-<br>
-Crear Subinterfaces:<br>
+Copiar<br>
+<br>Crear Subinterfaces:<br>
 Por cada VLAN, crea una subinterfaz en la interfaz física del router. Supongamos que la interfaz es GigabitEthernet 0/0 y queremos configurar para la VLAN 10:
-Router(config)# interface GigabitEthernet 0/0.10
+<br>Router(config)# interface GigabitEthernet 0/0.10
 Router(config-subif)# encapsulation dot1Q 10
-Copy
-
-<br>Resultado Final<br>
+Copiar<br>Resultado Final<br>
 <img alt="src/img/Pasted image 20240209123527.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209123527.png"><br><br>Después de habilitar las VLANs en las subinterfaces, debes asignar una dirección IP a cada subinterfaz para permitir la comunicación entre las VLANs:<br>
 <br>Asignar Dirección IP:<br>
 Continuando con el ejemplo de la VLAN 10 en la subinterfaz GigabitEthernet 0/0.10:
-Router(config-subif)# ip address 192.168.10.1 255.255.255.0
-Copy
-Repite este proceso para cada VLAN/subinterfaz, asegurándote de utilizar direcciones IP y máscaras de subred adecuadas para cada segmento de red.
-<br>Resultado Final<br>
+<br>Router(config-subif)# ip address 192.168.10.1 255.255.255.0
+Copiar<br>   Repite este proceso para cada VLAN/subinterfaz, asegurándote de utilizar direcciones IP y máscaras de subred adecuadas para cada segmento de red.<br>Resultado Final<br>
 <img alt="src/img/Pasted image 20240209123851.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209123851.png"><br>
 2. Activar la Interfaz Física:<br>
 No olvides activar la interfaz física principal si aún no está activa:<br>Router(config)# interface GigabitEthernet 0/0/0
 Router(config-if)# no shutdown
-Copy<br><br><br><br>En este ejemplo se utiliza una red de clase B:<br>Paso 1: Configurar el Router (Servidor PPPoE)<br>
+Copiar<br><br><br><br>En este ejemplo se utiliza una red de clase B:<br>Paso 1: Configurar el Router (Servidor PPPoE)<br>
 <br>Acceder al Router: Haz doble clic en el router y abre la CLI (Interfaz de Línea de Comandos).
 <br>Configuración Básica:
 
@@ -269,14 +253,14 @@ interface GigabitEthernet0/0/0
 ip address 172.16.0.1 255.255.0.0
 no shutdown
 exit
-Copy<br>
+Copiar<br>
 <br>Crear el Pool de Direcciones IP:
 
-<br>Crea un pool de direcciones IP para los clientes PPPoE:
+<br>Crea un Conjunto\Rango de direcciones IP para los clientes PPPoE:
 
 
 <br>ip local pool pppoepool 172.16.128.1 172.16.128.254
-Copy<br>
+Copiar<br>
 <br>Configurar el Grupo BBA:
 
 <br>Configura el grupo PPPoE (BBA) y asocia una plantilla virtual:
@@ -284,7 +268,7 @@ Copy<br>
 
 <br>bba-group pppoe global
 virtual-template 1
-Copy<br>
+Copiar<br>
 <br>Crear la Plantilla Virtual:
 
 <br>Crea y configura la plantilla virtual para la conexión PPPoE:
@@ -296,14 +280,14 @@ peer default ip address pool pppoepool
 encapsulation ppp
 ppp authentication pap
 exit
-Copy<br>
+Copiar<br>
 <br>Configurar Usuario y Contraseña:
 
 <br>Configura las credenciales del cliente PPPoE:
 
 
 <br>username [username] password [password]
-Copy<br>Sustituye [username] y [password] con las credenciales solicitadas en el examen o las que tu quieras.<br>
+Copiar<br>Sustituye [username] y [password] con las credenciales solicitadas en el examen o las que tu quieras.<br>
 <br>Activar PPPoE en la Interfaz:
 
 <br>Activa PPPoE en la interfaz Ethernet del router:
@@ -312,13 +296,13 @@ Copy<br>Sustituye [username] y [password] con las credenciales solicitadas en el
 <br>interface GigabitEthernet0/0/0
 pppoe enable group global
 exit
-Copy<br><br>vpdn-group GROUP
+Copiar<br>USAR BAJO VUESTRO PROPIO RIESGO<br><br>vpdn-group GROUP
 accept-dialin
- virtual-template 1
+virtual-template 1
 username pepe password 0 pepe2000
 
 bba-group pppoe global
- virtual-template 1
+virtual-template 1
 
 interface Virtual-Template1
 peer default ip address pool pppoepool
@@ -336,33 +320,41 @@ speed auto
 
 
 ip local pool pppoepool 172.16.128.1 172.16.128.254
-Copy<br><br>Con el comando -<br>show pppoe session<br>
+Copiar<br><br>Con el comando podeis verificar que funciona el servidor pppoe, para que obtengais este resultado similar teneis que usar <br>show pppoe session<br>
 <img alt="src/img/Pasted image 20240314220017.png" src="manual-de-packet-tracer\src\img\pasted-image-20240314220017.png"><br><br><br><br>
 <br>Acceso al PC Cliente:
 
-<br>Haz doble clic en el PC que actuará como cliente PPPoE.
+<br>Haz doble clic en el PC que actuará como cliente PPPoE.<br>
+<img alt="src/img/Pasted image 20240315094944.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315094944.png">
 
 
 <br><br>
 <br>Establecimiento de la Conexión PPPoE:
 
-<br>Accede a "Desktop" &gt; "PPPoE".
-<br>Ingresa el nombre de usuario y contraseña establecidos en el servidor PPPoE.
-<br>Haz clic en "Connect" para iniciar la conexión.
+<br>Accede a "Desktop" &gt; "PPPoE Dialer".<br>
+<img alt="src/img/Pasted image 20240315094956.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315094956.png">
+<br>Ingresa el nombre de usuario y contraseña establecidos en el servidor PPPoE.<br>
+<img alt="src/img/Pasted image 20240315095028.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315095028.png">
+<br>Haz clic en "Connect" para iniciar la conexión.<br>
+<img alt="src/img/Pasted image 20240315095043.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315095043.png">
 
 
 <br><br>
 <br>Comprobación del Estado de Conexión:
 
-<br>Abre el "Command Prompt".
-<br>Utiliza ipconfig para verificar la asignación de IP.
-<br>Emplea ping para probar la conectividad.
+<br>Abre el "Command Prompt".<br>
+<img alt="src/img/Pasted image 20240315095231.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315095231.png">
+<br>Utiliza ipconfig para verificar la asignación de IP.<br>
+<img alt="src/img/Pasted image 20240315095213.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315095213.png">
+<br>Emplea ping para probar la conectividad.<br>
+<img alt="src/img/Pasted image 20240315095812.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315095812.png">
 
 
 <br><br><br>
 <br>Acceso al Router Cliente:
 
-<br>Haz doble clic en el router cliente y abre la CLI.
+<br>Haz doble clic en el router cliente y abre la CLI.<br>
+<img alt="src/img/Pasted image 20240315100200.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315100200.png">
 
 
 <br><br>
@@ -376,27 +368,46 @@ ip address negotiated
 encapsulation ppp
 dialer pool 1
 ppp pap sent-username [username] password [password]
-Copy<br>
+Copiar<br>
 <br>Donde [username] es el usuario con el que se nos autenticamos en el servidor PPPOE
 <br>Donde [password] es la contraseña con la que se nos autenticamos en el servidor PPPOE
-<br><br>
+<br>Foto del resultado:<img alt="src/img/Pasted image 20240315100834.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315100834.png"><br><br><br>
 <br>Preparación de la Interfaz:
 
-<br>Configura la interfaz que se usará para la conexión PPPoE.
+<br>Configura la interfaz que se usará para la conexión PPPoE. Asegúrate de que la interfaz esté en el estado correcto antes de aplicar la configuración PPPoE.
 
 
+<br>
+<br>Entra en modo de configuración y selecciona la interfaz correcta:
 <br>enable
 configure terminal
-interface GigabitEthernet0/0
-	 pppoe-client dial-pool-number 1
-no ip address
-no shutdown
+interface GigabitEthernet 0/0/0
+Copiar<br>
+<br>Configura la interfaz para PPPoE y asigna el dial-pool:
+<br>no ip address
+pppoe enable
+pppoe-client dial-pool-number 1
+Copiar<br>
+<br>Activa la interfaz (asegúrate de que no esté apagada):
+<br>no shutdown
 exit
-Copy<br><br>
-<br>Comprobación del Estado de Conexión:
+Copiar<br>Resultado Final:<br>
+<img alt="src/img/Pasted image 20240315101518.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315101518.png"><br><br>
+<br>
+Comprobación del Estado de Conexión:
 
-<br>Usa show pppoe session 
-<br>puedes usar  otros comandos para verificar la conexión o un dispositivo conectado al router .
+<br>
+Usa el comando show pppoe session para verificar la sesión PPPoE.<br>
+<img alt="src/img/Pasted image 20240315101557.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315101557.png">
+
+<br>
+Usa el comando Ping [Puerta de enlace del servidor PPPOE] para verificar  que la sesión PPPoE este activa y funcional.
 
 
-]]></description><link>manual-de-packet-tracer\manual-de-packet-tracer.html</link><guid isPermaLink="false">Manual de packet tracer/Manual de packet tracer.md</guid><pubDate>Thu, 14 Mar 2024 21:07:03 GMT</pubDate><enclosure url="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual-de-packet-tracer\src\img\pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+<img alt="src/img/Pasted image 20240315101828.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315101828.png">
+
+<br>Puedes utilizar también otros comandos como show ip interface brief para verificar el estado de la interfaz y show running-config para ver la configuración actual en el router.<br>
+<img alt="src/img/Pasted image 20240315101632.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315101632.png">
+
+
+<br>]]></description><link>manual-de-packet-tracer\manual-de-packet-tracer.html</link><guid isPermaLink="false">Manual de packet tracer/Manual de packet tracer.md</guid><pubDate>Fri, 15 Mar 2024 09:18:41 GMT</pubDate><enclosure url="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual-de-packet-tracer\src\img\pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
