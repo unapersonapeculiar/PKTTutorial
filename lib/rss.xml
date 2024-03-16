@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 16 Mar 2024 21:22:39 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 16 Mar 2024 21:22:36 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Pasted]]></title><description><![CDATA[ 
- ]]></description><link>manual-de-packet-tracer\src\img\pasted.html</link><guid isPermaLink="false">Manual de packet tracer/src/img/Pasted.md</guid><pubDate>Fri, 09 Feb 2024 18:10:18 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 16 Mar 2024 21:27:10 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 16 Mar 2024 21:27:09 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
  <br><br>LECTURA OBLIGATORIA<br>
 Se recomienda tener conocimientos previos de subnetting.<br>
 <br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" rel="noopener" class="external-link" href="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" target="_blank">Subnetting IPv4 explicación en español</a>
@@ -209,8 +208,7 @@ Switch(config-if)# switchport access vlan 10
 Copy<br>Resultado Final<br>
 <img alt="src/img/Pasted image 20240209112446.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209112446.png"><br>Resultado Final - Alternativo<br>
 <img alt="src/img/Pasted image 20240209112053.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209112053.png"><br>
-Nota: Si no existe la VLAN creada en el switch la crea <br>Para identificar una trama con VLAN se mira que la trama tenga TCI con un valor exadecimal.<br>
-<img alt="src/img/Pasted image 20240315193651.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315193651.png"><br><br>¿Que es un puerto trunk?<br>
+Nota: Si no existe la VLAN creada en el switch la crea.<br><br>¿Que es un puerto trunk?<br>
 Un puerto trunk en una red de área local (LAN) es una interfaz de switch configurada para transportar tráfico de varias VLANs a través de un único enlace físico(Capa 1 - Fisica) entre dos dispositivos de red. (En router no hace falta truncarlo)<br>Para configurar un puerto como trunk (esto permite que el puerto transporte tráfico de múltiples VLANs), sigue estos pasos:<br>
 <br>Seleccionar el Puerto:<br>
 Accede a la configuración del puerto que deseas configurar como trunk. Por ejemplo, FastEthernet 0/24 - (Se usan los puertos mas bajos y incluso se puede usar los puertos gigabit del switch):
@@ -219,9 +217,11 @@ Copy<br>
 <br>Configurar el Puerto como Trunk:
 <br>Switch(config-if)# switchport mode trunk
 Copy<br>Resultado Final.<br>
-<img alt="src/img/Pasted image 20240209122010.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209122010.png"><br>
-3. Especificar VLANs Permitidas (opcional - No cae en examen pero lo pongo por si las moscas):<br>
-Puedes especificar qué VLANs están permitidas a través del trunk:<br>Switch(config-if)# switchport trunk allowed vlan add 10
+<img alt="src/img/Pasted image 20240209122010.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209122010.png"><br>Para identificar una trama con VLAN, se verifica si la trama contiene un TCI (Tag Control Information) con un valor hexadecimal. Este elemento se encuentra dentro del apartado del simulador.<br>
+<img alt="src/img/Pasted image 20240315193651.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315193651.png"><br>
+<br>Especificar VLANs Permitidas (opcional - No cae en examen pero lo pongo por si las moscas):<br>
+Puedes especificar qué VLANs están permitidas a través del trunk:
+<br>Switch(config-if)# switchport trunk allowed vlan add 10
 Copy<br>   Si omites este paso, el puerto permitirá todas las VLANs por defecto.<br><br><br>Para configurar subinterfaces en un router (permitiendo que una interfaz física maneje múltiples VLANs), sigue estos pasos:<br>
 <br>Entrar al Modo de Configuración Global:
 <br>Router&gt; enable
@@ -481,4 +481,5 @@ Usa el comando Ping [Puerta de enlace del servidor PPPOE] para verificar  que la
 <img alt="src/img/Pasted image 20240315101632.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315101632.png">
 
 
-<br>]]></description><link>manual-de-packet-tracer\manual-de-packet-tracer.html</link><guid isPermaLink="false">Manual de packet tracer/Manual de packet tracer.md</guid><pubDate>Sat, 16 Mar 2024 21:21:44 GMT</pubDate><enclosure url="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual-de-packet-tracer\src\img\pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+<br>]]></description><link>manual-de-packet-tracer\manual-de-packet-tracer.html</link><guid isPermaLink="false">Manual de packet tracer/Manual de packet tracer.md</guid><pubDate>Sat, 16 Mar 2024 21:26:04 GMT</pubDate><enclosure url="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Pasted]]></title><description><![CDATA[ 
+ ]]></description><link>manual-de-packet-tracer\src\img\pasted.html</link><guid isPermaLink="false">Manual de packet tracer/src/img/Pasted.md</guid><pubDate>Fri, 09 Feb 2024 18:10:18 GMT</pubDate></item></channel></rss>
