@@ -1,4 +1,5 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 16 Mar 2024 21:27:10 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 16 Mar 2024 21:27:09 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Mar 2024 22:43:27 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Mar 2024 22:43:24 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Pasted]]></title><description><![CDATA[ 
+ ]]></description><link>manual-de-packet-tracer\src\img\pasted.html</link><guid isPermaLink="false">Manual de packet tracer/src/img/Pasted.md</guid><pubDate>Fri, 09 Feb 2024 18:10:18 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
  <br><br>LECTURA OBLIGATORIA<br>
 Se recomienda tener conocimientos previos de subnetting.<br>
 <br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" rel="noopener" class="external-link" href="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" target="_blank">Subnetting IPv4 explicación en español</a>
@@ -143,8 +144,10 @@ Copy<br>
 <br>Configurar el Tiempo de Asignación (Lease Time):
 <br>
 <br>Configura el tiempo de asignación de las direcciones IP con lease [días] [horas] [minutos]. Esto define cuánto tiempo un cliente puede mantener una dirección IP antes de que tenga que renovarla.
-<br><br>Los routers necesitan conocer cómo llegar a distintas redes que no están directamente conectadas a ellos para poder enviar y recibir tráfico hacia y desde esas redes.<br>Para visualizar las rutas del router se usa este comado: show ip route<br>
-<img alt="src/img/Pasted image 20240207212212.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207212212.png"> (NOTA en este ejemplo del comando se usa rutas estaticas tambien son validas para rutas dinamicas)<br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
+<br><br>Los routers necesitan conocer cómo llegar a distintas redes que no están directamente conectadas a ellos para poder enviar y recibir tráfico hacia y desde esas redes.<br>Para visualizar las rutas del router se usa este comado:<br>
+<br>show ip route<br>
+<img alt="src/img/Pasted image 20240207212212.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207212212.png"> (NOTA en este ejemplo del comando se usa rutas estaticas tambien son validas para rutas dinamicas)
+<br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
 <br>172.16.0.0/16
 <br>172.17.0.0/16
 <br>172.18.0.0/16
@@ -228,20 +231,22 @@ Copy<br>   Si omites este paso, el puerto permitirá todas las VLANs por defecto
 Router# configure terminal
 Copy<br>
 <br>Crear Subinterfaces:<br>
-Por cada VLAN, crea una subinterfaz en la interfaz física del router. Supongamos que la interfaz es GigabitEthernet 0/0 y queremos configurar para la VLAN 10:
-<br>Router(config)# interface GigabitEthernet 0/0.10
+Por cada VLAN, crea una subinterfaz en la interfaz física del router. Supongamos que la interfaz es GigabitEthernet 0/0/0 y queremos configurar para la VLAN 10:
+<br>Router(config)# interface GigabitEthernet 0/0/0.10
 Router(config-subif)# encapsulation dot1Q 10
 Copy<br>Resultado Final<br>
 <img alt="src/img/Pasted image 20240209123527.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209123527.png"><br><br>Después de habilitar las VLANs en las subinterfaces, debes asignar una dirección IP a cada subinterfaz para permitir la comunicación entre las VLANs:<br>
 <br>Asignar Dirección IP:<br>
-Continuando con el ejemplo de la VLAN 10 en la subinterfaz GigabitEthernet 0/0.10:
+Continuando con el ejemplo de la VLAN 10 en la subinterfaz GigabitEthernet 0/0/0.10:
 <br>Router(config-subif)# ip address 192.168.10.1 255.255.255.0
 Copy<br>   Repite este proceso para cada VLAN/subinterfaz, asegurándote de utilizar direcciones IP y máscaras de subred adecuadas para cada segmento de red.<br>Resultado Final<br>
 <img alt="src/img/Pasted image 20240209123851.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209123851.png"><br>
 2. Activar la Interfaz Física:<br>
 No olvides activar la interfaz física principal si aún no está activa:<br>Router(config)# interface GigabitEthernet 0/0/0
 Router(config-if)# no shutdown
-Copy<br><br><br>La Traducción de Dirección de Red (NAT) es un método empleado para alterar direcciones IP dentro de los paquetes de datos durante su tránsito por dispositivos de enrutamiento. Esto implica la reasignación de un espacio de direcciones IP a otro. Los dos tipos principales de NAT son: NAT estático, NAT dinámico.<br><br>El NAT estático asocia directamente una única dirección IP interna con una única dirección IP externa. Este tipo se utiliza para habilitar el acceso desde el exterior a dispositivos internos, como servidores.<br><br>Para probar este NAT simple, tenemos el siguiente ejemplo compuesto por los siguientes elementos:<br>
+Copy<br><br><br>La Traducción de Dirección de Red (NAT) es un método empleado para alterar direcciones IP dentro de los paquetes de datos durante su tránsito por dispositivos de enrutamiento. Esto implica la reasignación de un espacio de direcciones IP a otro. Los dos tipos principales de NAT son: NAT estático, NAT dinámico.<br><br>
+<br>Nota: Asignar IPS a todo lo que Tenga una Interfaz.
+<br>El NAT estático asocia directamente una única dirección IP interna con una única dirección IP externa. Este tipo se utiliza para habilitar el acceso desde el exterior a dispositivos internos, como  puede ser  un servidor.<br><br>Para probar este NAT simple, tenemos el siguiente ejemplo compuesto por los siguientes elementos:<br>
 <br>1x Router
 <br>2x Switches
 <br>1x Servidor con el servicio HTTP/S habilitado (Se habilita desde la interfaz grafica de forma simple.)
@@ -339,6 +344,7 @@ Copy<br>
 
 <br>bba-group pppoe global
 virtual-template 1
+exit
 Copy<br>
 <br>Crear la Plantilla Virtual:
 
@@ -348,7 +354,6 @@ Copy<br>
 <br>interface Virtual-Template1
 ip unnumbered GigabitEthernet0/0/0
 peer default ip address pool pppoepool
-encapsulation ppp
 ppp authentication pap
 exit
 Copy<br>
@@ -367,46 +372,168 @@ Copy<br>Sustituye [username] y [password] con las credenciales solicitadas en el
 <br>interface GigabitEthernet0/0/0
 pppoe enable group global
 exit
-Copy<br>USAR BAJO VUESTRO PROPIO RIESGO<br><br>vpdn-group GROUP
-accept-dialin
-virtual-template 1
-username pepe password 0 pepe2000
+Copy<br>USAR BAJO VUESTRO PROPIO RIESGO<br>Resultado del router ya una vez configurado:<br>--- System Configuration Dialog ---
 
+
+Would you like to enter the initial configuration dialog? [yes/no]: no
+Press RETURN to get started!
+
+  
+
+  
+
+  
+
+Router&gt;enable
+Router#configure terminal
+Enter configuration commands, one per line. End with CNTL/Z.
+Router(config)#interface GigabitEthernet0/0/0
+Router(config-if)#ip address 172.16.0.1 255.255.0.0
+Router(config-if)#no shutdown
+Router(config-if)#exit
+
+%LINK-5-CHANGED: Interface GigabitEthernet0/0/0, changed state to up
+
+  
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0/0, changed state to up
+
+  
+
+Router(config)#ip local pool pppoepool 172.16.128.1 172.16.128.254
+Router(config)#bba-group pppoe global
+Router(config-bba)#virtual-template 1
+Router(config-bba)#exit
+
+%LINK-5-CHANGED: Interface Virtual-Access1, changed state to up
+
+  
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Virtual-Access1, changed state to up
+
+  
+
+Router(config)#interface Virtual-Template1
+Router(config-if)#ip unnumbered GigabitEthernet0/0/0
+Router(config-if)#peer default ip address pool pppoepool
+Router(config-if)#ppp authentication pap
+AAA: Warning, authentication list default is not defined for PPP.
+Router(config-if)#exit
+Router(config)#username rodas password rodas1234
+Router(config)#interface GigabitEthernet0/0/0
+Router(config-if)#pppoe enable group global
+Router(config-if)#exit
+Router(config)#
+
+%LINK-5-CHANGED: Interface Virtual-Access1.1, changed state to up
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Virtual-Access1.1, changed state to up
+Copy<br><br>!
+version 16.6.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+username rodas password 0 rodas1234
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
 bba-group pppoe global
-virtual-template 1
-
+  virtual-template 1
+!
 interface Virtual-Template1
-peer default ip address pool pppoepool
-ip unnumbered GigabitEthernet0/0/0
-
-encapsulation ppp
-ppp authentication pap
-
+ peer default ip address pool pppoepool
+ ip unnumbered GigabitEthernet0/0/0
+ encapsulation ppp
+ ppp authentication pap
+!
 interface GigabitEthernet0/0/0
-no shu
-ip address 172.16.0.1 255.255.0.0
-pppoe enable group global
-duplex auto
-speed auto
-
-
+ ip address 172.16.0.1 255.255.0.0
+ pppoe enable group global
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
 ip local pool pppoepool 172.16.128.1 172.16.128.254
-Copy<br><br>Con el comando podeis verificar que funciona el servidor pppoe, para que obtengais este resultado similar teneis que usar <br>show pppoe session<br>
-<img alt="src/img/Pasted image 20240314220017.png" src="manual-de-packet-tracer\src\img\pasted-image-20240314220017.png"><br><br><br><br>
-<br>Acceso al PC Cliente:
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
 
-<br>Haz doble clic en el PC que actuará como cliente PPPoE.<br>
+
+Copy<br><br>Con el comando podeis verificar que funciona el servidor pppoe, para que obtengais este resultado similar teneis que usar <br>
+<br>show pppoe session<br>
+<img alt="src/img/Pasted image 20240314220017.png" src="manual-de-packet-tracer\src\img\pasted-image-20240314220017.png">
+<br><br>Felipe maricon <br><br><br>
+<br>Acceso al PC Cliente: Haz doble clic en el PC que actuará como cliente PPPoE.<br>
 <img alt="src/img/Pasted image 20240315094944.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315094944.png">
-
-
 <br><br>
-<br>Establecimiento de la Conexión PPPoE:
+<br>Establecimiento de la Conexión PPPoE: 
 
-<br>Accede a "Desktop" &gt; "PPPoE Dialer".<br>
+<br>Entra en "Desktop" &gt; "PPPoE Dialer".<br>
 <img alt="src/img/Pasted image 20240315094956.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315094956.png">
-<br>Ingresa el nombre de usuario y contraseña establecidos en el servidor PPPoE.<br>
+<br>Introduce el nombre de usuario y contraseña del servidor PPPoE.<br>
 <img alt="src/img/Pasted image 20240315095028.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315095028.png">
-<br>Haz clic en "Connect" para iniciar la conexión.<br>
+<br>Pulsa "Connect" para iniciar la conexión.<br>
 <img alt="src/img/Pasted image 20240315095043.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315095043.png">
 
 
@@ -415,55 +542,29 @@ Copy<br><br>Con el comando podeis verificar que funciona el servidor pppoe, para
 
 <br>Abre el "Command Prompt".<br>
 <img alt="src/img/Pasted image 20240315095231.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315095231.png">
-<br>Utiliza ipconfig para verificar la asignación de IP.<br>
+<br>Usa ipconfig para verificar la asignación de IP.<br>
 <img alt="src/img/Pasted image 20240315095213.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315095213.png">
 <br>Emplea ping para probar la conectividad.<br>
 <img alt="src/img/Pasted image 20240315095812.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315095812.png">
 
 
 <br><br><br>
-<br>Acceso al Router Cliente:
-
-<br>Haz doble clic en el router cliente y abre la CLI.<br>
+<br>Acceso al Router Cliente: Haz doble clic en el router cliente y abre la CLI.<br>
 <img alt="src/img/Pasted image 20240315100200.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315100200.png">
-
-
 <br><br>
-<br>Perfil del Cliente PPPoE:
-
-<br>Define el perfil PPPoE y configura la autenticación.
-
-
-<br>interface Dialer1
+<br>Perfil del Cliente PPPoE: Define el perfil PPPoE y configura la autenticación.
+interface Dialer1
 ip address negotiated
 encapsulation ppp
 dialer pool 1
 ppp pap sent-username [username] password [password]
-Copy<br>
-<br>Donde [username] es el usuario con el que se nos autenticamos en el servidor PPPOE
-<br>Donde [password] es la contraseña con la que se nos autenticamos en el servidor PPPOE
-<br>Foto del resultado:<img alt="src/img/Pasted image 20240315100834.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315100834.png"><br><br><br>
-<br>Preparación de la Interfaz:
+Copy
 
-<br>Configura la interfaz que se usará para la conexión PPPoE. Asegúrate de que la interfaz esté en el estado correcto antes de aplicar la configuración PPPoE.
+<br>[username] y [password] corresponden a tus credenciales del servidor PPPoE.<br>
+Foto del resultado:<img alt="src/img/Pasted image 20240315100834.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315100834.png">
 
 
-<br>
-<br>Entra en modo de configuración y selecciona la interfaz correcta:
-<br>enable
-configure terminal
-interface GigabitEthernet 0/0/0
-Copy<br>
-<br>Configura la interfaz para PPPoE y asigna el dial-pool:
-<br>no ip address
-pppoe enable
-pppoe-client dial-pool-number 1
-Copy<br>
-<br>Activa la interfaz (asegúrate de que no esté apagada):
-<br>no shutdown
-exit
-Copy<br>Resultado Final:<br>
-<img alt="src/img/Pasted image 20240315101518.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315101518.png"><br><br>
+<br><br>
 <br>
 Comprobación del Estado de Conexión:
 
@@ -477,9 +578,40 @@ Usa el comando Ping [Puerta de enlace del servidor PPPOE] para verificar  que la
 
 <img alt="src/img/Pasted image 20240315101828.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315101828.png">
 
-<br>Puedes utilizar también otros comandos como show ip interface brief para verificar el estado de la interfaz y show running-config para ver la configuración actual en el router.<br>
+<br>Puedes utilizar Tambien show running-config para ver la configuración actual en el router.<br>
 <img alt="src/img/Pasted image 20240315101632.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315101632.png">
 
 
-<br>]]></description><link>manual-de-packet-tracer\manual-de-packet-tracer.html</link><guid isPermaLink="false">Manual de packet tracer/Manual de packet tracer.md</guid><pubDate>Sat, 16 Mar 2024 21:26:04 GMT</pubDate><enclosure url="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Pasted]]></title><description><![CDATA[ 
- ]]></description><link>manual-de-packet-tracer\src\img\pasted.html</link><guid isPermaLink="false">Manual de packet tracer/src/img/Pasted.md</guid><pubDate>Fri, 09 Feb 2024 18:10:18 GMT</pubDate></item></channel></rss>
+<br><br>La configuración de un router WR300N en Cisco Packet Tracer para usar una conexión PPPoE implica varios pasos detallados. Este proceso es crucial para establecer una conexión a Internet segura y eficiente utilizando el protocolo PPPoE, que es comúnmente utilizado por proveedores de servicios de Internet, especialmente en conexiones de banda ancha.<br>Paso 1: Acceso al Router WR300N<br>
+<br>Haga doble clic en el ícono del router para acceder a su interfaz gráfica de usuario (GUI).<br>
+<img alt="src/img/Pasted image 20240317233830.png" src="manual-de-packet-tracer\src\img\pasted-image-20240317233830.png">
+<br>Paso 2: Navegación en la GUI<br>
+<br>En la ventana de la GUI del router, encontrará diferentes opciones para configurar el dispositivo.
+<br><img alt="src/img/Pasted image 20240317233843.png" src="manual-de-packet-tracer\src\img\pasted-image-20240317233843.png">
+<br>Paso 3: Configuración del Tipo de Conexión a Internet<br>
+<br>Busque el apartado llamado 'Internet Connection Type'
+<br>Cambie el tipo de conexión de "DHCP "a 'PPPoE'. Esta opción permite que el router utilice el protocolo PPPoE para la autenticación y configuración de la conexión a Internet.<br>
+<img alt="src/img/Pasted image 20240317233912.png" src="manual-de-packet-tracer\src\img\pasted-image-20240317233912.png">
+<br>Paso 4: Ingreso de Credenciales PPPoE<br>
+<br>Una vez seleccionado PPPoE como tipo de conexión, se le pedirá que ingrese credenciales. Estas suelen ser proporcionadas por su proveedor de servicios de Internet.
+<br>Ingrese el 'Username' (Nombre de Usuario) y 'Password' (Contraseña) en los campos correspondientes. Asegúrese de ingresar estos datos correctamente, ya que son esenciales para la autenticación y el acceso a la red.<br>
+<img alt="src/img/Pasted image 20240317233937.png" src="manual-de-packet-tracer\src\img\pasted-image-20240317233937.png">
+<br>Paso 5: Guardar y Aplicar Cambios<br>
+<br>
+Después de ingresar las credenciales, busque un botón para guardar o aplicar los cambios. Esto esta etiquetado a bajo del todo de la pagina del router en un boton de que poner "Save settings".
+
+<br>
+Haga clic en este botón para confirmar y posteriormente se procedera a levantar  la configuración PPPoE en el router.<br>
+<img alt="src/img/Pasted image 20240317233954.png" src="manual-de-packet-tracer\src\img\pasted-image-20240317233954.png"><br>
+Paso 6: Verificación de la Configuración
+
+<br>
+Para verificar que la configuración es correcta y que el router se ha conectado a Internet mediante PPPoE, puede usar herramientas de diagnóstico disponibles en el router, como el comando 'ping' para probar la conectividad.
+
+<br>
+También puede revisar el estado de la conexión en la GUI para asegurarse de que la conexión PPPoE esté activa y funcional.
+
+<br>
+NOTA IMPORTANTE: Este router trae una NAT simple y DHCP por defecto.
+
+]]></description><link>manual-de-packet-tracer\manual-de-packet-tracer.html</link><guid isPermaLink="false">Manual de packet tracer/Manual de packet tracer.md</guid><pubDate>Sun, 17 Mar 2024 22:42:59 GMT</pubDate><enclosure url="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual-de-packet-tracer\src\img\pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
