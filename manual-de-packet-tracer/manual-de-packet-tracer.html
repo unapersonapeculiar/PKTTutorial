@@ -650,7 +650,8 @@ pppoe-client dial-pool-number 1
 duplex auto
 speed auto
 exit
-</code><button class="copy-code-button">Copiar</button></pre></div><div><ul>
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>Foto resultado Final:<br>
+<span alt="src/img/Pasted image 20240318092808.png" src="src/img/Pasted image 20240318092808.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240318092808.png" src="manual-de-packet-tracer/src/img/pasted-image-20240318092808.png"></span></p></div><div><ul>
 <li data-line="0">Configurar la interfaz Dialer para gestionar la conexión PPPoE:</li>
 </ul></div><div><pre><code>interface Dialer1
 dialer pool 1
@@ -661,14 +662,14 @@ ppp pap sent-username [username] password [password]
 exit
 </code><button class="copy-code-button">Copiar</button></pre></div><div><ul>
 <li data-line="0">
-<span style="display: block; margin-block-start: var(--p-spacing); margin-block-end: var(--p-spacing);">[username] y [password] corresponden a tus credenciales del servidor PPPoE.<br>
-Foto del resultado:  <span alt="src/img/Pasted image 20240315100834.png" src="src/img/Pasted image 20240315100834.png" class="internal-embed markdown-embed inline-embed is-loaded"><div class="embed-title markdown-embed-title">Pasted image 20240315100834.png</div><div class="markdown-embed-content node-insert-event"><div class="markdown-preview-view markdown-rendered node-insert-event show-indentation-guide allow-fold-headings allow-fold-lists"><div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: 0px;"><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="mod-header"></div></div></div></div><div class="markdown-embed-content node-insert-event" style="display: none;"></div><div class="markdown-embed-link" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></div></span></span>
+<p>[username] y [password] corresponden a tus credenciales del servidor PPPoE.<br>
+Foto del resultado: <span alt="src/img/Pasted image 20240318092825.png" src="src/img/Pasted image 20240318092825.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240318092825.png" src="manual-de-packet-tracer/src/img/pasted-image-20240318092825.png"></span></p>
 </li>
 <li data-line="3">
 <p>Establecer la ruta por defecto a través de la interfaz Dialer:</p>
 </li>
 </ul></div><div><pre><code>ip route 0.0.0.0 0.0.0.0 Dialer1
-</code><button class="copy-code-button">Copiar</button></pre></div></div></div><div class="heading-wrapper"><h5 data-heading="Verificación de la Conexión" class="heading" id="Verificación_de_la_Conexión"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Verificación de la Conexión</h5><div class="heading-children"><div><ol start="5">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>Foto resultado final: <span alt="src/img/Pasted image 20240318092848.png" src="src/img/Pasted image 20240318092848.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240318092848.png" src="manual-de-packet-tracer/src/img/pasted-image-20240318092848.png"></span></p></div></div></div><div class="heading-wrapper"><h5 data-heading="Verificación de la Conexión" class="heading" id="Verificación_de_la_Conexión"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Verificación de la Conexión</h5><div class="heading-children"><div><ol start="5">
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
 <p><strong>Comprobación del Estado de Conexión:</strong></p>
 <ul>
