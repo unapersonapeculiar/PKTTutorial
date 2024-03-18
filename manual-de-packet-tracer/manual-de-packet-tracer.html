@@ -209,7 +209,7 @@ ip dhcp excluded-address 192.168.90.127 192.168.90.254 - Indicamos al dhcp que n
 ip dhcp pool andared
 dns-server 192.168.90.1
 exit
-</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="8">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ol start="8">
 <li data-line="0"><strong>Resultado Final</strong><br>
 <span alt="src/img/Pasted image 20240207171144.png" src="src/img/Pasted image 20240207171144.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240207171144.png" src="manual-de-packet-tracer/src/img/pasted-image-20240207171144.png"></span></li>
 </ol></div></div></div><div class="heading-wrapper"><h4 data-heading="Parámetros Opcionales:" class="heading" id="Parámetros_Opcionales:"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Parámetros Opcionales:</h4><div class="heading-children"><div><p><strong>NOTA: Puede caer o no en el examen porque estos son parametros de un servidor dhcp, estas opciones se ven el segundo año del modulo mejor con mas tiempo y mejores herramientas.</strong></p></div><div><ol start="9">
@@ -245,12 +245,12 @@ exit
 <li data-line="1"><strong>Habilitar RIP versión 2:</strong></li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config)# router rip
 Router(config-router)# version 2
-</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="3">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ol start="3">
 <li data-line="0"><strong>Anunciar Redes:</strong><br>
 Anuncia cada red que el router debe conocer. Debes hacer esto para todas las redes directamente conectadas al router.</li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config-router)# network 172.16.0.0
 Router(config-router)# network 10.0.0.0
-</code><button class="copy-code-button">Copy</button></pre></div><div><p>   Repite el comando <code>network "Direccion de red"</code> en cada uno de los routers </p></div><div><p>Estos pasos se deben repetir en cada uno de los routers que participan en el enrutamiento, asegurándose de anunciar solo las redes directamente conectadas a cada router.</p></div></div></div><div class="heading-wrapper"><h3 data-heading="Resultado final de los comandos" class="heading" id="Resultado_final_de_los_comandos"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Resultado final de los comandos</h3><div class="heading-children"><div><p>he escogido el router con la red 172.16.0.0 como ejemplo de los comandos que hay que poner<br>
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>   Repite el comando <code>network "Direccion de red"</code> en cada uno de los routers </p></div><div><p>Estos pasos se deben repetir en cada uno de los routers que participan en el enrutamiento, asegurándose de anunciar solo las redes directamente conectadas a cada router.</p></div></div></div><div class="heading-wrapper"><h3 data-heading="Resultado final de los comandos" class="heading" id="Resultado_final_de_los_comandos"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Resultado final de los comandos</h3><div class="heading-children"><div><p>he escogido el router con la red 172.16.0.0 como ejemplo de los comandos que hay que poner<br>
 <span alt="src/img/Pasted image 20240207204212.png" src="src/img/Pasted image 20240207204212.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240207204212.png" src="manual-de-packet-tracer/src/img/pasted-image-20240207204212.png"></span></p></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="Estático" class="heading" id="Estático"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Estático</h2><div class="heading-children"><div><p>El enrutamiento estático, a diferencia del dinámico, requiere que se configure manualmente cada ruta hacia las redes destino. Esto implica especificar explícitamente, en cada router, cómo alcanzar cada red no directamente conectada. A continuación, se describe cómo configurar enrutamiento estático para una red. (en la actualidad no se utiliza esto porque existen muchas redes y imaginate )</p></div><div class="heading-wrapper"><h3 data-heading="Configuración de Enrutamiento Estático" class="heading" id="Configuración_de_Enrutamiento_Estático"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Configuración de Enrutamiento Estático</h3><div class="heading-children"><div><ol>
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
 <p><strong>Entrar al Modo de Configuración Global:</strong></p>
@@ -265,7 +265,7 @@ Router(config-router)# network 10.0.0.0
 </ul>
 </li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config)# ip route 172.16.0.0 255.255.0.0 10.0.0.2
-</code><button class="copy-code-button">Copy</button></pre></div><div><ul>
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ul>
 <li data-line="0">Repite este paso para cada red destino, especificando el adecuado siguiente salto o interfaz de salida.</li>
 </ul></div><div><ol start="3">
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Guardar la Configuración:</strong>
@@ -277,22 +277,22 @@ Supongamos que quiero enrutar 8 router pues repetir todas estas tablas entre si:
 <h3 data-heading="Resultado final:" class="heading" id="Resultado_final:">Resultado final:</h3>
 <span alt="src/img/Pasted image 20240207214404.png" src="src/img/Pasted image 20240207214404.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240207214404.png" src="manual-de-packet-tracer/src/img/pasted-image-20240207214404.png"></span>Los resquest timed out son porque tiene que hacer el protocolo ARP en las redes donde este el dispositivo conectado.</li>
 </ol></div><div><hr></div></div></div></div></div></div></div><div class="heading-wrapper"><h1 data-heading="8. **VLANs**" class="heading" id="8._**VLANs**">8. <strong>VLANs</strong></h1><div class="heading-children"><div><pre><code>¿Que es una VLAN?
-</code><button class="copy-code-button">Copy</button></pre></div><div><p>Una VLAN (Virtual Local Area Network) es un método que se utiliza para crear redes independiente (Capa 2 - Modelo OSI)  dentro de una misma red física (Capa 1 - Modelo OSI), permitiendo segmentar grupos de dispositivos aunque estén interconectados físicamente. Las VLANs se utiliza para crear varias redes dentro de un mismo.</p></div><div><p><strong>"Una VLAN SE CONSIDERA UNA INTERFAZ CONFIGURABLE"</strong></p></div><div class="heading-wrapper"><h2 data-heading="Switch" class="heading" id="Switch"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Switch</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="Cambiar de Vlan 1 a Vlan &quot;numerito que se te antoje&quot;" class="heading" id="Cambiar_de_Vlan_1_a_Vlan_&quot;numerito_que_se_te_antoje&quot;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Cambiar de Vlan 1 a Vlan "numerito que se te antoje"</h3><div class="heading-children"><div><ol>
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>Una VLAN (Virtual Local Area Network) es un método que se utiliza para crear redes independiente (Capa 2 - Modelo OSI)  dentro de una misma red física (Capa 1 - Modelo OSI), permitiendo segmentar grupos de dispositivos aunque estén interconectados físicamente. Las VLANs se utiliza para crear varias redes dentro de un mismo.</p></div><div><p><strong>"Una VLAN SE CONSIDERA UNA INTERFAZ CONFIGURABLE"</strong></p></div><div class="heading-wrapper"><h2 data-heading="Switch" class="heading" id="Switch"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Switch</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="Cambiar de Vlan 1 a Vlan &quot;numerito que se te antoje&quot;" class="heading" id="Cambiar_de_Vlan_1_a_Vlan_&quot;numerito_que_se_te_antoje&quot;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Cambiar de Vlan 1 a Vlan "numerito que se te antoje"</h3><div class="heading-children"><div><ol>
 <li data-line="0"><strong>Entrar al Modo de Configuración Global:</strong></li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Switch&gt; enable
 Switch# configure terminal
-</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="2">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ol start="2">
 <li data-line="0"><strong>Crear la VLAN:</strong><br>
 Suponiendo que el "numerito que se te antoje" es 10, para crear la VLAN 10, ejecuta:</li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Switch(config)# vlan 10
 Switch(config-vlan)# name Mi_VLAN
-</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="3">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ol start="3">
 <li data-line="0"><strong>Asignar Puertos a la VLAN:</strong><br>
 Para asignar un puerto al switch a la VLAN 10, primero debes entrar a la configuración del puerto y luego asignarlo a la VLAN. Por ejemplo, para el puerto FastEthernet 0/1:</li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Switch(config)# interface fastEthernet 0/1
 Switch(config-if)# switchport mode access - (Por defecto esto no hace falta pero no viene mal ponerlo )
 Switch(config-if)# switchport access vlan 10
-</code><button class="copy-code-button">Copy</button></pre></div><div><p>Resultado Final<br>
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>Resultado Final<br>
 <span alt="src/img/Pasted image 20240209112446.png" src="src/img/Pasted image 20240209112446.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240209112446.png" src="manual-de-packet-tracer/src/img/pasted-image-20240209112446.png"></span></p></div><div><p>Resultado Final - Alternativo<br>
 <span alt="src/img/Pasted image 20240209112053.png" src="src/img/Pasted image 20240209112053.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240209112053.png" src="manual-de-packet-tracer/src/img/pasted-image-20240209112053.png"></span><br>
 Nota: Si no existe la VLAN creada en el switch la crea.</p></div></div></div><div class="heading-wrapper"><h3 data-heading="Truncar el Puerto del Switch" class="heading" id="Truncar_el_Puerto_del_Switch"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Truncar el Puerto del Switch</h3><div class="heading-children"><div><p>¿Que es un puerto trunk?<br>
@@ -300,35 +300,35 @@ Un puerto trunk en una red de área local (LAN) es una interfaz de switch config
 <li data-line="0"><strong>Seleccionar el Puerto:</strong><br>
 Accede a la configuración del puerto que deseas configurar como trunk. Por ejemplo, FastEthernet 0/24 - (Se usan los puertos mas bajos y incluso se puede usar los puertos gigabit del switch):</li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Switch(config)# interface fastEthernet 0/24
-</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="2">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ol start="2">
 <li data-line="0"><strong>Configurar el Puerto como Trunk:</strong></li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Switch(config-if)# switchport mode trunk
-</code><button class="copy-code-button">Copy</button></pre></div><div><p>Resultado Final.<br>
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>Resultado Final.<br>
 <span alt="src/img/Pasted image 20240209122010.png" src="src/img/Pasted image 20240209122010.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240209122010.png" src="manual-de-packet-tracer/src/img/pasted-image-20240209122010.png"></span></p></div><div><p><strong>Para identificar una trama con VLAN, se verifica si la trama contiene un TCI (Tag Control Information) con un valor hexadecimal. Este elemento se encuentra dentro del apartado del simulador.</strong><br>
 <span alt="src/img/Pasted image 20240315193651.png" src="src/img/Pasted image 20240315193651.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240315193651.png" src="manual-de-packet-tracer/src/img/pasted-image-20240315193651.png"></span></p></div><div><ol start="0">
 <li data-line="0"><strong>Especificar VLANs Permitidas (opcional - No cae en examen pero lo pongo por si las moscas):</strong><br>
 Puedes especificar qué VLANs están permitidas a través del trunk:</li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Switch(config-if)# switchport trunk allowed vlan add 10
-</code><button class="copy-code-button">Copy</button></pre></div><div><p>   Si omites este paso, el puerto permitirá todas las VLANs por defecto.</p></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="Router" class="heading" id="Router"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Router</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="Habilitar una VLAN en la Interfaz Concreta del Router" class="heading" id="Habilitar_una_VLAN_en_la_Interfaz_Concreta_del_Router"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Habilitar una VLAN en la Interfaz Concreta del Router</h3><div class="heading-children"><div><p>Para configurar subinterfaces en un router (permitiendo que una interfaz física maneje múltiples VLANs), sigue estos pasos:</p></div><div><ol>
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>   Si omites este paso, el puerto permitirá todas las VLANs por defecto.</p></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="Router" class="heading" id="Router"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Router</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="Habilitar una VLAN en la Interfaz Concreta del Router" class="heading" id="Habilitar_una_VLAN_en_la_Interfaz_Concreta_del_Router"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Habilitar una VLAN en la Interfaz Concreta del Router</h3><div class="heading-children"><div><p>Para configurar subinterfaces en un router (permitiendo que una interfaz física maneje múltiples VLANs), sigue estos pasos:</p></div><div><ol>
 <li data-line="0"><strong>Entrar al Modo de Configuración Global:</strong></li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router&gt; enable
 Router# configure terminal
-</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="2">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ol start="2">
 <li data-line="0"><strong>Crear Subinterfaces:</strong><br>
 Por cada VLAN, crea una subinterfaz en la interfaz física del router. Supongamos que la interfaz es GigabitEthernet 0/0/0 y queremos configurar para la VLAN 10:</li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config)# interface GigabitEthernet 0/0/0.10
 Router(config-subif)# encapsulation dot1Q 10
-</code><button class="copy-code-button">Copy</button></pre></div><div><p>Resultado Final<br>
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>Resultado Final<br>
 <span alt="src/img/Pasted image 20240209123527.png" src="src/img/Pasted image 20240209123527.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240209123527.png" src="manual-de-packet-tracer/src/img/pasted-image-20240209123527.png"></span></p></div></div></div><div class="heading-wrapper"><h3 data-heading="Colocar IPs en Cada Una de las VLAN" class="heading" id="Colocar_IPs_en_Cada_Una_de_las_VLAN"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Colocar IPs en Cada Una de las VLAN</h3><div class="heading-children"><div><p>Después de habilitar las VLANs en las subinterfaces, debes asignar una dirección IP a cada subinterfaz para permitir la comunicación entre las VLANs:</p></div><div><ol>
 <li data-line="0"><strong>Asignar Dirección IP:</strong><br>
 Continuando con el ejemplo de la VLAN 10 en la subinterfaz GigabitEthernet 0/0/0.10:</li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config-subif)# ip address 192.168.10.1 255.255.255.0
-</code><button class="copy-code-button">Copy</button></pre></div><div><p>   Repite este proceso para cada VLAN/subinterfaz, asegurándote de utilizar direcciones IP y máscaras de subred adecuadas para cada segmento de red.</p></div><div><p>Resultado Final<br>
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>   Repite este proceso para cada VLAN/subinterfaz, asegurándote de utilizar direcciones IP y máscaras de subred adecuadas para cada segmento de red.</p></div><div><p>Resultado Final<br>
 <span alt="src/img/Pasted image 20240209123851.png" src="src/img/Pasted image 20240209123851.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240209123851.png" src="manual-de-packet-tracer/src/img/pasted-image-20240209123851.png"></span><br>
 2. <strong>Activar la Interfaz Física:</strong><br>
 No olvides activar la interfaz física principal si aún no está activa:</p></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config)# interface GigabitEthernet 0/0/0
 Router(config-if)# no shutdown
-</code><button class="copy-code-button">Copy</button></pre></div><div><hr></div></div></div></div></div></div></div><div class="heading-wrapper"><h1 data-heading="9. NAT - Traducción de Dirección de Red" class="heading" id="9._NAT_-_Traducción_de_Dirección_de_Red">9. NAT - Traducción de Dirección de Red</h1><div class="heading-children"><div><p>La Traducción de Dirección de Red (NAT) es un método empleado para alterar direcciones IP dentro de los paquetes de datos durante su tránsito por dispositivos de enrutamiento. Esto implica la reasignación de un espacio de direcciones IP a otro. Los dos tipos principales de NAT son: NAT estático, NAT dinámico.</p></div><div class="heading-wrapper"><h2 data-heading="9.1 Configuración de NAT Estático - Relacion 1:1" class="heading" id="9.1_Configuración_de_NAT_Estático_-_Relacion_1:1"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>9.1 Configuración de NAT Estático - Relacion 1:1</h2><div class="heading-children"><div><ul>
+</code><button class="copy-code-button">Copiar</button></pre></div><div><hr></div></div></div></div></div></div></div><div class="heading-wrapper"><h1 data-heading="9. NAT - Traducción de Dirección de Red" class="heading" id="9._NAT_-_Traducción_de_Dirección_de_Red">9. NAT - Traducción de Dirección de Red</h1><div class="heading-children"><div><p>La Traducción de Dirección de Red (NAT) es un método empleado para alterar direcciones IP dentro de los paquetes de datos durante su tránsito por dispositivos de enrutamiento. Esto implica la reasignación de un espacio de direcciones IP a otro. Los dos tipos principales de NAT son: NAT estático, NAT dinámico.</p></div><div class="heading-wrapper"><h2 data-heading="9.1 Configuración de NAT Estático - Relacion 1:1" class="heading" id="9.1_Configuración_de_NAT_Estático_-_Relacion_1:1"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>9.1 Configuración de NAT Estático - Relacion 1:1</h2><div class="heading-children"><div><ul>
 <li data-line="0"><strong>Nota:</strong> Asignar IPS a todo lo que Tenga una Interfaz.</li>
 </ul></div><div><p>El NAT estático asocia directamente una única dirección IP interna con una única dirección IP externa. Este tipo se utiliza para habilitar el acceso desde el exterior a dispositivos internos, como  puede ser  un servidor.</p></div><div class="heading-wrapper"><h3 data-heading="Entorno de Packet Tracer" class="heading" id="Entorno_de_Packet_Tracer"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Entorno de Packet Tracer</h3><div class="heading-children"><div><p>Para probar este NAT simple, tenemos el siguiente ejemplo compuesto por los siguientes elementos:</p></div><div><ul>
 <li data-line="0">1x Router</li>
@@ -350,10 +350,10 @@ Router(config-if)# no shutdown
 Router(config-if)# ip nat outside
 Router(config)# interface GigabitEthernet 0/0/1
 Router(config-if)# ip nat inside
-</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="3">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ol start="3">
 <li data-line="0"><strong>Establecimiento de la Traducción NAT Estática:</strong> Una vez definidas las interfaces pública y privada, debemos especificar cuál es la IP privada que queremos enmascarar con la dirección IP pública del router.</li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config)# ip nat inside source static [IP_Interna] [IP_Externa]
-</code><button class="copy-code-button">Copy</button></pre></div><div><p>   Sustituye <code>[IP_Interna]</code> por la dirección IP del dispositivo en la red local y <code>[IP_Externa]</code> por la dirección IP para dar acceso desde fuera de la red.</p></div><div><ol start="4">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>   Sustituye <code>[IP_Interna]</code> por la dirección IP del dispositivo en la red local y <code>[IP_Externa]</code> por la dirección IP para dar acceso desde fuera de la red.</p></div><div><ol start="4">
 <li data-line="0"><strong>Comandos para la Configuración en el Router:</strong> Comandos de ejemplo reales</li>
 </ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config)# interface GigabitEthernet 0/0/0
 Router(config-if)# .... Comandos previos ...... (en comandos previos son los comandos como puede ser un ip address o vlan o cosas que se requieren configurar previamente)
@@ -363,7 +363,7 @@ Router(config)# interface GigabitEthernet 0/0/1
 Router(config-if)# ip nat inside
 Router(config-if)# exit
 Router(config)# ip nat inside source static 192.168.1.200 10.0.0.1
-</code><button class="copy-code-button">Copy</button></pre></div><div><p>Aqui la dirección IP interna es [192.168.1.200] que es traducce hacia la interfaz externa por la IP [10.0.0.1]</p></div><div><p>[192.168.1.200] &gt;&gt;&gt;&gt; [10.0.0.1]</p></div><div><ol start="5">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>Aqui la dirección IP interna es [192.168.1.200] que es traducce hacia la interfaz externa por la IP [10.0.0.1]</p></div><div><p>[192.168.1.200] &gt;&gt;&gt;&gt; [10.0.0.1]</p></div><div><ol start="5">
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Verificación de la Configuración:</strong> Ejemplo: Visual 
 <ul>
 <li data-line="1">Utilizar el comando <code>show ip nat translations</code> para verificar las traducciones NAT activas desde un router.<br>
@@ -382,7 +382,7 @@ tcp 10.0.0.1:80 192.168.1.200:80 10.0.0.10:1025 10.0.0.10:1025
 tcp 10.0.0.1:80 192.168.1.200:80 10.0.0.10:1026 10.0.0.10:1026
 
 Router#
-</code><button class="copy-code-button">Copy</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Verificación en un Ordenador:" class="heading" id="Verificación_en_un_Ordenador:"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Verificación en un Ordenador:</h3><div class="heading-children"><div><p>Para asegurarse de que la configuración de NAT estático funciona correctamente, es recomendable realizar pruebas desde un ordenador externo:</p></div><div><ul>
+</code><button class="copy-code-button">Copiar</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Verificación en un Ordenador:" class="heading" id="Verificación_en_un_Ordenador:"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Verificación en un Ordenador:</h3><div class="heading-children"><div><p>Para asegurarse de que la configuración de NAT estático funciona correctamente, es recomendable realizar pruebas desde un ordenador externo:</p></div><div><ul>
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Intentar acceder al servidor interno (192.168.1.200) utilizando la dirección IP externa asignada (10.0.0.1).
 <ul>
 <li data-line="1"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Mediante Ping:
@@ -413,14 +413,14 @@ interface GigabitEthernet0/0/0
 ip address 172.16.0.1 255.255.0.0
 no shutdown
 exit
-</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="3">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ol start="3">
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Crear el Pool de Direcciones IP:</strong>
 <ul>
 <li data-line="1">Crea un Conjunto\Rango de direcciones IP para los clientes PPPoE:</li>
 </ul>
 </li>
 </ol></div><div><pre><code>ip local pool pppoepool 172.16.128.1 172.16.128.254
-</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="4">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ol start="4">
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Configurar el Grupo BBA:</strong>
 <ul>
 <li data-line="1">Configura el grupo PPPoE (BBA) y asocia una plantilla virtual:</li>
@@ -429,7 +429,7 @@ exit
 </ol></div><div><pre><code>bba-group pppoe global
 virtual-template 1
 exit
-</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="5">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ol start="5">
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Crear la Plantilla Virtual:</strong>
 <ul>
 <li data-line="1">Crea y configura la plantilla virtual para la conexión PPPoE:</li>
@@ -440,14 +440,14 @@ ip unnumbered GigabitEthernet0/0/0
 peer default ip address pool pppoepool
 ppp authentication pap
 exit
-</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="6">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ol start="6">
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Configurar Usuario y Contraseña:</strong>
 <ul>
 <li data-line="1">Configura las credenciales del cliente PPPoE:</li>
 </ul>
 </li>
 </ol></div><div><pre><code>username [username] password [password]
-</code><button class="copy-code-button">Copy</button></pre></div><div><p>Sustituye <code>[username]</code> y <code>[password]</code> con las credenciales solicitadas en el examen o las que tu quieras.</p></div><div><ol start="7">
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>Sustituye <code>[username]</code> y <code>[password]</code> con las credenciales solicitadas en el examen o las que tu quieras.</p></div><div><ol start="7">
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Activar PPPoE en la Interfaz:</strong>
 <ul>
 <li data-line="1">Activa PPPoE en la interfaz Ethernet del router:</li>
@@ -456,7 +456,7 @@ exit
 </ol></div><div><pre><code>interface GigabitEthernet0/0/0
 pppoe enable group global
 exit
-</code><button class="copy-code-button">Copy</button></pre></div><div><p>USAR BAJO VUESTRO PROPIO RIESGO</p></div><div><p>Resultado del router ya una vez configurado:</p></div><div><pre><code>--- System Configuration Dialog ---
+</code><button class="copy-code-button">Copiar</button></pre></div><div><p>USAR BAJO VUESTRO PROPIO RIESGO</p></div><div><p>Resultado del router ya una vez configurado:</p></div><div><pre><code>--- System Configuration Dialog ---
 
 
 Would you like to enter the initial configuration dialog? [yes/no]: no
@@ -511,7 +511,7 @@ Router(config)#
 
 %LINK-5-CHANGED: Interface Virtual-Access1.1, changed state to up
 %LINEPROTO-5-UPDOWN: Line protocol on Interface Virtual-Access1.1, changed state to up
-</code><button class="copy-code-button">Copy</button></pre></div><div class="heading-wrapper"><h5 data-heading="OPCIONAL: Aqui os dejo el show running config despues de haber introducido los comandos anteriores en el router Teneis que tener una cosa similar a esto en el examen:" class="heading" id="OPCIONAL:_Aqui_os_dejo_el_show_running_config_despues_de_haber_introducido_los_comandos_anteriores_en_el_router_Teneis_que_tener_una_cosa_similar_a_esto_en_el_examen:"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>OPCIONAL: Aqui os dejo el show running config despues de haber introducido los comandos anteriores en el router Teneis que tener una cosa similar a esto en el examen:</h5><div class="heading-children"><div><pre><code>!
+</code><button class="copy-code-button">Copiar</button></pre></div><div class="heading-wrapper"><h5 data-heading="OPCIONAL: Aqui os dejo el show running config despues de haber introducido los comandos anteriores en el router Teneis que tener una cosa similar a esto en el examen:" class="heading" id="OPCIONAL:_Aqui_os_dejo_el_show_running_config_despues_de_haber_introducido_los_comandos_anteriores_en_el_router_Teneis_que_tener_una_cosa_similar_a_esto_en_el_examen:"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>OPCIONAL: Aqui os dejo el show running config despues de haber introducido los comandos anteriores en el router Teneis que tener una cosa similar a esto en el examen:</h5><div class="heading-children"><div><pre><code>!
 version 16.6.4
 no service timestamps log datetime msec
 no service timestamps debug datetime msec
@@ -604,7 +604,7 @@ line vty 0 4
 end
 
 
-</code><button class="copy-code-button">Copy</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Resultado Final" class="heading" id="Resultado_Final"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Resultado Final</h3><div class="heading-children"><div><p>Con el comando podeis verificar que funciona el servidor pppoe, para que obtengais este resultado similar teneis que usar </p></div><div><ul>
+</code><button class="copy-code-button">Copiar</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Resultado Final" class="heading" id="Resultado_Final"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Resultado Final</h3><div class="heading-children"><div><p>Con el comando podeis verificar que funciona el servidor pppoe, para que obtengais este resultado similar teneis que usar </p></div><div><ul>
 <li data-line="0">show pppoe session<br>
 <span alt="src/img/Pasted image 20240314220017.png" src="src/img/Pasted image 20240314220017.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240314220017.png" src="manual-de-packet-tracer/src/img/pasted-image-20240314220017.png"></span></li>
 </ul></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="Configuración de un Cliente PPPoE" class="heading" id="Configuración_de_un_Cliente_PPPoE"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Configuración de un Cliente PPPoE</h2><div class="heading-children"><div><p>Felipe maricon </p></div><div class="heading-wrapper"><h3 data-heading="Configuración en PC - Ordenador" class="heading" id="Configuración_en_PC_-_Ordenador"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Configuración en PC - Ordenador</h3><div class="heading-children"><div class="heading-wrapper"><h4 data-heading="Acceso al PC" class="heading" id="Acceso_al_PC"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Acceso al PC</h4><div class="heading-children"><div><ol>
@@ -636,24 +636,44 @@ end
 <li data-line="0"><strong>Acceso al Router Cliente:</strong> Haz doble clic en el router cliente y abre la CLI.<br>
 <span alt="src/img/Pasted image 20240315100200.png" src="src/img/Pasted image 20240315100200.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240315100200.png" src="manual-de-packet-tracer/src/img/pasted-image-20240315100200.png"></span></li>
 </ol></div></div></div><div class="heading-wrapper"><h4 data-heading="Configuración del Cliente PPPoE" class="heading" id="Configuración_del_Cliente_PPPoE"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Configuración del Cliente PPPoE</h4><div class="heading-children"><div><ol start="2">
-<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Perfil del Cliente PPPoE:</strong> Define el perfil PPPoE y configura la autenticación.
-<pre class="language-bash" tabindex="0"><code class="language-bash is-loaded">interface Dialer1
-<span class="token function">ip</span> address negotiated
+<li data-line="0"><strong>Perfil del Cliente PPPoE:</strong> Define el perfil PPPoE y configura la autenticación utilizando el protocolo PAP (Password Authentication Protocol). Sigue estos pasos en la CLI del Router:</li>
+</ol></div><div><ul>
+<li data-line="0">Configurar la interfaz Ethernet para PPPoE:</li>
+</ul></div><div><pre><code>enable
+conf t
+interface GigabitEthernet0/0/0
+no shutdown
+no ip address
+no ip proxy-arp
+pppoe enable
+pppoe-client dial-pool-number 1
+duplex auto
+speed auto
+exit
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ul>
+<li data-line="0">Configurar la interfaz Dialer para gestionar la conexión PPPoE:</li>
+</ul></div><div><pre><code>interface Dialer1
+dialer pool 1
+ip address negotiated
 encapsulation ppp
-dialer pool <span class="token number">1</span>
-ppp pap sent-username <span class="token punctuation">[</span>username<span class="token punctuation">]</span> password <span class="token punctuation">[</span>password<span class="token punctuation">]</span>
-</code><button class="copy-code-button">Copy</button></pre>
-<ul>
-<li data-line="8">[username] y [password] corresponden a tus credenciales del servidor PPPoE.<br>
-Foto del resultado:<span alt="src/img/Pasted image 20240315100834.png" src="src/img/Pasted image 20240315100834.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240315100834.png" src="manual-de-packet-tracer/src/img/pasted-image-20240315100834.png"></span></li>
-</ul>
+ppp authentication pap
+ppp pap sent-username [username] password [password]
+exit
+</code><button class="copy-code-button">Copiar</button></pre></div><div><ul>
+<li data-line="0">
+<p>[username] y [password] corresponden a tus credenciales del servidor PPPoE.<br>
+Foto del resultado:<span alt="src/img/Pasted image 20240315100834.png" src="src/img/Pasted image 20240315100834.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240315100834.png" src="manual-de-packet-tracer/src/img/pasted-image-20240315100834.png"></span></p>
 </li>
-</ol></div></div></div><div class="heading-wrapper"><h4 data-heading="Verificación de la Conexión" class="heading" id="Verificación_de_la_Conexión"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Verificación de la Conexión</h4><div class="heading-children"><div><ol start="5">
+<li data-line="3">
+<p>Establecer la ruta por defecto a través de la interfaz Dialer:</p>
+</li>
+</ul></div><div><pre><code>ip route 0.0.0.0 0.0.0.0 Dialer1
+</code><button class="copy-code-button">Copiar</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="Verificación de la Conexión" class="heading" id="Verificación_de_la_Conexión"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Verificación de la Conexión</h4><div class="heading-children"><div><ol start="5">
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
 <p><strong>Comprobación del Estado de Conexión:</strong></p>
 <ul>
 <li data-line="1">
-<p>Usa el comando <code>show pppoe session</code> para verificar la sesión PPPoE.<br>
+<p>Usa el comando <code>show pppoe session</code> para verificar la sesión PPPoE. (Puedes usarlos en varios router)<br>
 <span alt="src/img/Pasted image 20240315101557.png" src="src/img/Pasted image 20240315101557.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240315101557.png" src="manual-de-packet-tracer/src/img/pasted-image-20240315101557.png"></span></p>
 </li>
 <li data-line="4">
@@ -662,7 +682,7 @@ Foto del resultado:<span alt="src/img/Pasted image 20240315100834.png" src="src/
 </ul>
 <p><span alt="src/img/Pasted image 20240315101828.png" src="src/img/Pasted image 20240315101828.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240315101828.png" src="manual-de-packet-tracer/src/img/pasted-image-20240315101828.png"></span></p>
 <ul>
-<li data-line="7">Puedes utilizar Tambien <code>show running-config</code> para ver la configuración actual en el router.<br>
+<li data-line="7">Puedes utilizar Tambien <code>show ip interface brief</code> para ver las interfaces activa del router..<br>
 <span alt="src/img/Pasted image 20240315101632.png" src="src/img/Pasted image 20240315101632.png" class="internal-embed media-embed image-embed is-loaded"><img alt="src/img/Pasted image 20240315101632.png" src="manual-de-packet-tracer/src/img/pasted-image-20240315101632.png"></span></li>
 </ul>
 </li>

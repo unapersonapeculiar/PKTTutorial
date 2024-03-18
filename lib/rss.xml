@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Mar 2024 22:43:27 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Mar 2024 22:43:24 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Pasted]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 18 Mar 2024 08:12:01 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 18 Mar 2024 08:11:57 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Pasted]]></title><description><![CDATA[ 
  ]]></description><link>manual-de-packet-tracer\src\img\pasted.html</link><guid isPermaLink="false">Manual de packet tracer/src/img/Pasted.md</guid><pubDate>Fri, 09 Feb 2024 18:10:18 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
  <br><br>LECTURA OBLIGATORIA<br>
 Se recomienda tener conocimientos previos de subnetting.<br>
@@ -125,7 +125,7 @@ ip dhcp excluded-address 192.168.90.127 192.168.90.254 - Indicamos al dhcp que n
 ip dhcp pool andared
 dns-server 192.168.90.1
 exit
-Copy<br>
+Copiar<br>
 <br>Resultado Final<br>
 <img alt="src/img/Pasted image 20240207171144.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207171144.png">
 <br><br>NOTA: Puede caer o no en el examen porque estos son parametros de un servidor dhcp, estas opciones se ven el segundo año del modulo mejor con mas tiempo y mejores herramientas.<br>
@@ -161,12 +161,12 @@ Copy<br>
 <br>Habilitar RIP versión 2:
 <br>Router(config)# router rip
 Router(config-router)# version 2
-Copy<br>
+Copiar<br>
 <br>Anunciar Redes:<br>
 Anuncia cada red que el router debe conocer. Debes hacer esto para todas las redes directamente conectadas al router.
 <br>Router(config-router)# network 172.16.0.0
 Router(config-router)# network 10.0.0.0
-Copy<br>   Repite el comando network "Direccion de red" en cada uno de los routers <br>Estos pasos se deben repetir en cada uno de los routers que participan en el enrutamiento, asegurándose de anunciar solo las redes directamente conectadas a cada router.<br><br>he escogido el router con la red 172.16.0.0 como ejemplo de los comandos que hay que poner<br>
+Copiar<br>   Repite el comando network "Direccion de red" en cada uno de los routers <br>Estos pasos se deben repetir en cada uno de los routers que participan en el enrutamiento, asegurándose de anunciar solo las redes directamente conectadas a cada router.<br><br>he escogido el router con la red 172.16.0.0 como ejemplo de los comandos que hay que poner<br>
 <img alt="src/img/Pasted image 20240207204212.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207204212.png"><br><br>El enrutamiento estático, a diferencia del dinámico, requiere que se configure manualmente cada ruta hacia las redes destino. Esto implica especificar explícitamente, en cada router, cómo alcanzar cada red no directamente conectada. A continuación, se describe cómo configurar enrutamiento estático para una red. (en la actualidad no se utiliza esto porque existen muchas redes y imaginate )<br><br>
 <br>
 Entrar al Modo de Configuración Global:
@@ -181,7 +181,7 @@ Configurar una Ruta Estática:
 
 
 <br>Router(config)# ip route 172.16.0.0 255.255.0.0 10.0.0.2
-Copy<br>
+Copiar<br>
 <br>Repite este paso para cada red destino, especificando el adecuado siguiente salto o interfaz de salida.
 <br>
 <br>Guardar la Configuración:
@@ -193,22 +193,22 @@ Supongamos que quiero enrutar 8 router pues repetir todas estas tablas entre si:
 
 <img alt="src/img/Pasted image 20240207214404.png" src="manual-de-packet-tracer\src\img\pasted-image-20240207214404.png">Los resquest timed out son porque tiene que hacer el protocolo ARP en las redes donde este el dispositivo conectado.
 <br><br><br>¿Que es una VLAN?
-Copy<br>Una VLAN (Virtual Local Area Network) es un método que se utiliza para crear redes independiente (Capa 2 - Modelo OSI)  dentro de una misma red física (Capa 1 - Modelo OSI), permitiendo segmentar grupos de dispositivos aunque estén interconectados físicamente. Las VLANs se utiliza para crear varias redes dentro de un mismo.<br>"Una VLAN SE CONSIDERA UNA INTERFAZ CONFIGURABLE"<br><br><br>
+Copiar<br>Una VLAN (Virtual Local Area Network) es un método que se utiliza para crear redes independiente (Capa 2 - Modelo OSI)  dentro de una misma red física (Capa 1 - Modelo OSI), permitiendo segmentar grupos de dispositivos aunque estén interconectados físicamente. Las VLANs se utiliza para crear varias redes dentro de un mismo.<br>"Una VLAN SE CONSIDERA UNA INTERFAZ CONFIGURABLE"<br><br><br>
 <br>Entrar al Modo de Configuración Global:
 <br>Switch&gt; enable
 Switch# configure terminal
-Copy<br>
+Copiar<br>
 <br>Crear la VLAN:<br>
 Suponiendo que el "numerito que se te antoje" es 10, para crear la VLAN 10, ejecuta:
 <br>Switch(config)# vlan 10
 Switch(config-vlan)# name Mi_VLAN
-Copy<br>
+Copiar<br>
 <br>Asignar Puertos a la VLAN:<br>
 Para asignar un puerto al switch a la VLAN 10, primero debes entrar a la configuración del puerto y luego asignarlo a la VLAN. Por ejemplo, para el puerto FastEthernet 0/1:
 <br>Switch(config)# interface fastEthernet 0/1
 Switch(config-if)# switchport mode access - (Por defecto esto no hace falta pero no viene mal ponerlo )
 Switch(config-if)# switchport access vlan 10
-Copy<br>Resultado Final<br>
+Copiar<br>Resultado Final<br>
 <img alt="src/img/Pasted image 20240209112446.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209112446.png"><br>Resultado Final - Alternativo<br>
 <img alt="src/img/Pasted image 20240209112053.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209112053.png"><br>
 Nota: Si no existe la VLAN creada en el switch la crea.<br><br>¿Que es un puerto trunk?<br>
@@ -216,35 +216,35 @@ Un puerto trunk en una red de área local (LAN) es una interfaz de switch config
 <br>Seleccionar el Puerto:<br>
 Accede a la configuración del puerto que deseas configurar como trunk. Por ejemplo, FastEthernet 0/24 - (Se usan los puertos mas bajos y incluso se puede usar los puertos gigabit del switch):
 <br>Switch(config)# interface fastEthernet 0/24
-Copy<br>
+Copiar<br>
 <br>Configurar el Puerto como Trunk:
 <br>Switch(config-if)# switchport mode trunk
-Copy<br>Resultado Final.<br>
+Copiar<br>Resultado Final.<br>
 <img alt="src/img/Pasted image 20240209122010.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209122010.png"><br>Para identificar una trama con VLAN, se verifica si la trama contiene un TCI (Tag Control Information) con un valor hexadecimal. Este elemento se encuentra dentro del apartado del simulador.<br>
 <img alt="src/img/Pasted image 20240315193651.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315193651.png"><br>
 <br>Especificar VLANs Permitidas (opcional - No cae en examen pero lo pongo por si las moscas):<br>
 Puedes especificar qué VLANs están permitidas a través del trunk:
 <br>Switch(config-if)# switchport trunk allowed vlan add 10
-Copy<br>   Si omites este paso, el puerto permitirá todas las VLANs por defecto.<br><br><br>Para configurar subinterfaces en un router (permitiendo que una interfaz física maneje múltiples VLANs), sigue estos pasos:<br>
+Copiar<br>   Si omites este paso, el puerto permitirá todas las VLANs por defecto.<br><br><br>Para configurar subinterfaces en un router (permitiendo que una interfaz física maneje múltiples VLANs), sigue estos pasos:<br>
 <br>Entrar al Modo de Configuración Global:
 <br>Router&gt; enable
 Router# configure terminal
-Copy<br>
+Copiar<br>
 <br>Crear Subinterfaces:<br>
 Por cada VLAN, crea una subinterfaz en la interfaz física del router. Supongamos que la interfaz es GigabitEthernet 0/0/0 y queremos configurar para la VLAN 10:
 <br>Router(config)# interface GigabitEthernet 0/0/0.10
 Router(config-subif)# encapsulation dot1Q 10
-Copy<br>Resultado Final<br>
+Copiar<br>Resultado Final<br>
 <img alt="src/img/Pasted image 20240209123527.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209123527.png"><br><br>Después de habilitar las VLANs en las subinterfaces, debes asignar una dirección IP a cada subinterfaz para permitir la comunicación entre las VLANs:<br>
 <br>Asignar Dirección IP:<br>
 Continuando con el ejemplo de la VLAN 10 en la subinterfaz GigabitEthernet 0/0/0.10:
 <br>Router(config-subif)# ip address 192.168.10.1 255.255.255.0
-Copy<br>   Repite este proceso para cada VLAN/subinterfaz, asegurándote de utilizar direcciones IP y máscaras de subred adecuadas para cada segmento de red.<br>Resultado Final<br>
+Copiar<br>   Repite este proceso para cada VLAN/subinterfaz, asegurándote de utilizar direcciones IP y máscaras de subred adecuadas para cada segmento de red.<br>Resultado Final<br>
 <img alt="src/img/Pasted image 20240209123851.png" src="manual-de-packet-tracer\src\img\pasted-image-20240209123851.png"><br>
 2. Activar la Interfaz Física:<br>
 No olvides activar la interfaz física principal si aún no está activa:<br>Router(config)# interface GigabitEthernet 0/0/0
 Router(config-if)# no shutdown
-Copy<br><br><br>La Traducción de Dirección de Red (NAT) es un método empleado para alterar direcciones IP dentro de los paquetes de datos durante su tránsito por dispositivos de enrutamiento. Esto implica la reasignación de un espacio de direcciones IP a otro. Los dos tipos principales de NAT son: NAT estático, NAT dinámico.<br><br>
+Copiar<br><br><br>La Traducción de Dirección de Red (NAT) es un método empleado para alterar direcciones IP dentro de los paquetes de datos durante su tránsito por dispositivos de enrutamiento. Esto implica la reasignación de un espacio de direcciones IP a otro. Los dos tipos principales de NAT son: NAT estático, NAT dinámico.<br><br>
 <br>Nota: Asignar IPS a todo lo que Tenga una Interfaz.
 <br>El NAT estático asocia directamente una única dirección IP interna con una única dirección IP externa. Este tipo se utiliza para habilitar el acceso desde el exterior a dispositivos internos, como  puede ser  un servidor.<br><br>Para probar este NAT simple, tenemos el siguiente ejemplo compuesto por los siguientes elementos:<br>
 <br>1x Router
@@ -266,10 +266,10 @@ Ajuste de Interfaces: Con la instrucción "ip nat", podemos identificar cuál es
 Router(config-if)# ip nat outside
 Router(config)# interface GigabitEthernet 0/0/1
 Router(config-if)# ip nat inside
-Copy<br>
+Copiar<br>
 <br>Establecimiento de la Traducción NAT Estática: Una vez definidas las interfaces pública y privada, debemos especificar cuál es la IP privada que queremos enmascarar con la dirección IP pública del router.
 <br>Router(config)# ip nat inside source static [IP_Interna] [IP_Externa]
-Copy<br>   Sustituye [IP_Interna] por la dirección IP del dispositivo en la red local y [IP_Externa] por la dirección IP para dar acceso desde fuera de la red.<br>
+Copiar<br>   Sustituye [IP_Interna] por la dirección IP del dispositivo en la red local y [IP_Externa] por la dirección IP para dar acceso desde fuera de la red.<br>
 <br>Comandos para la Configuración en el Router: Comandos de ejemplo reales
 <br>Router(config)# interface GigabitEthernet 0/0/0
 Router(config-if)# .... Comandos previos ...... (en comandos previos son los comandos como puede ser un ip address o vlan o cosas que se requieren configurar previamente)
@@ -279,7 +279,7 @@ Router(config)# interface GigabitEthernet 0/0/1
 Router(config-if)# ip nat inside
 Router(config-if)# exit
 Router(config)# ip nat inside source static 192.168.1.200 10.0.0.1
-Copy<br>Aqui la dirección IP interna es [192.168.1.200] que es traducce hacia la interfaz externa por la IP [10.0.0.1]<br>[192.168.1.200] &gt;&gt;&gt;&gt; [10.0.0.1]<br>
+Copiar<br>Aqui la dirección IP interna es [192.168.1.200] que es traducce hacia la interfaz externa por la IP [10.0.0.1]<br>[192.168.1.200] &gt;&gt;&gt;&gt; [10.0.0.1]<br>
 <br>Verificación de la Configuración: Ejemplo: Visual 
 
 <br>Utilizar el comando show ip nat translations para verificar las traducciones NAT activas desde un router.<br>
@@ -298,7 +298,7 @@ tcp 10.0.0.1:80 192.168.1.200:80 10.0.0.10:1025 10.0.0.10:1025
 tcp 10.0.0.1:80 192.168.1.200:80 10.0.0.10:1026 10.0.0.10:1026
 
 Router#
-Copy<br><br>Para asegurarse de que la configuración de NAT estático funciona correctamente, es recomendable realizar pruebas desde un ordenador externo:<br>
+Copiar<br><br>Para asegurarse de que la configuración de NAT estático funciona correctamente, es recomendable realizar pruebas desde un ordenador externo:<br>
 <br>Intentar acceder al servidor interno (192.168.1.200) utilizando la dirección IP externa asignada (10.0.0.1).
 
 <br>Mediante Ping:
@@ -329,14 +329,14 @@ interface GigabitEthernet0/0/0
 ip address 172.16.0.1 255.255.0.0
 no shutdown
 exit
-Copy<br>
+Copiar<br>
 <br>Crear el Pool de Direcciones IP:
 
 <br>Crea un Conjunto\Rango de direcciones IP para los clientes PPPoE:
 
 
 <br>ip local pool pppoepool 172.16.128.1 172.16.128.254
-Copy<br>
+Copiar<br>
 <br>Configurar el Grupo BBA:
 
 <br>Configura el grupo PPPoE (BBA) y asocia una plantilla virtual:
@@ -345,7 +345,7 @@ Copy<br>
 <br>bba-group pppoe global
 virtual-template 1
 exit
-Copy<br>
+Copiar<br>
 <br>Crear la Plantilla Virtual:
 
 <br>Crea y configura la plantilla virtual para la conexión PPPoE:
@@ -356,14 +356,14 @@ ip unnumbered GigabitEthernet0/0/0
 peer default ip address pool pppoepool
 ppp authentication pap
 exit
-Copy<br>
+Copiar<br>
 <br>Configurar Usuario y Contraseña:
 
 <br>Configura las credenciales del cliente PPPoE:
 
 
 <br>username [username] password [password]
-Copy<br>Sustituye [username] y [password] con las credenciales solicitadas en el examen o las que tu quieras.<br>
+Copiar<br>Sustituye [username] y [password] con las credenciales solicitadas en el examen o las que tu quieras.<br>
 <br>Activar PPPoE en la Interfaz:
 
 <br>Activa PPPoE en la interfaz Ethernet del router:
@@ -372,7 +372,7 @@ Copy<br>Sustituye [username] y [password] con las credenciales solicitadas en el
 <br>interface GigabitEthernet0/0/0
 pppoe enable group global
 exit
-Copy<br>USAR BAJO VUESTRO PROPIO RIESGO<br>Resultado del router ya una vez configurado:<br>--- System Configuration Dialog ---
+Copiar<br>USAR BAJO VUESTRO PROPIO RIESGO<br>Resultado del router ya una vez configurado:<br>--- System Configuration Dialog ---
 
 
 Would you like to enter the initial configuration dialog? [yes/no]: no
@@ -427,7 +427,7 @@ Router(config)#
 
 %LINK-5-CHANGED: Interface Virtual-Access1.1, changed state to up
 %LINEPROTO-5-UPDOWN: Line protocol on Interface Virtual-Access1.1, changed state to up
-Copy<br><br>!
+Copiar<br><br>!
 version 16.6.4
 no service timestamps log datetime msec
 no service timestamps debug datetime msec
@@ -520,7 +520,7 @@ line vty 0 4
 end
 
 
-Copy<br><br>Con el comando podeis verificar que funciona el servidor pppoe, para que obtengais este resultado similar teneis que usar <br>
+Copiar<br><br>Con el comando podeis verificar que funciona el servidor pppoe, para que obtengais este resultado similar teneis que usar <br>
 <br>show pppoe session<br>
 <img alt="src/img/Pasted image 20240314220017.png" src="manual-de-packet-tracer\src\img\pasted-image-20240314220017.png">
 <br><br>Felipe maricon <br><br><br>
@@ -552,24 +552,44 @@ Copy<br><br>Con el comando podeis verificar que funciona el servidor pppoe, para
 <br>Acceso al Router Cliente: Haz doble clic en el router cliente y abre la CLI.<br>
 <img alt="src/img/Pasted image 20240315100200.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315100200.png">
 <br><br>
-<br>Perfil del Cliente PPPoE: Define el perfil PPPoE y configura la autenticación.
-interface Dialer1
+<br>Perfil del Cliente PPPoE: Define el perfil PPPoE y configura la autenticación utilizando el protocolo PAP (Password Authentication Protocol). Sigue estos pasos en la CLI del Router:
+<br>
+<br>Configurar la interfaz Ethernet para PPPoE:
+<br>enable
+conf t
+interface GigabitEthernet0/0/0
+no shutdown
+no ip address
+no ip proxy-arp
+pppoe enable
+pppoe-client dial-pool-number 1
+duplex auto
+speed auto
+exit
+Copiar<br>
+<br>Configurar la interfaz Dialer para gestionar la conexión PPPoE:
+<br>interface Dialer1
+dialer pool 1
 ip address negotiated
 encapsulation ppp
-dialer pool 1
+ppp authentication pap
 ppp pap sent-username [username] password [password]
-Copy
-
-<br>[username] y [password] corresponden a tus credenciales del servidor PPPoE.<br>
+exit
+Copiar<br>
+<br>
+[username] y [password] corresponden a tus credenciales del servidor PPPoE.<br>
 Foto del resultado:<img alt="src/img/Pasted image 20240315100834.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315100834.png">
 
+<br>
+Establecer la ruta por defecto a través de la interfaz Dialer:
 
-<br><br>
+<br>ip route 0.0.0.0 0.0.0.0 Dialer1
+Copiar<br><br>
 <br>
 Comprobación del Estado de Conexión:
 
 <br>
-Usa el comando show pppoe session para verificar la sesión PPPoE.<br>
+Usa el comando show pppoe session para verificar la sesión PPPoE. (Puedes usarlos en varios router)<br>
 <img alt="src/img/Pasted image 20240315101557.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315101557.png">
 
 <br>
@@ -578,7 +598,7 @@ Usa el comando Ping [Puerta de enlace del servidor PPPOE] para verificar  que la
 
 <img alt="src/img/Pasted image 20240315101828.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315101828.png">
 
-<br>Puedes utilizar Tambien show running-config para ver la configuración actual en el router.<br>
+<br>Puedes utilizar Tambien show ip interface brief para ver las interfaces activa del router..<br>
 <img alt="src/img/Pasted image 20240315101632.png" src="manual-de-packet-tracer\src\img\pasted-image-20240315101632.png">
 
 
@@ -614,4 +634,4 @@ También puede revisar el estado de la conexión en la GUI para asegurarse de qu
 <br>
 NOTA IMPORTANTE: Este router trae una NAT simple y DHCP por defecto.
 
-]]></description><link>manual-de-packet-tracer\manual-de-packet-tracer.html</link><guid isPermaLink="false">Manual de packet tracer/Manual de packet tracer.md</guid><pubDate>Sun, 17 Mar 2024 22:42:59 GMT</pubDate><enclosure url="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual-de-packet-tracer\src\img\pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+]]></description><link>manual-de-packet-tracer\manual-de-packet-tracer.html</link><guid isPermaLink="false">Manual de packet tracer/Manual de packet tracer.md</guid><pubDate>Mon, 18 Mar 2024 08:11:11 GMT</pubDate><enclosure url="manual-de-packet-tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual-de-packet-tracer\src\img\pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
