@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 26 May 2024 11:25:34 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 26 May 2024 11:25:30 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Cliente]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 26 May 2024 13:58:31 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 26 May 2024 13:58:26 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Dinamico]]></title><description><![CDATA[ 
+ <br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
+<br>172.16.0.0/16
+<br>172.17.0.0/16
+<br>172.18.0.0/16
+<br>172.19.0.0/16
+<br>172.20.0.0/16
+<br>172.21.0.0/16
+<br>172.22.0.0/16
+<br>172.23.0.0/16
+<br>Cada router tendrá una dirección IP dentro del bloque 10.0.0.0/8, que se utilizará para el enrutamiento entre ellos.<br><br>Para configurar RIP versión 2 en un router de cisco (Recordemos que packet tracer es de cisco) y facilitar el enrutamiento entre las redes anteriormente mencionadas, sigue los siguientes pasos:<br>
+<br>Usa el comando configure terminal para entrar al modo de configuración.
+<br>Habilitar RIP versión 2:
+<br>Router(config)# router rip
+Router(config-router)# version 2
+Copy<br>
+<br>Anunciar Redes:<br>
+Anuncia cada red que el router debe conocer. Debes hacer esto para todas las redes directamente conectadas al router.
+<br>Router(config-router)# network 172.16.0.0
+Router(config-router)# network 10.0.0.0
+Copy<br>   Repite el comando network "Direccion de red" en cada uno de los routers <br>Estos pasos se deben repetir en cada uno de los routers que participan en el enrutamiento, asegurándose de anunciar solo las redes directamente conectadas a cada router.<br><br>he escogido el router con la red 172.16.0.0 como ejemplo de los comandos que hay que poner<br>
+<img alt="src/img/Pasted image 20240207204212.png" src="lib\media\pasted-image-20240207204212.png">]]></description><link>manual_de_packet_tracer\enrutamiento\dinamico.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Enrutamiento/Dinamico.md</guid><pubDate>Sun, 26 May 2024 11:39:31 GMT</pubDate><enclosure url="lib\media\pasted-image-20240207204212.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib\media\pasted-image-20240207204212.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Estatico]]></title><description><![CDATA[ 
+ <br><br>El enrutamiento estático, a diferencia del dinámico, requiere que se configure manualmente cada ruta hacia las redes destino. Esto implica especificar explícitamente, en cada router, cómo alcanzar cada red no directamente conectada. A continuación, se describe cómo configurar enrutamiento estático para una red. (en la actualidad no se utiliza esto porque existen muchas redes y imaginate )<br><br>
+<br>
+Entrar al Modo de Configuración Global:
+
+<br>Usa el comando configure terminal para entrar al modo de configuración.
+
+
+<br>
+Configurar una Ruta Estática:
+
+<br>Para agregar una ruta estática, utiliza el comando ip route, seguido de la red destino, la máscara de subred, y el siguiente salto o interfaz de salida.
+
+
+<br>Router(config)# ip route 172.16.0.0 255.255.0.0 10.0.0.2
+Copy<br>
+<br>Repite este paso para cada red destino, especificando el adecuado siguiente salto o interfaz de salida.
+<br>
+<br>Guardar la Configuración:
+
+<br>Guarda la configuración al salir del modo de configuración y usar el comando copy running-config startup-config.<br>
+Supongamos que quiero enrutar 8 router pues repetir todas estas tablas entre si:<br>
+<img alt="src/img/Pasted image 20240207211745.png" src="lib\media\pasted-image-20240207211745.png">
+
+
+<img alt="src/img/Pasted image 20240207214404.png" src="lib\media\pasted-image-20240207214404.png">Los resquest timed out son porque tiene que hacer el protocolo ARP en las redes donde este el dispositivo conectado.
+<br>]]></description><link>manual_de_packet_tracer\enrutamiento\estatico.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Enrutamiento/Estatico.md</guid><pubDate>Sun, 26 May 2024 13:57:42 GMT</pubDate><enclosure url="lib\media\pasted-image-20240207211745.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib\media\pasted-image-20240207211745.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Cliente]]></title><description><![CDATA[ 
  <br><br><br><br>
 <br>Acceso al PC Cliente: Haz doble clic en el PC que actuará como cliente PPPoE.<br>
 <img alt="src/img/Pasted image 20240315094944.png" src="lib\media\pasted-image-20240315094944.png">
@@ -566,54 +613,17 @@ Router(config)#access-list 103 deny tcp any host 192.168.1.3 neq 22
 Copy<br><br>Router(config)#access-list 103 deny udp any any range 27015 27030
 Copy]]></description><link>manual_de_packet_tracer\acl.html</link><guid isPermaLink="false">Manual_de_packet_tracer/ACL.md</guid><pubDate>Thu, 16 May 2024 08:30:29 GMT</pubDate></item><item><title><![CDATA[7. <strong>Enrutamiento</strong>]]></title><description><![CDATA[ 
  <br><br>Los routers necesitan conocer cómo llegar a distintas redes que no están directamente conectadas a ellos para poder enviar y recibir tráfico hacia y desde esas redes.<br>Para visualizar las rutas del router se usa este comado:<br>
-<br>show ip route<br>
+<br>
+show ip route<br>
 <img alt="src/img/Pasted image 20240207212212.png" src="manual_de_packet_tracer\src\img\pasted-image-20240207212212.png"> (NOTA en este ejemplo del comando se usa rutas estaticas tambien son validas para rutas dinamicas)
-<br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
-<br>172.16.0.0/16
-<br>172.17.0.0/16
-<br>172.18.0.0/16
-<br>172.19.0.0/16
-<br>172.20.0.0/16
-<br>172.21.0.0/16
-<br>172.22.0.0/16
-<br>172.23.0.0/16
-<br>Cada router tendrá una dirección IP dentro del bloque 10.0.0.0/8, que se utilizará para el enrutamiento entre ellos.<br><br>Para configurar RIP versión 2 en un router de cisco (Recordemos que packet tracer es de cisco) y facilitar el enrutamiento entre las redes anteriormente mencionadas, sigue los siguientes pasos:<br>
-<br>Usa el comando configure terminal para entrar al modo de configuración.
-<br>Habilitar RIP versión 2:
-<br>Router(config)# router rip
-Router(config-router)# version 2
-Copy<br>
-<br>Anunciar Redes:<br>
-Anuncia cada red que el router debe conocer. Debes hacer esto para todas las redes directamente conectadas al router.
-<br>Router(config-router)# network 172.16.0.0
-Router(config-router)# network 10.0.0.0
-Copy<br>   Repite el comando network "Direccion de red" en cada uno de los routers <br>Estos pasos se deben repetir en cada uno de los routers que participan en el enrutamiento, asegurándose de anunciar solo las redes directamente conectadas a cada router.<br><br>he escogido el router con la red 172.16.0.0 como ejemplo de los comandos que hay que poner<br>
-<img alt="src/img/Pasted image 20240207204212.png" src="manual_de_packet_tracer\src\img\pasted-image-20240207204212.png"><br><br>El enrutamiento estático, a diferencia del dinámico, requiere que se configure manualmente cada ruta hacia las redes destino. Esto implica especificar explícitamente, en cada router, cómo alcanzar cada red no directamente conectada. A continuación, se describe cómo configurar enrutamiento estático para una red. (en la actualidad no se utiliza esto porque existen muchas redes y imaginate )<br><br>
-<br>
-Entrar al Modo de Configuración Global:
-
-<br>Usa el comando configure terminal para entrar al modo de configuración.
-
 
 <br>
-Configurar una Ruta Estática:
+<a class="internal-link" data-href="Enrutamiento/Dinamico.md" href="manual_de_packet_tracer\enrutamiento\dinamico.html" target="_self" rel="noopener">Como Configurar una VLAN en un Router</a>
 
-<br>Para agregar una ruta estática, utiliza el comando ip route, seguido de la red destino, la máscara de subred, y el siguiente salto o interfaz de salida.
-
-
-<br>Router(config)# ip route 172.16.0.0 255.255.0.0 10.0.0.2
-Copy<br>
-<br>Repite este paso para cada red destino, especificando el adecuado siguiente salto o interfaz de salida.
 <br>
-<br>Guardar la Configuración:
+<a class="internal-link" data-href="Enrutamiento/Estatico.md" href="manual_de_packet_tracer\enrutamiento\estatico.html" target="_self" rel="noopener">Como Hacer una VLAN en un Switch</a>
 
-<br>Guarda la configuración al salir del modo de configuración y usar el comando copy running-config startup-config.<br>
-Supongamos que quiero enrutar 8 router pues repetir todas estas tablas entre si:<br>
-<img alt="src/img/Pasted image 20240207211745.png" src="manual_de_packet_tracer\src\img\pasted-image-20240207211745.png">
-
-
-<img alt="src/img/Pasted image 20240207214404.png" src="manual_de_packet_tracer\src\img\pasted-image-20240207214404.png">Los resquest timed out son porque tiene que hacer el protocolo ARP en las redes donde este el dispositivo conectado.
-<br>]]></description><link>manual_de_packet_tracer\enrutamiento.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Enrutamiento.md</guid><pubDate>Thu, 16 May 2024 08:19:23 GMT</pubDate><enclosure url="manual_de_packet_tracer\src\img\pasted-image-20240207212212.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\src\img\pasted-image-20240207212212.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Índice del Manual de Packet Tracer]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer\enrutamiento.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Enrutamiento.md</guid><pubDate>Sun, 26 May 2024 11:40:24 GMT</pubDate><enclosure url="manual_de_packet_tracer\src\img\pasted-image-20240207212212.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\src\img\pasted-image-20240207212212.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Índice del Manual de Packet Tracer]]></title><description><![CDATA[ 
  <br><br>
 <br><a class="internal-link" data-href="Introducción.md" href="manual_de_packet_tracer\introducción.html" target="_self" rel="noopener">Introducción</a>
 <br><a class="internal-link" data-href="ACL.md" href="manual_de_packet_tracer\acl.html" target="_self" rel="noopener">ACL</a>
