@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 26 May 2024 13:58:31 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 26 May 2024 13:58:26 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Dinamico]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 26 May 2024 16:28:06 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 26 May 2024 16:28:02 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Dinamico]]></title><description><![CDATA[ 
  <br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
 <br>172.16.0.0/16
 <br>172.17.0.0/16
@@ -387,7 +387,203 @@ end
 Copy<br><br>Con el comando podeis verificar que funciona el servidor pppoe, para que obtengais este resultado similar teneis que usar <br>
 <br>show pppoe session<br>
 <img alt="src/img/Pasted image 20240314220017.png" src="lib\media\pasted-image-20240314220017.png">
-]]></description><link>manual_de_packet_tracer\pppoe\servidor.html</link><guid isPermaLink="false">Manual_de_packet_tracer/PPPoE/Servidor.md</guid><pubDate>Sun, 26 May 2024 11:23:59 GMT</pubDate><enclosure url="lib\media\pasted-image-20240314220017.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib\media\pasted-image-20240314220017.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Router]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer\pppoe\servidor.html</link><guid isPermaLink="false">Manual_de_packet_tracer/PPPoE/Servidor.md</guid><pubDate>Sun, 26 May 2024 11:23:59 GMT</pubDate><enclosure url="lib\media\pasted-image-20240314220017.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib\media\pasted-image-20240314220017.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RAS-IP-NORMAL]]></title><description><![CDATA[ 
+ <br><br><br>Usaremos dos PCs conectadas a un switch y un router para enrutar tráfico entre ellas.<br><br>
+<br>
+Añadir Dispositivos
+
+<br>Arrastra un switch y dos PCs al área de trabajo.
+<br>Conecta las PCs al switch.
+
+
+<br>
+Configurar PCs
+
+<br>Asigna direcciones IP a las PCs:
+
+<br>PC1: 192.168.100.200 / 255.255.255.0
+<br>PC2: 192.168.100.202 / 255.255.255.0
+
+
+
+
+<br>
+Rastrear el Tráfico
+
+<br>Usa la herramienta de simulación de Packet Tracer.<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526181948.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526181948.png">
+<br>Genera tráfico desde PC1 a PC2. (Mediante Ping)<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526182216.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526182216.png">
+<br>Observa el tráfico a través del switch y el router. Y haz clic en una traza de la generada anteriormente.<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526182245.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526182245.png"><br>
+Nos vamos a "Inbound PDU Details"<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526182309.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526182309.png">
+
+
+]]></description><link>manual_de_packet_tracer\rastreo\ras-ip-normal.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Rastreo/RAS-IP-NORMAL.md</guid><pubDate>Sun, 26 May 2024 16:23:44 GMT</pubDate><enclosure url="manual_de_packet_tracer\rastreo\pasted-image-20240526181948.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\rastreo\pasted-image-20240526181948.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RAS-PPPoE]]></title><description><![CDATA[ 
+ <br><br>Antes de empezar os recomiendo un vistazo al siguiente capitulo.<br>
+<br><a class="internal-link" data-href="../PPPoE.md" href="manual_de_packet_tracer\pppoe.html" target="_self" rel="noopener">Como configurar el servicio PPPoE</a>
+<br><br>Usaremos un router configurado como cliente PPPoE y otro como servidor.<br><br>
+<br>
+Añadir Dispositivos
+
+<br>Arrastra dos routers al área de trabajo y conéctalos.
+
+
+<br>
+Configurar el Servidor PPPoE
+
+<br>Configura el servidor PPPoE en uno de los routers:
+
+
+<br>enable
+configure terminal
+interface GigabitEthernet0/0/0
+ip address 172.16.0.1 255.255.0.0
+no shutdown
+exit
+ip local pool pppoepool 172.16.128.1 172.16.128.254
+bba-group pppoe global
+virtual-template 1
+exit
+interface Virtual-Template1
+ip unnumbered GigabitEthernet0/0/0
+peer default ip address pool pppoepool
+ppp authentication pap
+exit
+username [username] password [password]
+interface GigabitEthernet0/0/0
+pppoe enable group global
+exit
+Copy<br>
+<br>Configurar el Cliente PPPoE
+
+<br>Configura el cliente PPPoE en el otro router:
+
+
+<br>enable
+conf t
+interface GigabitEthernet0/0/0
+no shutdown
+no ip address
+no ip proxy-arp
+pppoe enable
+pppoe-client dial-pool-number 1
+duplex auto
+speed auto
+exit
+interface Dialer1
+dialer pool 1
+ip address negotiated
+encapsulation ppp
+ppp authentication pap
+ppp pap sent-username [username] password [password]
+exit
+Copy<br>
+<br>Rastrear el Tráfico
+
+<br>Usa la herramienta de simulación de Packet Tracer.<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526181028.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526181028.png">
+<br>Genera tráfico desde un dispositivo conectado al cliente PPPoE hacia la red del servidor. (En este caso en el router cliente lo he apagado y lo encendido - hacer un reload.)<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526181121.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526181121.png">
+<br>Observa cómo el tráfico se encapsula y desencapsula a través del enlace PPPoE y selecciona una captura de las que hemos realizado .<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526181238.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526181238.png">
+
+
+<br>
+<br>Despues nos vamos a Outbound PDU Details: y podemos observar cada dato de una trama PPPoE<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526181310.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526181310.png">
+]]></description><link>manual_de_packet_tracer\rastreo\ras-pppoe.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Rastreo/RAS-PPPoE.md</guid><pubDate>Sun, 26 May 2024 16:23:17 GMT</pubDate><enclosure url="manual_de_packet_tracer\rastreo\pasted-image-20240526181028.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\rastreo\pasted-image-20240526181028.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RAS-VLAN]]></title><description><![CDATA[ 
+ <br>Antes de empezar os recomiendo un vistazo al siguiente capitulo.<br>
+<br><a class="internal-link" data-href="../VLAN.md" href="manual_de_packet_tracer\vlan.html" target="_self" rel="noopener">Como configurar una VLAN</a>
+<br><br><br>Usaremos un router y un switch con VLANs 19 y 20.<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526162938.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526162938.png"><br><br>
+<br>
+Añadir Dispositivos
+
+<br>Arrastra un router y un switch al área de trabajo.
+<br>Añade un PCs para cada VLAN (2 PCs).
+
+
+<br>
+Configurar VLANs en el Switch
+
+<br>Haz clic en el switch, selecciona CLI y entra en el modo de configuración global.
+<br>Crea las VLANs 19 y 20:<br>
+     enable      configure terminal      vlan 19      name VLAN19      exit      vlan 20      name VLAN20      exit     <br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526164915.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526164915.png">
+
+
+<br>
+Asignar Puertos a las VLANs
+
+<br>Asigna puertos del switch a cada VLAN:<br>
+     interface fastethernet 0/1      switchport mode access      switchport access vlan 19      exit      interface fastethernet 0/2      switchport mode access      switchport access vlan 20      exit     <br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526164948.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526164948.png"><br>
+Resultado de la asignación de VLAN:<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526165016.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526165016.png">
+
+
+<br>
+Configurar Enlace Troncal entre el Switch y el Router
+
+<br>Configura el puerto del switch conectado al router como troncal:<br>
+     interface gigabitethernet 0/1      switchport mode trunk      exit     <br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526165046.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526165046.png">
+
+
+<br>
+Configurar Subinterfaces en el Router
+
+<br>Configura subinterfaces en el router para cada VLAN:
+
+
+<br>enable
+configure terminal
+interface gigabitethernet 0/0/0.19
+encapsulation dot1Q 19
+ip address 192.168.19.1 255.255.255.0
+exit
+interface gigabitethernet 0/0/0.20
+encapsulation dot1Q 20
+ip address 192.168.20.1 255.255.255.0
+exit
+Copy<br><img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526165423.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526165423.png"><br>
+6. Configurar PCs:<br>Nota
+Si no te acuerdas de asignar una ip a un ordenador revisa el siguiente capitulo:
+
+<br><a class="internal-link" data-href="../Introducción.md" href="manual_de_packet_tracer\introducción.html" target="_self" rel="noopener">Introducción al packet tracer</a>
+
+<br>
+<br>Asigna direcciones IP a las PCs correspondientes a cada VLAN.
+
+<br>PCs en VLAN 19: 192.168.19.2 / 24
+<br>PCs en VLAN 20: 192.168.20.2 / 24
+
+
+<br>
+<br>Rastrear el Tráfico
+
+<br>Usa la herramienta de simulación de Packet Tracer.<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526171039.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526171039.png">
+<br>Genera tráfico desde un PC de una VLAN a un PC de la otra VLAN. (Usando ping)<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526171658.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526171658.png">
+
+
+<br>
+<br>Hacemos clic en una traza de packet tracer: Se nos habre la siguiente ventana:<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526171757.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526171757.png">
+
+<br>Navegamos a la pestaña Inbound PDU Details en busca de parametro TCI.<br>
+<img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526172920.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526172920.png">
+
+
+<br>Nota
+Ahora buscamos el valor de la VLAN en este documento:
+
+<br><a class="internal-link" data-href="tci_values_with_vlan.txt" href="manual_de_packet_tracer\rastreo\tci_values_with_vlan.txt" target="_self" rel="noopener">Valores TCI - VLAN</a>
+
+]]></description><link>manual_de_packet_tracer\rastreo\ras-vlan.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Rastreo/RAS-VLAN.md</guid><pubDate>Sun, 26 May 2024 16:27:06 GMT</pubDate><enclosure url="manual_de_packet_tracer\rastreo\pasted-image-20240526162938.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\rastreo\pasted-image-20240526162938.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Router]]></title><description><![CDATA[ 
  <br><br>"Una VLAN se considera una interfaz configurable"<br><br>Para configurar subinterfaces en un router (permitiendo que una interfaz física maneje múltiples VLANs), sigue estos pasos:<br>
 <br>Entrar al Modo de Configuración Global:
 <br>Router&gt; enable
@@ -631,8 +827,9 @@ show ip route<br>
 <br><a class="internal-link" data-href="NAT.md" href="manual_de_packet_tracer\nat.html" target="_self" rel="noopener">NAT</a>
 <br><a class="internal-link" data-href="PPPoE.md" href="manual_de_packet_tracer\pppoe.html" target="_self" rel="noopener">PPPoE</a>
 <br><a class="internal-link" data-href="Router Con DHCP.md" href="manual_de_packet_tracer\router-con-dhcp.html" target="_self" rel="noopener">Router con DHCP</a>
-<br><a class="internal-link" data-href="VLAN.md" href="manual_de_packet_tracer\vlan.html" target="_self" rel="noopener">VLAN</a>
-]]></description><link>manual_de_packet_tracer\indice.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Indice.md</guid><pubDate>Thu, 16 May 2024 08:48:21 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
+<br><a class="internal-link" data-href="Manual_de_packet_tracer/VLAN.md" href="manual_de_packet_tracer\vlan.html" target="_self" rel="noopener">VLAN</a>
+<br><a class="internal-link" data-href="rastreo.md" href="manual_de_packet_tracer\rastreo.html" target="_self" rel="noopener">Rastreo</a>
+]]></description><link>manual_de_packet_tracer\indice.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Indice.md</guid><pubDate>Sun, 26 May 2024 14:10:02 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
  <br><br>LECTURA OBLIGATORIA<br>
 Se recomienda tener conocimientos previos de subnetting.<br>
 <br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" rel="noopener" class="external-link" href="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" target="_blank">Subnetting IPv4 explicación en español</a>
@@ -795,7 +992,12 @@ Copy]]></description><link>manual_de_packet_tracer\nat.html</link><guid isPermaL
  <br><br><br>PPPoE (Point-to-Point Protocol over Ethernet) es un protocolo de red que encapsula PPP dentro de tramas Ethernet. PPPoE se utiliza principalmente para establecer conexiones de internet sobre una infraestructura Ethernet, combinando las características de PPP, como autenticación y compresión, con la simplicidad y flexibilidad de Ethernet. PPPoE permite que múltiples usuarios en una red Ethernet compartan una conexión a internet a través de un único módem de banda ancha.<br>
 <br><a class="internal-link" data-href="PPPoE/Servidor.md" href="manual_de_packet_tracer\pppoe\servidor.html" target="_self" rel="noopener">Cómo Configurar PPPoE en un Router Como Servidor</a>
 <br><a class="internal-link" data-href="PPPoE/Cliente.md" href="manual_de_packet_tracer\pppoe\cliente.html" target="_self" rel="noopener">Cómo Configurar una Conexión PPPoE Como Cliente</a>
-]]></description><link>manual_de_packet_tracer\pppoe.html</link><guid isPermaLink="false">Manual_de_packet_tracer/PPPoE.md</guid><pubDate>Sun, 26 May 2024 11:10:45 GMT</pubDate></item><item><title><![CDATA[6. <strong>Configuración de Dispositivos</strong>]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer\pppoe.html</link><guid isPermaLink="false">Manual_de_packet_tracer/PPPoE.md</guid><pubDate>Sun, 26 May 2024 11:10:45 GMT</pubDate></item><item><title><![CDATA[Rastreo]]></title><description><![CDATA[ 
+ <br><br>Cisco Packet Tracer es una herramienta de simulación de redes utilizada para diseñar y configurar redes, permitiendo visualizar y analizar el tráfico de red. En este manual, aprenderás a rastrear y visualizar tráfico de VLAN, PPPoE y tráfico IP normal.<br>
+<br><a class="internal-link" data-href="Rastreo/RAS-IP-NORMAL.md" href="manual_de_packet_tracer\rastreo\ras-ip-normal.html" target="_self" rel="noopener">Cómo Identificar Tráfico de una Red</a>
+<br><a class="internal-link" data-href="Rastreo/RAS-PPPoE.md" href="manual_de_packet_tracer\rastreo\ras-pppoe.html" target="_self" rel="noopener">Cómo Identificar Tráfico de PPPoE</a>
+<br><a class="internal-link" data-href="Rastreo/RAS-VLAN.md" href="manual_de_packet_tracer\rastreo\ras-vlan.html" target="_self" rel="noopener">Cómo Identificar Tráfico de una VLAN</a>
+]]></description><link>manual_de_packet_tracer\rastreo.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Rastreo.md</guid><pubDate>Sun, 26 May 2024 14:16:00 GMT</pubDate></item><item><title><![CDATA[6. <strong>Configuración de Dispositivos</strong>]]></title><description><![CDATA[ 
  <br><br><br>Estos comandos son universales<br><br>
 <br>Haz clic en el dispositivo.<br>
 <img alt="src/img/Pasted image 20240207162211.png" src="manual_de_packet_tracer\src\img\pasted-image-20240207162211.png">
