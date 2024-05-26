@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 26 May 2024 16:28:06 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 26 May 2024 16:28:02 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Dinamico]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 26 May 2024 20:58:29 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 26 May 2024 20:58:24 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Dinamico]]></title><description><![CDATA[ 
  <br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
 <br>172.16.0.0/16
 <br>172.17.0.0/16
@@ -638,9 +638,15 @@ Puedes especificar qué VLANs están permitidas a través del trunk:
 <br>Switch(config-if)# switchport trunk allowed vlan add 10
 Copy<br>   Si omites este paso, el puerto permitirá todas las VLANs por defecto.]]></description><link>manual_de_packet_tracer\vlan\switch.html</link><guid isPermaLink="false">Manual_de_packet_tracer/VLAN/Switch.md</guid><pubDate>Sun, 26 May 2024 10:49:05 GMT</pubDate><enclosure url="lib\media\pasted-image-20240209112446.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib\media\pasted-image-20240209112446.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[11. <strong>Listas de Control de Acceso (ACL)</strong>]]></title><description><![CDATA[ 
  <br><br>Las Listas de Control de Acceso (ACL) son un conjunto de reglas que se utilizan para filtrar el tráfico de red en dispositivos como puede ser  routers y switches. Estas reglas incrementan la seguridad de la red controlando el flujo de paquetes, permitiendo o denegando el tráfico bajo una serie de criterios específicos.<br>Os dejo esta tabla de mascaras ya que no se pone la mascara de red en formato decimal tal cual como lo conocemos. Si no que se requiere invertir la mascara. Esto se conoce como mascara WILDCART.<br><br><br>
-<br>Restricción de Acceso: Limitan el acceso a partes específicas de la red, un ejemplo puede ser en un colegio bloqueando casas de apuestas, o juegos o material pornografico .
-<br>Control de Tráfico: Administran el flujo de tráfico, pudiendo bloquear o permitir tipos específicos de tráfico como servicios de web (HTTP), conexiones remotas (SSH), entre otros.
-<br>Seguridad de Red: Ayudan a prevenir ataques de red y acceso no autorizado, siendo esenciales en la implementación de políticas de seguridad.
+<br>
+Restricción de Acceso: Limitan el acceso a partes específicas de la red, un ejemplo puede ser en un colegio bloqueando casas de apuestas, o juegos o material pornografico.
+
+<br>
+Control de Tráfico: Administran el flujo de tráfico, pudiendo bloquear o permitir tipos específicos de tráfico como servicios de web (HTTP), conexiones remotas (SSH), entre otros.
+
+<br>
+Seguridad de Red: Ayudan a prevenir ataques de red y acceso no autorizado, siendo esenciales en la implementación de políticas de seguridad.
+
 <br><br>
 <br>ACL Estándar:
 
@@ -807,7 +813,7 @@ Router(config-if)#ip access-group 103 in
 Copy<br><br>Router(config)#access-list 103 permit tcp any host 192.168.1.3 eq 22
 Router(config)#access-list 103 deny tcp any host 192.168.1.3 neq 22
 Copy<br><br>Router(config)#access-list 103 deny udp any any range 27015 27030
-Copy]]></description><link>manual_de_packet_tracer\acl.html</link><guid isPermaLink="false">Manual_de_packet_tracer/ACL.md</guid><pubDate>Thu, 16 May 2024 08:30:29 GMT</pubDate></item><item><title><![CDATA[7. <strong>Enrutamiento</strong>]]></title><description><![CDATA[ 
+Copy]]></description><link>manual_de_packet_tracer\acl.html</link><guid isPermaLink="false">Manual_de_packet_tracer/ACL.md</guid><pubDate>Sun, 26 May 2024 17:36:51 GMT</pubDate></item><item><title><![CDATA[7. <strong>Enrutamiento</strong>]]></title><description><![CDATA[ 
  <br><br>Los routers necesitan conocer cómo llegar a distintas redes que no están directamente conectadas a ellos para poder enviar y recibir tráfico hacia y desde esas redes.<br>Para visualizar las rutas del router se usa este comado:<br>
 <br>
 show ip route<br>
@@ -895,100 +901,65 @@ Interface Configuration Mode (Modo de Configuración de Interfaz): Se accede des
 
 <br>Estos son los modos básicos en un switch o router de Cisco de Packet Tracer, pudiendo existir modos adicionales o variantes según la versión del software y las características del dispositivo.<br><br>Existen comandos específicos para diferentes modos en el CLI de Cisco. Algunas abreviaturas y trucos comunes son:<br><br>Nota: Existen más abreviaturas, pero se han listado las más utilizadas.<br>Tabulación: Al igual que en Linux, se puede usar el tabulador para completar un comando.<br>
 <img alt="src/img/Pasted image 20240207163142.png" src="manual_de_packet_tracer\src\img\pasted-image-20240207163142.png"><br>]]></description><link>manual_de_packet_tracer\introducción.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Introducción.md</guid><pubDate>Mon, 20 May 2024 09:12:32 GMT</pubDate><enclosure url="manual_de_packet_tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\src\img\pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[NAT]]></title><description><![CDATA[ 
- <br><br><br>Este manual detalla los pasos para configurar NAT (Network Address Translation) en un router Cisco. NAT permite que múltiples dispositivos de una red local (LAN) compartan una única dirección IP pública para acceder a Internet o otras redes. También permite la asignación de puertos específicos para servicios internos para convertirlos en servicios externos.<br><br>
-<br>Un router Cisco con interfaces FastEthernet o GigabitEthenet.
-<br>Cables de red para conectar el router a la red interna y externa.
-<br>Dirección IP pública para la interfaz externa.
-<br>Direcciones IP privadas para la red interna.
-<br><br><br>
-<br>Conectarse al router a través del CLI.
-<br>Entre al modo privilegiado:
-Router&gt;enable
-Copy
-
-<br>Entre al modo de configuración global:
-Router#configure terminal
-Copy
-
-<br><br><br>
-<br>Seleccionamos la interfaz FastEthernet 0/0
-Router(config)#interface Fa0/0
-Copy
-
-<br>Active la interfaz:
-Router(config-if)#no shutdown
-Copy
-
-<br>Asigne una dirección IP y máscara de subred:
-Router(config-if)#ip address 10.0.0.1 255.0.0.0
-Copy
-
-<br>Configure la interfaz como externa para NAT:
-Router(config-if)#ip nat outside
-Copy
-
-<br><br>
-<br>Seleccione la interfaz FastEthernet 0/1:
-Router(config)#interface Fa0/1
-Copy
-
-<br>Active la interfaz:
-Router(config-if)#no shutdown
-Copy
-
-<br>Asigne una dirección IP y máscara de subred:
-Router(config-if)#ip address 192.168.1.1 255.255.255.0
-Copy
-
-<br>Configure la interfaz como interna para NAT:
-Router(config-if)#ip nat inside
-Copy
-
-<br><br>
-<br>Creamos una lista de acceso para permitir las direcciones IP internas que usarán NAT:
-Router(config)#access-list 99 permit 192.168.1.0 0.0.0.255
-Copy
-
-<br><br><br>
-<br>Definimos un pool de direcciones IP para NAT:
-Router(config)#ip nat pool CONJUNTO1 10.0.0.2 10.0.0.255 netmask 0.255.255.255
-Copy
-
-<br>Configuramos NAT para usar la lista de acceso y el pool:
-Router(config)#ip nat inside source list 99 pool CONJUNTO1
-Copy
-
-<br><br>
-<br>Defina un pool con una sola dirección IP:
-Router(config)#ip nat pool CONJUNTO1 10.0.0.1 10.0.0.1 netmask 0.255.255.255
-Copy
-
-<br>Configure NAT para usar la lista de acceso y el pool con sobrecarga:
-Router(config)#ip nat inside source list 99 pool CONJUNTO1 overload
-Copy
-
-<br><br>
-<br>Asignamos el puerto 80 de la IP interna 192.168.1.3 al puerto 80 de la IP externa 10.0.0.1:
-Router(config)#ip nat inside source static tcp 192.168.1.3 80 10.0.0.1 80
-Copy
-
-<br><br>
-<br>Configure la ruta por defecto hacia la interfaz externa:
-Router(config)#ip route 0.0.0.0 0.0.0.0 Fa0/0
-Copy
-
-<br><br>
-<br>Para verificar la configuración de NAT y las traducciones actuales, usamos el siguiente comando:
-Router#show ip nat translations
-Copy
-
-<br>Este comando muestra una tabla con las traducciones NAT actuales, incluyendo las direcciones IP internas y externas y los puertos asociados.
-<br>Ejemplo de salida del comando:<br>Pro  Inside global     Inside local       Outside local      Outside global
-tcp 10.0.0.1:80        192.168.1.3:80     ---                ---
-tcp 10.0.0.1:80        192.168.1.3:80     10.0.0.3:1025      10.0.0.3:1025
-tcp 10.0.0.1:80        192.168.1.3:80     10.0.0.4:1028      10.0.0.4:1028
-...
-Copy]]></description><link>manual_de_packet_tracer\nat.html</link><guid isPermaLink="false">Manual_de_packet_tracer/NAT.md</guid><pubDate>Mon, 20 May 2024 09:12:40 GMT</pubDate></item><item><title><![CDATA[10. <strong>PPPoE</strong>]]></title><description><![CDATA[ 
+ <br><br>Este manual describe los pasos para configurar NAT (Network Address Translation) en un router utilizando Cisco Packet Tracer.<br>
+La configuración permite que una red privada tenga acceso a una red pública y también habilita servidores en la red privada para ser accesibles desde la red pública.<br>NO USAR PUERTA DE ENLACE EN LA RED PRIVADA<br>Tabla De direcciones ip wildcart <br><br><br>
+<br>Configurar la interfaz GigabitEthernet0/0/0 como interfaz externa:
+<br>interface GigabitEthernet0/0/0
+ip address 10.0.0.1 255.255.255.0
+ip nat outside
+Copy<br>
+<br>Configurar la interfaz GigabitEthernet0/0/1 como interfaz interna:
+<br>interface GigabitEthernet0/0/1
+ip address 192.168.200.1 255.255.255.0
+ip nat inside
+Copy<br><br>
+<br>Crear un pool de direcciones NAT: (Se crea el rango para las direcciones ip publicas del nat "SE UTILIZA la ip de la interfaz externa")
+<br>ip nat pool CONJUNTO1 10.0.0.1 10.0.0.1 netmask 0.0.0.255
+Copy<br>
+<br>Configurar la lista de acceso para definir la red interna:
+<br>access-list 99 permit 192.168.200.0 0.0.0.255
+Copy<br>
+<br>Asignar la lista de acceso al pool de NAT con sobrecarga:
+<br>ip nat inside source list 99 pool CONJUNTO1 overload
+Copy<br><img alt="src/nat/Pasted image 20240526225159.png" src="manual_de_packet_tracer\src\nat\pasted-image-20240526225159.png"><br><br>
+<br>Configurar NAT estático para permitir acceso a un servidor HTTP en la red privada:
+<br>ip nat inside source static tcp 192.168.200.100 80 10.0.0.1 80
+Copy<br><img alt="src/nat/Pasted image 20240526225244.png" src="manual_de_packet_tracer\src\nat\pasted-image-20240526225244.png"><br>
+<br>Configurar NAT estático para permitir acceso a un servidor FTP en la red privada:
+<br>ip nat inside source static tcp 192.168.200.100 21 10.0.0.1 21
+Copy<br>
+<br>Configurar NAT estático para permitir acceso a un servidor DNS en la red privada:
+<br>ip nat inside source static udp 192.168.200.100 53 10.0.0.1 53
+Copy<br><br>
+<br>Verificar la Configuración:<br>
+Para verificar que la configuración de NAT está funcionando correctamente, puedes usar los siguientes comandos:
+<br>show ip nat translations
+show ip nat statistics
+Copy<br><img alt="src/nat/Pasted image 20240526225126.png" src="manual_de_packet_tracer\src\nat\pasted-image-20240526225126.png"><br>
+<br>Guardar la Configuración:<br>
+No olvides guardar la configuración para que persista después de reiniciar el router:
+<br>end
+write
+reload
+Copy<br>Nota
+Aqui teneis para copiar y pegar los comandos en el router y hacerlo de una tacada.
+<br>enable
+conf t
+interface GigabitEthernet0/0/0
+ip address 10.0.0.1 255.255.255.0
+ip nat outside
+no shut
+exit
+interface GigabitEthernet0/0/1
+ip address 192.168.200.1 255.255.255.0
+ip nat inside
+no shut
+exit
+ip nat pool CONJUNTO1 10.0.0.1 10.0.0.1 netmask 0.0.0.255
+access-list 99 permit 192.168.200.0 0.0.0.255
+ip nat inside source list 99 pool CONJUNTO1 overload
+ip nat inside source static tcp 192.168.200.100 80 10.0.0.1 80
+Copy]]></description><link>manual_de_packet_tracer\nat.html</link><guid isPermaLink="false">Manual_de_packet_tracer/NAT.md</guid><pubDate>Sun, 26 May 2024 20:56:40 GMT</pubDate><enclosure url="manual_de_packet_tracer\src\nat\pasted-image-20240526225159.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\src\nat\pasted-image-20240526225159.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[10. <strong>PPPoE</strong>]]></title><description><![CDATA[ 
  <br><br><br>PPPoE (Point-to-Point Protocol over Ethernet) es un protocolo de red que encapsula PPP dentro de tramas Ethernet. PPPoE se utiliza principalmente para establecer conexiones de internet sobre una infraestructura Ethernet, combinando las características de PPP, como autenticación y compresión, con la simplicidad y flexibilidad de Ethernet. PPPoE permite que múltiples usuarios en una red Ethernet compartan una conexión a internet a través de un único módem de banda ancha.<br>
 <br><a class="internal-link" data-href="PPPoE/Servidor.md" href="manual_de_packet_tracer\pppoe\servidor.html" target="_self" rel="noopener">Cómo Configurar PPPoE en un Router Como Servidor</a>
 <br><a class="internal-link" data-href="PPPoE/Cliente.md" href="manual_de_packet_tracer\pppoe\cliente.html" target="_self" rel="noopener">Cómo Configurar una Conexión PPPoE Como Cliente</a>
