@@ -1,6 +1,6 @@
 {
   "vaultName": "Vault2 - Manuales",
-  "lastExport": 1716795991970,
+  "lastExport": 1716796042221,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title",
   "useCustomHeadContent": false,
@@ -66,464 +66,170 @@
     "lib/styles/main-styles.css"
   ],
   "fileInfo": {
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526181948.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 165750,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526181948.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526182216.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 224223,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526182216.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526182245.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 22419,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526182245.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526182309.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 29364,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526182309.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526181028.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 157978,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526181028.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526181121.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 188306,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526181121.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526181238.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 19559,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526181238.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526181310.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 17967,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526181310.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526162938.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 16663,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526162938.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526164915.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 27847,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526164915.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526164948.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 41900,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526164948.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526165016.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 196409,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526165016.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526165046.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 53412,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526165046.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526165423.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 33225,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526165423.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526171039.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 187448,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526171039.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526171658.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 222770,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526171658.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526171757.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 22520,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526171757.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/rastreo/pasted-image-20240526172920.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 24744,
-      "exportedPath": "manual_de_packet_tracer/rastreo/pasted-image-20240526172920.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207212212.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 48501,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207212212.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207154633.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 100303,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207154633.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207154717.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 31317,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207154717.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207154830.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 17771,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207154830.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207154857.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 10150,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207154857.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240208214929.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 4120,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240208214929.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240213094539.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 79210,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240213094539.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240213094609.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 210880,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240213094609.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240213095033.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 26644,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240213095033.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240213095153.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 39932,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240213095153.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207155214.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 24047,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207155214.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207155244.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 1034,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207155244.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207155306.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 5297,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207155306.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207155336.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 35841,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207155336.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207155651.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 3737,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207155651.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240315093145.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 4368,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240315093145.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240315093221.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 4555,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240315093221.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240315093307.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 9583,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240315093307.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240315093444.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 8193,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240315093444.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207163142.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 3696,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207163142.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/nat/pasted-image-20240526225159.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 50660,
-      "exportedPath": "manual_de_packet_tracer/src/nat/pasted-image-20240526225159.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/nat/pasted-image-20240526225244.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 39508,
-      "exportedPath": "manual_de_packet_tracer/src/nat/pasted-image-20240526225244.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/nat/pasted-image-20240526225126.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 33251,
-      "exportedPath": "manual_de_packet_tracer/src/nat/pasted-image-20240526225126.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207162211.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 49619,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207162211.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207162222.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 59278,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207162222.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207162236.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 58459,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207162236.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207162249.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 44335,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207162249.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207162334.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 44916,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207162334.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207163030.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 42074,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207163030.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207170945.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 2283,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207170945.png",
-      "dependencies": []
-    },
-    "manual_de_packet_tracer/src/img/pasted-image-20240207171144.png": {
-      "modifiedTime": 1716794876861,
-      "sourceSize": 27028,
-      "exportedPath": "manual_de_packet_tracer/src/img/pasted-image-20240207171144.png",
-      "dependencies": []
-    },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 669,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1716795991970,
-      "sourceSize": 243,
+      "modifiedTime": 1716796042221,
+      "sourceSize": 279,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 157722,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 238,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1716795991970,
+      "modifiedTime": 1716796042221,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
