@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 27 May 2024 07:16:25 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 27 May 2024 07:16:19 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Dinamico]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 27 May 2024 07:28:03 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 27 May 2024 07:27:56 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Dinamico]]></title><description><![CDATA[ 
  <br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
 <br>172.16.0.0/16
 <br>172.17.0.0/16
@@ -407,8 +407,13 @@ Configurar PCs
 
 
 
+<br>Nota
+Si no te acuerdas de asignar una ip a un ordenador revisa el siguiente capitulo
+
+<br><a class="internal-link" data-href="../Introducción.md" href="manual_de_packet_tracer\introducción.html" target="_self" rel="noopener">Como asignar una dirección IPv4 a un ordendor</a>
+
 <br>
-Rastrear el Tráfico
+<br>Rastrear el Tráfico
 
 <br>Usa la herramienta de simulación de Packet Tracer.<br>
 <img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526181948.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526181948.png">
@@ -420,7 +425,7 @@ Nos vamos a "Inbound PDU Details"<br>
 <img alt="Manual_de_packet_tracer/Rastreo/Pasted image 20240526182309.png" src="manual_de_packet_tracer\rastreo\pasted-image-20240526182309.png">
 
 
-]]></description><link>manual_de_packet_tracer\rastreo\ras-ip-normal.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Rastreo/RAS-IP-NORMAL.md</guid><pubDate>Sun, 26 May 2024 16:23:44 GMT</pubDate><enclosure url="manual_de_packet_tracer\rastreo\pasted-image-20240526181948.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\rastreo\pasted-image-20240526181948.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RAS-PPPoE]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer\rastreo\ras-ip-normal.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Rastreo/RAS-IP-NORMAL.md</guid><pubDate>Mon, 27 May 2024 07:21:18 GMT</pubDate><enclosure url="manual_de_packet_tracer\rastreo\pasted-image-20240526181948.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\rastreo\pasted-image-20240526181948.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RAS-PPPoE]]></title><description><![CDATA[ 
  <br><br>Antes de empezar os recomiendo un vistazo al siguiente capitulo.<br>
 <br><a class="internal-link" data-href="../PPPoE.md" href="manual_de_packet_tracer\pppoe.html" target="_self" rel="noopener">Como configurar el servicio PPPoE</a>
 <br><br>Usaremos un router configurado como cliente PPPoE y otro como servidor.<br><br>
@@ -830,10 +835,10 @@ show ip route<br>
 <br><a class="internal-link" data-href="Enrutamiento.md" href="manual_de_packet_tracer\enrutamiento.html" target="_self" rel="noopener">Enrutamiento</a>
 <br><a class="internal-link" data-href="NAT.md" href="manual_de_packet_tracer\nat.html" target="_self" rel="noopener">NAT</a>
 <br><a class="internal-link" data-href="PPPoE.md" href="manual_de_packet_tracer\pppoe.html" target="_self" rel="noopener">PPPoE</a>
-<br><a class="internal-link" data-href="Router Con DHCP.md" href="manual_de_packet_tracer\router-con-dhcp.html" target="_self" rel="noopener">Router con DHCP</a>
+<br><a class="internal-link" data-href="Router Con DHCP.md" href="manual_de_packet_tracer\router-con-dhcp.html" target="_self" rel="noopener">Como configurar un router con DHCP</a>
 <br><a class="internal-link" data-href="Manual_de_packet_tracer/VLAN.md" href="manual_de_packet_tracer\vlan.html" target="_self" rel="noopener">VLAN</a>
 <br><a class="internal-link" data-href="rastreo.md" href="manual_de_packet_tracer\rastreo.html" target="_self" rel="noopener">Rastreo</a>
-]]></description><link>manual_de_packet_tracer\indice.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Indice.md</guid><pubDate>Sun, 26 May 2024 21:15:00 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer\indice.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Indice.md</guid><pubDate>Mon, 27 May 2024 07:22:25 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
  <br><br>LECTURA OBLIGATORIA<br>
 Se recomienda tener conocimientos previos de subnetting.<br>
 <br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" rel="noopener" class="external-link" href="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" target="_blank">Subnetting IPv4 explicación en español</a>
@@ -940,7 +945,7 @@ No olvides guardar la configuración para que persista después de reiniciar el 
 write
 reload
 Copy<br>Nota
-Aqui teneis para copiar y pegar los comandos en el router y hacerlo de una tacada.
+Aqui teneis para copiar y pegar los comandos en el router y hacerlo de una tacada. (Obviamente cambiar las ips para usar este documento en examen.)
 <br>enable
 conf t
 interface GigabitEthernet0/0/0
@@ -957,7 +962,7 @@ ip nat pool CONJUNTO1 10.0.0.1 10.0.0.1 netmask 0.0.0.255
 access-list 99 permit 192.168.200.0 0.0.0.255
 ip nat inside source list 99 pool CONJUNTO1 overload
 ip nat inside source static tcp 192.168.200.100 80 10.0.0.1 80
-Copy]]></description><link>manual_de_packet_tracer\nat.html</link><guid isPermaLink="false">Manual_de_packet_tracer/NAT.md</guid><pubDate>Sun, 26 May 2024 21:18:32 GMT</pubDate><enclosure url="manual_de_packet_tracer\src\nat\pasted-image-20240526225159.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\src\nat\pasted-image-20240526225159.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[10. <strong>PPPoE</strong>]]></title><description><![CDATA[ 
+Copy]]></description><link>manual_de_packet_tracer\nat.html</link><guid isPermaLink="false">Manual_de_packet_tracer/NAT.md</guid><pubDate>Mon, 27 May 2024 07:27:32 GMT</pubDate><enclosure url="manual_de_packet_tracer\src\nat\pasted-image-20240526225159.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\src\nat\pasted-image-20240526225159.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[10. <strong>PPPoE</strong>]]></title><description><![CDATA[ 
  <br><br><br>PPPoE (Point-to-Point Protocol over Ethernet) es un protocolo de red que encapsula PPP dentro de tramas Ethernet. PPPoE se utiliza principalmente para establecer conexiones de internet sobre una infraestructura Ethernet, combinando las características de PPP, como autenticación y compresión, con la simplicidad y flexibilidad de Ethernet. PPPoE permite que múltiples usuarios en una red Ethernet compartan una conexión a internet a través de un único módem de banda ancha.<br>
 <br><a class="internal-link" data-href="PPPoE/Servidor.md" href="manual_de_packet_tracer\pppoe\servidor.html" target="_self" rel="noopener">Cómo Configurar PPPoE en un Router Como Servidor</a>
 <br><a class="internal-link" data-href="PPPoE/Cliente.md" href="manual_de_packet_tracer\pppoe\cliente.html" target="_self" rel="noopener">Cómo Configurar una Conexión PPPoE Como Cliente</a>
