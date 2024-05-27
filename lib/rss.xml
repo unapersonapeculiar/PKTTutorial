@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 26 May 2024 20:58:29 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 26 May 2024 20:58:24 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Dinamico]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 27 May 2024 07:16:25 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 27 May 2024 07:16:19 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Dinamico]]></title><description><![CDATA[ 
  <br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
 <br>172.16.0.0/16
 <br>172.17.0.0/16
@@ -648,7 +648,7 @@ Control de Tráfico: Administran el flujo de tráfico, pudiendo bloquear o permi
 Seguridad de Red: Ayudan a prevenir ataques de red y acceso no autorizado, siendo esenciales en la implementación de políticas de seguridad.
 
 <br><br>
-<br>ACL Estándar:
+<br>ACL Estándar: 
 
 <br>Se enfocan en las direcciones IP de origen para permitir o denegar el tráfico.
 <br>Intervalo de identificación de ACL: 1-99 y 1300-1999.
@@ -661,34 +661,32 @@ Seguridad de Red: Ayudan a prevenir ataques de red y acceso no autorizado, siend
 
 
 <br><br>
-<br>
-Crear la ACL Estándar:
+<br>Crear la ACL Estándar:
 
 <br>Sintaxis básica para crear una regla en la ACL:
-Router(config)# access-list [número] [permit|deny] [dirección origen] [máscara wildcard]
-Copy
 
+
+<br>Router(config)# access-list [número] [permit|deny] [dirección origen] [máscara wildcard]
+Copy<br>
 <br>Ejemplo: Para permitir el tráfico de la red 192.168.1.0:
-access-list 10 permit 192.168.1.0 0.0.0.255
-Copy
-
-
-
-<br>
-Aplicar la ACL a una Interfaz:
+<br>access-list 10 permit 192.168.1.0 0.0.0.255
+Copy<br>
+<br>Aplicar la ACL a una Interfaz:
 
 <br>Seleccionar la interfaz y aplicar la ACL:
-Router(config)# interface [tipo de interfaz][número de interfaz]
-Router(config-if)# ip access-group [número de ACL] [in|out]
-Copy
 
+
+<br>Router(config)# interface [tipo de interfaz][número de interfaz]
+Copy<br>
+<br>Ejemplo de interfaz: 
+<br>Interface gigabitethernet 0/0/0
+Copy<br>
+<br>Aplicación en una interfaz:
+<br>Router(config-if)# ip access-group [número de ACL] [in|out]
+Copy<br>
 <br>Ejemplo: Para aplicar la ACL en la interfaz entrante:
-ip access-group 10 in
-Copy
-
-
-
-<br><br>
+<br>ip access-group 10 in
+Copy<br><br>
 <br>
 Crear la ACL Extendida:
 
@@ -813,7 +811,7 @@ Router(config-if)#ip access-group 103 in
 Copy<br><br>Router(config)#access-list 103 permit tcp any host 192.168.1.3 eq 22
 Router(config)#access-list 103 deny tcp any host 192.168.1.3 neq 22
 Copy<br><br>Router(config)#access-list 103 deny udp any any range 27015 27030
-Copy]]></description><link>manual_de_packet_tracer\acl.html</link><guid isPermaLink="false">Manual_de_packet_tracer/ACL.md</guid><pubDate>Sun, 26 May 2024 17:36:51 GMT</pubDate></item><item><title><![CDATA[7. <strong>Enrutamiento</strong>]]></title><description><![CDATA[ 
+Copy]]></description><link>manual_de_packet_tracer\acl.html</link><guid isPermaLink="false">Manual_de_packet_tracer/ACL.md</guid><pubDate>Mon, 27 May 2024 07:15:46 GMT</pubDate></item><item><title><![CDATA[7. <strong>Enrutamiento</strong>]]></title><description><![CDATA[ 
  <br><br>Los routers necesitan conocer cómo llegar a distintas redes que no están directamente conectadas a ellos para poder enviar y recibir tráfico hacia y desde esas redes.<br>Para visualizar las rutas del router se usa este comado:<br>
 <br>
 show ip route<br>
@@ -825,8 +823,8 @@ show ip route<br>
 <br>
 <a class="internal-link" data-href="Enrutamiento/Estatico.md" href="manual_de_packet_tracer\enrutamiento\estatico.html" target="_self" rel="noopener">Como Hacer una VLAN en un Switch</a>
 
-]]></description><link>manual_de_packet_tracer\enrutamiento.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Enrutamiento.md</guid><pubDate>Sun, 26 May 2024 11:40:24 GMT</pubDate><enclosure url="manual_de_packet_tracer\src\img\pasted-image-20240207212212.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\src\img\pasted-image-20240207212212.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Índice del Manual de Packet Tracer]]></title><description><![CDATA[ 
- <br><br>
+]]></description><link>manual_de_packet_tracer\enrutamiento.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Enrutamiento.md</guid><pubDate>Sun, 26 May 2024 11:40:24 GMT</pubDate><enclosure url="manual_de_packet_tracer\src\img\pasted-image-20240207212212.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\src\img\pasted-image-20240207212212.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RECORDAR CAMBIAR LAS DIRECCIONES IPS]]></title><description><![CDATA[ 
+ <br><br><br>
 <br><a class="internal-link" data-href="Introducción.md" href="manual_de_packet_tracer\introducción.html" target="_self" rel="noopener">Introducción</a>
 <br><a class="internal-link" data-href="ACL.md" href="manual_de_packet_tracer\acl.html" target="_self" rel="noopener">ACL</a>
 <br><a class="internal-link" data-href="Enrutamiento.md" href="manual_de_packet_tracer\enrutamiento.html" target="_self" rel="noopener">Enrutamiento</a>
@@ -835,7 +833,7 @@ show ip route<br>
 <br><a class="internal-link" data-href="Router Con DHCP.md" href="manual_de_packet_tracer\router-con-dhcp.html" target="_self" rel="noopener">Router con DHCP</a>
 <br><a class="internal-link" data-href="Manual_de_packet_tracer/VLAN.md" href="manual_de_packet_tracer\vlan.html" target="_self" rel="noopener">VLAN</a>
 <br><a class="internal-link" data-href="rastreo.md" href="manual_de_packet_tracer\rastreo.html" target="_self" rel="noopener">Rastreo</a>
-]]></description><link>manual_de_packet_tracer\indice.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Indice.md</guid><pubDate>Sun, 26 May 2024 14:10:02 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer\indice.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Indice.md</guid><pubDate>Sun, 26 May 2024 21:15:00 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
  <br><br>LECTURA OBLIGATORIA<br>
 Se recomienda tener conocimientos previos de subnetting.<br>
 <br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" rel="noopener" class="external-link" href="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" target="_blank">Subnetting IPv4 explicación en español</a>
@@ -902,7 +900,7 @@ Interface Configuration Mode (Modo de Configuración de Interfaz): Se accede des
 <br>Estos son los modos básicos en un switch o router de Cisco de Packet Tracer, pudiendo existir modos adicionales o variantes según la versión del software y las características del dispositivo.<br><br>Existen comandos específicos para diferentes modos en el CLI de Cisco. Algunas abreviaturas y trucos comunes son:<br><br>Nota: Existen más abreviaturas, pero se han listado las más utilizadas.<br>Tabulación: Al igual que en Linux, se puede usar el tabulador para completar un comando.<br>
 <img alt="src/img/Pasted image 20240207163142.png" src="manual_de_packet_tracer\src\img\pasted-image-20240207163142.png"><br>]]></description><link>manual_de_packet_tracer\introducción.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Introducción.md</guid><pubDate>Mon, 20 May 2024 09:12:32 GMT</pubDate><enclosure url="manual_de_packet_tracer\src\img\pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\src\img\pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[NAT]]></title><description><![CDATA[ 
  <br><br>Este manual describe los pasos para configurar NAT (Network Address Translation) en un router utilizando Cisco Packet Tracer.<br>
-La configuración permite que una red privada tenga acceso a una red pública y también habilita servidores en la red privada para ser accesibles desde la red pública.<br>NO USAR PUERTA DE ENLACE EN LA RED PRIVADA<br>Tabla De direcciones ip wildcart <br><br><br>
+La configuración permite que una red privada tenga acceso a una red pública y también habilita servidores en la red privada para ser accesibles desde la red pública.<br>Tabla De direcciones ip wildcart <br><br><br>
 <br>Configurar la interfaz GigabitEthernet0/0/0 como interfaz externa:
 <br>interface GigabitEthernet0/0/0
 ip address 10.0.0.1 255.255.255.0
@@ -959,7 +957,7 @@ ip nat pool CONJUNTO1 10.0.0.1 10.0.0.1 netmask 0.0.0.255
 access-list 99 permit 192.168.200.0 0.0.0.255
 ip nat inside source list 99 pool CONJUNTO1 overload
 ip nat inside source static tcp 192.168.200.100 80 10.0.0.1 80
-Copy]]></description><link>manual_de_packet_tracer\nat.html</link><guid isPermaLink="false">Manual_de_packet_tracer/NAT.md</guid><pubDate>Sun, 26 May 2024 20:56:40 GMT</pubDate><enclosure url="manual_de_packet_tracer\src\nat\pasted-image-20240526225159.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\src\nat\pasted-image-20240526225159.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[10. <strong>PPPoE</strong>]]></title><description><![CDATA[ 
+Copy]]></description><link>manual_de_packet_tracer\nat.html</link><guid isPermaLink="false">Manual_de_packet_tracer/NAT.md</guid><pubDate>Sun, 26 May 2024 21:18:32 GMT</pubDate><enclosure url="manual_de_packet_tracer\src\nat\pasted-image-20240526225159.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer\src\nat\pasted-image-20240526225159.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[10. <strong>PPPoE</strong>]]></title><description><![CDATA[ 
  <br><br><br>PPPoE (Point-to-Point Protocol over Ethernet) es un protocolo de red que encapsula PPP dentro de tramas Ethernet. PPPoE se utiliza principalmente para establecer conexiones de internet sobre una infraestructura Ethernet, combinando las características de PPP, como autenticación y compresión, con la simplicidad y flexibilidad de Ethernet. PPPoE permite que múltiples usuarios en una red Ethernet compartan una conexión a internet a través de un único módem de banda ancha.<br>
 <br><a class="internal-link" data-href="PPPoE/Servidor.md" href="manual_de_packet_tracer\pppoe\servidor.html" target="_self" rel="noopener">Cómo Configurar PPPoE en un Router Como Servidor</a>
 <br><a class="internal-link" data-href="PPPoE/Cliente.md" href="manual_de_packet_tracer\pppoe\cliente.html" target="_self" rel="noopener">Cómo Configurar una Conexión PPPoE Como Cliente</a>

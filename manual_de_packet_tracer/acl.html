@@ -267,7 +267,7 @@ Listas de Control de Acceso (ACL)
 <p><strong>Seguridad de Red:</strong> Ayudan a prevenir ataques de red y acceso no autorizado, siendo esenciales en la implementación de políticas de seguridad.</p>
 </li>
 </ul></div></div></div><div class="heading-wrapper"><h2 data-heading="11.2 Tipos de ACL" class="heading" id="11.2_Tipos_de_ACL"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>11.2 Tipos de ACL</h2><div class="heading-children"><div><ol>
-<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>ACL Estándar:</strong>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>ACL Estándar:</strong> 
 <ul>
 <li data-line="1">Se enfocan en las direcciones IP de origen para permitir o denegar el tráfico.</li>
 <li data-line="2">Intervalo de identificación de ACL: 1-99 y 1300-1999.</li>
@@ -280,34 +280,32 @@ Listas de Control de Acceso (ACL)
 </ul>
 </li>
 </ol></div></div></div><div class="heading-wrapper"><h2 data-heading="11.3 Configuración de una ACL Estándar" class="heading" id="11.3_Configuración_de_una_ACL_Estándar"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>11.3 Configuración de una ACL Estándar</h2><div class="heading-children"><div><ol>
-<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
-<p><strong>Crear la ACL Estándar:</strong></p>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Crear la ACL Estándar:</strong>
 <ul>
-<li data-line="1">Sintaxis básica para crear una regla en la ACL:
-<pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config)# access-list [número] [permit|deny] [dirección origen] [máscara wildcard]
-</code><button class="copy-code-button">Copy</button></pre>
-</li>
-<li data-line="5">Ejemplo: Para permitir el tráfico de la red 192.168.1.0:
-<pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">access-list 10 permit 192.168.1.0 0.0.0.255
-</code><button class="copy-code-button">Copy</button></pre>
-</li>
+<li data-line="1">Sintaxis básica para crear una regla en la ACL:</li>
 </ul>
 </li>
-<li data-line="10"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
-<p><strong>Aplicar la ACL a una Interfaz:</strong></p>
+</ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config)# access-list [número] [permit|deny] [dirección origen] [máscara wildcard]
+</code><button class="copy-code-button">Copy</button></pre></div><div><ul>
+<li data-line="0">Ejemplo: Para permitir el tráfico de la red 192.168.1.0:</li>
+</ul></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">access-list 10 permit 192.168.1.0 0.0.0.255
+</code><button class="copy-code-button">Copy</button></pre></div><div><ol start="2">
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Aplicar la ACL a una Interfaz:</strong>
 <ul>
-<li data-line="11">Seleccionar la interfaz y aplicar la ACL:
-<pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config)# interface [tipo de interfaz][número de interfaz]
-Router(config-if)# ip access-group [número de ACL] [in|out]
-</code><button class="copy-code-button">Copy</button></pre>
-</li>
-<li data-line="16">Ejemplo: Para aplicar la ACL en la interfaz entrante:
-<pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">ip access-group 10 in
-</code><button class="copy-code-button">Copy</button></pre>
-</li>
+<li data-line="1">Seleccionar la interfaz y aplicar la ACL:</li>
 </ul>
 </li>
-</ol></div></div></div><div class="heading-wrapper"><h2 data-heading="11.4 Configuración de una ACL Extendida" class="heading" id="11.4_Configuración_de_una_ACL_Extendida"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>11.4 Configuración de una ACL Extendida</h2><div class="heading-children"><div><ol>
+</ol></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">Router(config)# interface [tipo de interfaz][número de interfaz]
+</code><button class="copy-code-button">Copy</button></pre></div><div><ul>
+<li data-line="0"><strong>Ejemplo de interfaz:</strong> </li>
+</ul></div><div><pre class="language-pkt" tabindex="0"><code class="language-pkt is-loaded">Interface gigabitethernet 0/0/0
+</code><button class="copy-code-button">Copy</button></pre></div><div><ul>
+<li data-line="0">Aplicación en una interfaz:</li>
+</ul></div><div><pre><code>Router(config-if)# ip access-group [número de ACL] [in|out]
+</code><button class="copy-code-button">Copy</button></pre></div><div><ul>
+<li data-line="0">Ejemplo: Para aplicar la ACL en la interfaz entrante:</li>
+</ul></div><div><pre class="language-plaintext" tabindex="0"><code class="language-plaintext is-loaded">ip access-group 10 in
+</code><button class="copy-code-button">Copy</button></pre></div></div></div><div class="heading-wrapper"><h2 data-heading="11.4 Configuración de una ACL Extendida" class="heading" id="11.4_Configuración_de_una_ACL_Extendida"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>11.4 Configuración de una ACL Extendida</h2><div class="heading-children"><div><ol>
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
 <p><strong>Crear la ACL Extendida:</strong></p>
 <ul>
