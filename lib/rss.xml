@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Manual_de_packet_tracer]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Manual_de_packet_tracer</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 12 Mar 2025 09:11:56 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 12 Mar 2025 09:11:51 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Dinamico]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 12 Mar 2025 09:17:37 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 12 Mar 2025 09:17:32 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Dinamico]]></title><description><![CDATA[ 
  <br><br>Para facilitar la gestión del enrutamiento entre múltiples redes, se puede utilizar el protocolo de enrutamiento dinámico. En este ejemplo, usaremos RIP en su versión 2 para enrutar entre ocho redes diferentes:<br>
 <br>172.16.0.0/16
 <br>172.17.0.0/16
@@ -19,7 +19,7 @@ Anuncia cada red que el router debe conocer. Debes hacer esto para todas las red
 <br>Router(config-router)# network 172.16.0.0
 Router(config-router)# network 10.0.0.0
 <br>   Repite el comando network "Direccion de red" en cada uno de los routers <br>Estos pasos se deben repetir en cada uno de los routers que participan en el enrutamiento, asegurándose de anunciar solo las redes directamente conectadas a cada router.<br><br>he escogido el router con la red 172.16.0.0 como ejemplo de los comandos que hay que poner<br>
-<img alt="Pasted image 20240207204212.png" src="lib/media/pasted-image-20240207204212.png">]]></description><link>enrutamiento/dinamico.html</link><guid isPermaLink="false">Enrutamiento/Dinamico.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240207204212.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240207204212.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Estatico]]></title><description><![CDATA[ 
+<img alt="Pasted image 20240207204212.png" src="lib/media/pasted-image-20240207204212.png">]]></description><link>manual_de_packet_tracer/enrutamiento/dinamico.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Enrutamiento/Dinamico.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240207204212.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240207204212.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Estatico]]></title><description><![CDATA[ 
  <br><br>El enrutamiento estático, a diferencia del dinámico, requiere que se configure manualmente cada ruta hacia las redes destino. Esto implica especificar explícitamente, en cada router, cómo alcanzar cada red no directamente conectada. A continuación, se describe cómo configurar enrutamiento estático para una red. (en la actualidad no se utiliza esto porque existen muchas redes y imaginate )<br><br>
 <br>
 Entrar al Modo de Configuración Global:
@@ -45,7 +45,7 @@ Supongamos que quiero enrutar 8 router pues repetir todas estas tablas entre si:
 
 
 <img alt="Pasted image 20240207214404.png" src="lib/media/pasted-image-20240207214404.png">Los resquest timed out son porque tiene que hacer el protocolo ARP en las redes donde este el dispositivo conectado.
-<br>]]></description><link>enrutamiento/estatico.html</link><guid isPermaLink="false">Enrutamiento/Estatico.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240207211745.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240207211745.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Cliente]]></title><description><![CDATA[ 
+<br>]]></description><link>manual_de_packet_tracer/enrutamiento/estatico.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Enrutamiento/Estatico.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240207211745.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240207211745.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Cliente]]></title><description><![CDATA[ 
  <br><br><br><br>
 <br>Acceso al PC Cliente: Haz doble clic en el PC que actuará como cliente PPPoE.<br>
 <img alt="Pasted image 20240315094944.png" src="lib/media/pasted-image-20240315094944.png">
@@ -158,7 +158,7 @@ También puede revisar el estado de la conexión en la GUI para asegurarse de qu
 <br>
 NOTA IMPORTANTE: Este router trae una NAT simple y DHCP por defecto.
 
-]]></description><link>pppoe/cliente.html</link><guid isPermaLink="false">PPPoE/Cliente.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240315094944.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240315094944.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Servidor]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer/pppoe/cliente.html</link><guid isPermaLink="false">Manual_de_packet_tracer/PPPoE/Cliente.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240315094944.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240315094944.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Servidor]]></title><description><![CDATA[ 
  <br><br>En este ejemplo se utiliza una red de clase B:<br>Paso 1: Configurar el Router (Servidor PPPoE)<br>
 <br>Acceder al Router: Haz doble clic en el router y abre la CLI (Interfaz de Línea de Comandos).
 <br>Configuración Básica:
@@ -387,7 +387,7 @@ end
 <br><br>Con el comando podeis verificar que funciona el servidor pppoe, para que obtengais este resultado similar teneis que usar <br>
 <br>show pppoe session<br>
 <img alt="Pasted image 20240314220017.png" src="lib/media/pasted-image-20240314220017.png">
-]]></description><link>pppoe/servidor.html</link><guid isPermaLink="false">PPPoE/Servidor.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240314220017.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240314220017.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RAS-IP-NORMAL]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer/pppoe/servidor.html</link><guid isPermaLink="false">Manual_de_packet_tracer/PPPoE/Servidor.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240314220017.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240314220017.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RAS-IP-NORMAL]]></title><description><![CDATA[ 
  <br><br><br>Usaremos dos PCs conectadas a un switch y un router para enrutar tráfico entre ellas.<br><br>
 <br>
 Añadir Dispositivos
@@ -410,24 +410,24 @@ Configurar PCs
 <br>Nota
 Si no te acuerdas de asignar una ip a un ordenador revisa el siguiente capitulo
 
-<br><a class="internal-link" data-href="Introducción.md" href="introducción.html" target="_self" rel="noopener nofollow">Como asignar una dirección IPv4 a un ordendor</a>
+<br><a class="internal-link" data-href="Introducción.md" href="manual_de_packet_tracer/introducción.html" target="_self" rel="noopener nofollow">Como asignar una dirección IPv4 a un ordendor</a>
 
 <br>
 <br>Rastrear el Tráfico
 
 <br>Usa la herramienta de simulación de Packet Tracer.<br>
-<img alt="Pasted image 20240526181948.png" src="rastreo/pasted-image-20240526181948.png">
+<img alt="Pasted image 20240526181948.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526181948.png">
 <br>Genera tráfico desde PC1 a PC2. (Mediante Ping)<br>
-<img alt="Pasted image 20240526182216.png" src="rastreo/pasted-image-20240526182216.png">
+<img alt="Pasted image 20240526182216.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526182216.png">
 <br>Observa el tráfico a través del switch y el router. Y haz clic en una traza de la generada anteriormente.<br>
-<img alt="Pasted image 20240526182245.png" src="rastreo/pasted-image-20240526182245.png"><br>
+<img alt="Pasted image 20240526182245.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526182245.png"><br>
 Nos vamos a "Inbound PDU Details"<br>
-<img alt="Pasted image 20240526182309.png" src="rastreo/pasted-image-20240526182309.png">
+<img alt="Pasted image 20240526182309.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526182309.png">
 
 
-]]></description><link>rastreo/ras-ip-normal.html</link><guid isPermaLink="false">Rastreo/RAS-IP-NORMAL.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="rastreo/pasted-image-20240526181948.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;rastreo/pasted-image-20240526181948.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RAS-PPPoE]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer/rastreo/ras-ip-normal.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Rastreo/RAS-IP-NORMAL.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="manual_de_packet_tracer/rastreo/pasted-image-20240526181948.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer/rastreo/pasted-image-20240526181948.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RAS-PPPoE]]></title><description><![CDATA[ 
  <br><br>Antes de empezar os recomiendo un vistazo al siguiente capitulo.<br>
-<br><a class="internal-link" data-href="PPPoE.md" href="pppoe.html" target="_self" rel="noopener nofollow">Como configurar el servicio PPPoE</a>
+<br><a class="internal-link" data-href="PPPoE.md" href="manual_de_packet_tracer/pppoe.html" target="_self" rel="noopener nofollow">Como configurar el servicio PPPoE</a>
 <br><br>Usaremos un router configurado como cliente PPPoE y otro como servidor.<br><br>
 <br>
 Añadir Dispositivos
@@ -488,21 +488,21 @@ exit
 <br>Rastrear el Tráfico
 
 <br>Usa la herramienta de simulación de Packet Tracer.<br>
-<img alt="Pasted image 20240526181028.png" src="rastreo/pasted-image-20240526181028.png">
+<img alt="Pasted image 20240526181028.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526181028.png">
 <br>Genera tráfico desde un dispositivo conectado al cliente PPPoE hacia la red del servidor. (En este caso en el router cliente lo he apagado y lo encendido - hacer un reload.)<br>
-<img alt="Pasted image 20240526181121.png" src="rastreo/pasted-image-20240526181121.png">
+<img alt="Pasted image 20240526181121.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526181121.png">
 <br>Observa cómo el tráfico se encapsula y desencapsula a través del enlace PPPoE y selecciona una captura de las que hemos realizado .<br>
-<img alt="Pasted image 20240526181238.png" src="rastreo/pasted-image-20240526181238.png">
+<img alt="Pasted image 20240526181238.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526181238.png">
 
 
 <br>
 <br>Despues nos vamos a Outbound PDU Details: y podemos observar cada dato de una trama PPPoE<br>
-<img alt="Pasted image 20240526181310.png" src="rastreo/pasted-image-20240526181310.png">
-]]></description><link>rastreo/ras-pppoe.html</link><guid isPermaLink="false">Rastreo/RAS-PPPoE.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="rastreo/pasted-image-20240526181028.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;rastreo/pasted-image-20240526181028.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RAS-VLAN]]></title><description><![CDATA[ 
+<img alt="Pasted image 20240526181310.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526181310.png">
+]]></description><link>manual_de_packet_tracer/rastreo/ras-pppoe.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Rastreo/RAS-PPPoE.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="manual_de_packet_tracer/rastreo/pasted-image-20240526181028.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer/rastreo/pasted-image-20240526181028.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RAS-VLAN]]></title><description><![CDATA[ 
  <br>Antes de empezar os recomiendo un vistazo al siguiente capitulo.<br>
-<br><a class="internal-link" data-href="VLAN.md" href="vlan.html" target="_self" rel="noopener nofollow">Como configurar una VLAN</a>
+<br><a class="internal-link" data-href="VLAN.md" href="manual_de_packet_tracer/vlan.html" target="_self" rel="noopener nofollow">Como configurar una VLAN</a>
 <br><br><br>Usaremos un router y un switch con VLANs 19 y 20.<br>
-<img alt="Pasted image 20240526162938.png" src="rastreo/pasted-image-20240526162938.png"><br><br>
+<img alt="Pasted image 20240526162938.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526162938.png"><br><br>
 <br>
 Añadir Dispositivos
 
@@ -516,7 +516,7 @@ Configurar VLANs en el Switch
 <br>Haz clic en el switch, selecciona CLI y entra en el modo de configuración global.
 <br>Crea las VLANs 19 y 20:<br>
      enable      configure terminal      vlan 19      name VLAN19      exit      vlan 20      name VLAN20      exit     <br>
-<img alt="Pasted image 20240526164915.png" src="rastreo/pasted-image-20240526164915.png">
+<img alt="Pasted image 20240526164915.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526164915.png">
 
 
 <br>
@@ -524,9 +524,9 @@ Asignar Puertos a las VLANs
 
 <br>Asigna puertos del switch a cada VLAN:<br>
      interface fastethernet 0/1      switchport mode access      switchport access vlan 19      exit      interface fastethernet 0/2      switchport mode access      switchport access vlan 20      exit     <br>
-<img alt="Pasted image 20240526164948.png" src="rastreo/pasted-image-20240526164948.png"><br>
+<img alt="Pasted image 20240526164948.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526164948.png"><br>
 Resultado de la asignación de VLAN:<br>
-<img alt="Pasted image 20240526165016.png" src="rastreo/pasted-image-20240526165016.png">
+<img alt="Pasted image 20240526165016.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526165016.png">
 
 
 <br>
@@ -534,7 +534,7 @@ Configurar Enlace Troncal entre el Switch y el Router
 
 <br>Configura el puerto del switch conectado al router como troncal:<br>
      interface gigabitethernet 0/1      switchport mode trunk      exit     <br>
-<img alt="Pasted image 20240526165046.png" src="rastreo/pasted-image-20240526165046.png">
+<img alt="Pasted image 20240526165046.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526165046.png">
 
 
 <br>
@@ -553,11 +553,11 @@ interface gigabitethernet 0/0/0.20
 encapsulation dot1Q 20
 ip address 192.168.20.1 255.255.255.0
 exit
-<br><img alt="Pasted image 20240526165423.png" src="rastreo/pasted-image-20240526165423.png"><br>
+<br><img alt="Pasted image 20240526165423.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526165423.png"><br>
 6. Configurar PCs:<br>Nota
 Si no te acuerdas de asignar una ip a un ordenador revisa el siguiente capitulo:
 
-<br><a class="internal-link" data-href="Introducción.md" href="introducción.html" target="_self" rel="noopener nofollow">Introducción al packet tracer</a>
+<br><a class="internal-link" data-href="Introducción.md" href="manual_de_packet_tracer/introducción.html" target="_self" rel="noopener nofollow">Introducción al packet tracer</a>
 
 <br>
 <br>Asigna direcciones IP a las PCs correspondientes a cada VLAN.
@@ -570,26 +570,26 @@ Si no te acuerdas de asignar una ip a un ordenador revisa el siguiente capitulo:
 <br>Rastrear el Tráfico
 
 <br>Usa la herramienta de simulación de Packet Tracer.<br>
-<img alt="Pasted image 20240526171039.png" src="rastreo/pasted-image-20240526171039.png">
+<img alt="Pasted image 20240526171039.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526171039.png">
 <br>Genera tráfico desde un PC de una VLAN a un PC de la otra VLAN. (Usando ping)<br>
-<img alt="Pasted image 20240526171658.png" src="rastreo/pasted-image-20240526171658.png">
+<img alt="Pasted image 20240526171658.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526171658.png">
 
 
 <br>
 <br>Hacemos clic en una traza de packet tracer: Se nos habre la siguiente ventana:<br>
-<img alt="Pasted image 20240526171757.png" src="rastreo/pasted-image-20240526171757.png">
+<img alt="Pasted image 20240526171757.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526171757.png">
 
 <br>Navegamos a la pestaña Inbound PDU Details en busca de parametro TCI.<br>
-<img alt="Pasted image 20240526172920.png" src="rastreo/pasted-image-20240526172920.png">
+<img alt="Pasted image 20240526172920.png" src="manual_de_packet_tracer/rastreo/pasted-image-20240526172920.png">
 
 
 <br>Nota
 Ahora buscamos el valor de la VLAN en este documento:
 
-<br><a class="internal-link" data-href="tci_values_with_vlan.txt" href="rastreo/tci_values_with_vlan.txt" target="_self" rel="noopener nofollow">Valores TCI - VLAN En formato txt</a>
-<br><a class="internal-link" data-href="tci_values_with_vlan.md" href="rastreo/tci_values_with_vlan.html" target="_self" rel="noopener nofollow">Valores TCI - VLAN</a>
+<br><a class="internal-link" data-href="tci_values_with_vlan.txt" href="manual_de_packet_tracer/rastreo/tci_values_with_vlan.txt" target="_self" rel="noopener nofollow">Valores TCI - VLAN En formato txt</a>
+<br><a class="internal-link" data-href="tci_values_with_vlan.md" href="manual_de_packet_tracer/rastreo/tci_values_with_vlan.html" target="_self" rel="noopener nofollow">Valores TCI - VLAN</a>
 
-]]></description><link>rastreo/ras-vlan.html</link><guid isPermaLink="false">Rastreo/RAS-VLAN.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="rastreo/pasted-image-20240526162938.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;rastreo/pasted-image-20240526162938.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[tci_values_with_vlan]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer/rastreo/ras-vlan.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Rastreo/RAS-VLAN.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="manual_de_packet_tracer/rastreo/pasted-image-20240526162938.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer/rastreo/pasted-image-20240526162938.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[tci_values_with_vlan]]></title><description><![CDATA[ 
  <br>0x0001 - Vlan 1<br>
 0x0002 - Vlan 2<br>
 0x0003 - Vlan 3<br>
@@ -4684,7 +4684,7 @@ Ahora buscamos el valor de la VLAN en este documento:
 0x0FFC - Vlan 4092<br>
 0x0FFD - Vlan 4093<br>
 0x0FFE - Vlan 4094<br>
-0x0FFF - Vlan 4095]]></description><link>rastreo/tci_values_with_vlan.html</link><guid isPermaLink="false">Rastreo/tci_values_with_vlan.md</guid><pubDate>Mon, 27 May 2024 07:44:53 GMT</pubDate></item><item><title><![CDATA[Router]]></title><description><![CDATA[ 
+0x0FFF - Vlan 4095]]></description><link>manual_de_packet_tracer/rastreo/tci_values_with_vlan.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Rastreo/tci_values_with_vlan.md</guid><pubDate>Mon, 27 May 2024 07:44:53 GMT</pubDate></item><item><title><![CDATA[Router]]></title><description><![CDATA[ 
  <br><br>"Una VLAN se considera una interfaz configurable"<br><br>Para configurar subinterfaces en un router (permitiendo que una interfaz física maneje múltiples VLANs), sigue estos pasos:<br>
 <br>Entrar al Modo de Configuración Global:
 <br>Router&gt; enable
@@ -4704,7 +4704,7 @@ Continuando con el ejemplo de la VLAN 10 en la subinterfaz GigabitEthernet 0/0/0
 2. Activar la Interfaz Física:<br>
 No olvides activar la interfaz física principal si aún no está activa:<br>Router(config)# interface GigabitEthernet 0/0/0
 Router(config-if)# no shutdown
-<br>]]></description><link>vlan/router.html</link><guid isPermaLink="false">VLAN/Router.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240209123527.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240209123527.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Switch]]></title><description><![CDATA[ 
+<br>]]></description><link>manual_de_packet_tracer/vlan/router.html</link><guid isPermaLink="false">Manual_de_packet_tracer/VLAN/Router.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240209123527.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240209123527.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Switch]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Entrar al Modo de Configuración Global:
 <br>Switch&gt; enable
@@ -4737,7 +4737,7 @@ Accede a la configuración del puerto que deseas configurar como trunk. Por ejem
 <br>Especificar VLANs Permitidas (opcional - No cae en examen pero lo pongo por si las moscas):<br>
 Puedes especificar qué VLANs están permitidas a través del trunk:
 <br>Switch(config-if)# switchport trunk allowed vlan add 10
-<br>   Si omites este paso, el puerto permitirá todas las VLANs por defecto.]]></description><link>vlan/switch.html</link><guid isPermaLink="false">VLAN/Switch.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240209112446.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240209112446.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[11. <strong>Listas de Control de Acceso (ACL)</strong>]]></title><description><![CDATA[ 
+<br>   Si omites este paso, el puerto permitirá todas las VLANs por defecto.]]></description><link>manual_de_packet_tracer/vlan/switch.html</link><guid isPermaLink="false">Manual_de_packet_tracer/VLAN/Switch.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="lib/media/pasted-image-20240209112446.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20240209112446.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[11. <strong>Listas de Control de Acceso (ACL)</strong>]]></title><description><![CDATA[ 
  <br><br>Las Listas de Control de Acceso (ACL) son un conjunto de reglas que se utilizan para filtrar el tráfico de red en dispositivos como puede ser  routers y switches. Estas reglas incrementan la seguridad de la red controlando el flujo de paquetes, permitiendo o denegando el tráfico bajo una serie de criterios específicos.<br>Os dejo esta tabla de mascaras ya que no se pone la mascara de red en formato decimal tal cual como lo conocemos. Si no que se requiere invertir la mascara. Esto se conoce como mascara WILDCART.<br><br><br>
 <br>
 Restricción de Acceso: Limitan el acceso a partes específicas de la red, un ejemplo puede ser en un colegio bloqueando casas de apuestas, o juegos o material pornografico.
@@ -4912,29 +4912,29 @@ Router(config-if)#ip access-group 103 in
 <br><br>Router(config)#access-list 103 permit tcp any host 192.168.1.3 eq 22
 Router(config)#access-list 103 deny tcp any host 192.168.1.3 neq 22
 <br><br>Router(config)#access-list 103 deny udp any any range 27015 27030
-]]></description><link>acl.html</link><guid isPermaLink="false">ACL.md</guid><pubDate>Mon, 27 May 2024 07:15:46 GMT</pubDate></item><item><title><![CDATA[7. <strong>Enrutamiento</strong>]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer/acl.html</link><guid isPermaLink="false">Manual_de_packet_tracer/ACL.md</guid><pubDate>Mon, 27 May 2024 07:15:46 GMT</pubDate></item><item><title><![CDATA[7. <strong>Enrutamiento</strong>]]></title><description><![CDATA[ 
  <br><br>Los routers necesitan conocer cómo llegar a distintas redes que no están directamente conectadas a ellos para poder enviar y recibir tráfico hacia y desde esas redes.<br>Para visualizar las rutas del router se usa este comado:<br>
 <br>
 show ip route<br>
-<img alt="Pasted image 20240207212212.png" src="src/img/pasted-image-20240207212212.png"> (NOTA en este ejemplo del comando se usa rutas estaticas tambien son validas para rutas dinamicas)
+<img alt="Pasted image 20240207212212.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207212212.png"> (NOTA en este ejemplo del comando se usa rutas estaticas tambien son validas para rutas dinamicas)
 
 <br>
-<a class="internal-link" data-href="Dinamico.md" href="enrutamiento/dinamico.html" target="_self" rel="noopener nofollow">Como Configurar una VLAN en un Router</a>
+<a class="internal-link" data-href="Dinamico.md" href="manual_de_packet_tracer/enrutamiento/dinamico.html" target="_self" rel="noopener nofollow">Como Configurar una VLAN en un Router</a>
 
 <br>
-<a class="internal-link" data-href="Estatico.md" href="enrutamiento/estatico.html" target="_self" rel="noopener nofollow">Como Hacer una VLAN en un Switch</a>
+<a class="internal-link" data-href="Estatico.md" href="manual_de_packet_tracer/enrutamiento/estatico.html" target="_self" rel="noopener nofollow">Como Hacer una VLAN en un Switch</a>
 
-]]></description><link>enrutamiento.html</link><guid isPermaLink="false">Enrutamiento.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="src/img/pasted-image-20240207212212.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;src/img/pasted-image-20240207212212.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RECORDAR CAMBIAR LAS DIRECCIONES IPS]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer/enrutamiento.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Enrutamiento.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="manual_de_packet_tracer/src/img/pasted-image-20240207212212.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer/src/img/pasted-image-20240207212212.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[RECORDAR CAMBIAR LAS DIRECCIONES IPS]]></title><description><![CDATA[ 
  <br><br><br>
-<br><a class="internal-link" data-href="Introducción.md" href="introducción.html" target="_self" rel="noopener nofollow">Introducción</a>
-<br><a class="internal-link" data-href="ACL.md" href="acl.html" target="_self" rel="noopener nofollow">ACL</a>
-<br><a class="internal-link" data-href="Enrutamiento.md" href="enrutamiento.html" target="_self" rel="noopener nofollow">Enrutamiento</a>
-<br><a class="internal-link" data-href="NAT.md" href="nat.html" target="_self" rel="noopener nofollow">NAT</a>
-<br><a class="internal-link" data-href="PPPoE.md" href="pppoe.html" target="_self" rel="noopener nofollow">PPPoE</a>
-<br><a class="internal-link" data-href="Router Con DHCP.md" href="router-con-dhcp.html" target="_self" rel="noopener nofollow">Como configurar un router con DHCP</a>
-<br><a class="internal-link" data-href="VLAN.md" href="vlan.html" target="_self" rel="noopener nofollow">VLAN</a>
-<br><a class="internal-link" data-href="Rastreo.md" href="rastreo.html" target="_self" rel="noopener nofollow">Rastreo</a>
-]]></description><link>indice.html</link><guid isPermaLink="false">Indice.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
+<br><a class="internal-link" data-href="Introducción.md" href="manual_de_packet_tracer/introducción.html" target="_self" rel="noopener nofollow">Introducción</a>
+<br><a class="internal-link" data-href="ACL.md" href="manual_de_packet_tracer/acl.html" target="_self" rel="noopener nofollow">ACL</a>
+<br><a class="internal-link" data-href="Enrutamiento.md" href="manual_de_packet_tracer/enrutamiento.html" target="_self" rel="noopener nofollow">Enrutamiento</a>
+<br><a class="internal-link" data-href="NAT.md" href="manual_de_packet_tracer/nat.html" target="_self" rel="noopener nofollow">NAT</a>
+<br><a class="internal-link" data-href="PPPoE.md" href="manual_de_packet_tracer/pppoe.html" target="_self" rel="noopener nofollow">PPPoE</a>
+<br><a class="internal-link" data-href="Router Con DHCP.md" href="manual_de_packet_tracer/router-con-dhcp.html" target="_self" rel="noopener nofollow">Como configurar un router con DHCP</a>
+<br><a class="internal-link" data-href="VLAN.md" href="manual_de_packet_tracer/vlan.html" target="_self" rel="noopener nofollow">VLAN</a>
+<br><a class="internal-link" data-href="Rastreo.md" href="manual_de_packet_tracer/rastreo.html" target="_self" rel="noopener nofollow">Rastreo</a>
+]]></description><link>manual_de_packet_tracer/indice.html</link><guid isPermaLink="false">Manual_de_packet_tracer/indice.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate></item><item><title><![CDATA[1. <strong>Antes de empezar</strong>]]></title><description><![CDATA[ 
  <br><br>LECTURA OBLIGATORIA<br>
 Se recomienda tener conocimientos previos de subnetting.<br>
 <br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" rel="noopener nofollow" class="external-link" href="https://www.youtube.com/watch?v=lEKR7WtKzDA&amp;pp=ygUYc3VibmV0dGluZyBpcHY0IGVzcGHDsW9s" target="_blank">Subnetting IPv4 explicación en español</a>
@@ -4943,63 +4943,63 @@ Se recomienda tener conocimientos previos de subnetting.<br>
 <br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=kceWXMaJsew&amp;list=PLINy58Bvq5_L2WfuQeZ4t77EEhj-sG675" rel="noopener nofollow" class="external-link" href="https://www.youtube.com/watch?v=kceWXMaJsew&amp;list=PLINy58Bvq5_L2WfuQeZ4t77EEhj-sG675" target="_blank">Curso de Subnetting de Elizer de León</a>
 <br>Recomendacion:  no saltarse estos capitulos de subnetting recomendados.<br><br>Este manual cubre los aspectos básicos para comenzar a trabajar con Cisco Packet Tracer. Para una comprensión más profunda y para casos de uso más avanzados, se recomienda consultar la documentación oficial de Cisco y otros recursos educativos especializados, como la academia online Cisco Skills for All.<br><br><br>La interfaz gráfica de Cisco Packet Tracer se divide en varias áreas principales:<br>
 <br>Área de Trabajo: Es el espacio grande en el centro de la pantalla donde se diseñan y visualizan las redes.<br>
-<img alt="Pasted image 20240207154633.png" src="src/img/pasted-image-20240207154633.png">
+<img alt="Pasted image 20240207154633.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207154633.png">
 <br><br>
 <br>Dispositivos y Componentes: abajo al lado izquierdo, encontrarás la lista de dispositivos y componentes que puedes arrastrar al área de trabajo. Estos están organizados en categorías como Routers, Switches, Dispositivos finales, etc.<br>
-<img alt="Pasted image 20240207154717.png" src="src/img/pasted-image-20240207154717.png">
+<img alt="Pasted image 20240207154717.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207154717.png">
 <br>Propiedades del dispositivo: Al hacer clic en un dispositivo, se muestra la vista de interfaces que tiene el dispositivo<br>
-<img alt="Pasted image 20240207154830.png" src="src/img/pasted-image-20240207154830.png">
+<img alt="Pasted image 20240207154830.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207154830.png">
 <br><br>
 <br>Barra de Herramientas: En la parte superior, se encuentra la barra de herramientas que ofrece acceso rápido a funciones como guardar, abrir, copiar, pegar, deshacer, entre otras cosas.<br>
-<img alt="Pasted image 20240207154857.png" src="src/img/pasted-image-20240207154857.png">
+<img alt="Pasted image 20240207154857.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207154857.png">
 <br><br>
 <br>Modos de Simulación y Tiempo Real: En la esquina inferior derecha, puedes cambiar entre los modos de simulación y tiempo real.<br>
-<img alt="Pasted image 20240208214929.png" src="src/img/pasted-image-20240208214929.png">
+<img alt="Pasted image 20240208214929.png" src="manual_de_packet_tracer/src/img/pasted-image-20240208214929.png">
 <br><br><br><br>Acceder a la Configuración del Ordenador (con clic izquierdo):<br>
-<img alt="Pasted image 20240213094539.png" src="src/img/pasted-image-20240213094539.png"><br>
+<img alt="Pasted image 20240213094539.png" src="manual_de_packet_tracer/src/img/pasted-image-20240213094539.png"><br>
 Selecciona la pestaña "Desktop" (Escritorio).<br>
-<img alt="Pasted image 20240213094609.png" src="src/img/pasted-image-20240213094609.png"><br><br>Dentro de la pestaña "Desktop", encuentra y selecciona "IP Configuration" (Configuración IP).<br>
+<img alt="Pasted image 20240213094609.png" src="manual_de_packet_tracer/src/img/pasted-image-20240213094609.png"><br><br>Dentro de la pestaña "Desktop", encuentra y selecciona "IP Configuration" (Configuración IP).<br>
 Ingresa una dirección IP, máscara de subred, y puerta de enlace predeterminada (gateway) adecuadas para la red a la que estás conectando el ordenador.<br>
-<img alt="Pasted image 20240213095033.png" src="src/img/pasted-image-20240213095033.png"><br><br>Usar el Comando Ping:<br>
+<img alt="Pasted image 20240213095033.png" src="manual_de_packet_tracer/src/img/pasted-image-20240213095033.png"><br><br>Usar el Comando Ping:<br>
 Todavía en la pestaña "Desktop", selecciona "Command Prompt" (Símbolo del sistema).<br>
 Para verificar la conectividad con otro dispositivo en la red, se usa el comando ping seguido de la dirección IP del dispositivo destino. Por ejemplo: ping 192.168.1.1.<br>
-<img alt="Pasted image 20240213095153.png" src="src/img/pasted-image-20240213095153.png"><br><br><br>Para conectar dos equipos (por ejemplo, un PC con un switch o dos PCs directamente):<br>
+<img alt="Pasted image 20240213095153.png" src="manual_de_packet_tracer/src/img/pasted-image-20240213095153.png"><br><br><br>Para conectar dos equipos (por ejemplo, un PC con un switch o dos PCs directamente):<br>
 <br>Selecciona el cable adecuado que se ubica en la sección de abajo a mano &nbsp;izquierda,
-<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155214.png" src="src/img/pasted-image-20240207155214.png"><br>
+<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155214.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207155214.png"><br>
 <br>normalmente se selecciona un cable de par trenzado &nbsp;para conectar dispositivos diferentes (PC a switch) o un cable cruzado para dispositivos iguales (PC a PC) tambien existe cable serial , fibra optica que estos no lo vamos a usar de momento
-<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155244.png" src="src/img/pasted-image-20240207155244.png"><br>
+<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155244.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207155244.png"><br>
 <br>Haz clic en el primer dispositivo, elige el puerto (Normalmente Fastethernet 0).
-<br><img alt="Pasted image 20240207155306.png" src="src/img/pasted-image-20240207155306.png"><br>
+<br><img alt="Pasted image 20240207155306.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207155306.png"><br>
 <br>Haz clic en el segundo dispositivo y selecciona el puerto (los mas bajo(1,2,3,4,5) se utiliza para los ordenador y dispositvos varios y los mas altos para conectar router y switch (20,21,22,23,24) ).
-<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155336.png" src="src/img/pasted-image-20240207155336.png"><br>
+<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155336.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207155336.png"><br>
 <br>Resultado Final
-<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155651.png" src="src/img/pasted-image-20240207155651.png"><br><br><br><br><br>En Cisco Packet Tracer, un switch o router pueden ser configurado en varios modos para realizar tareas de configuración y administración. Estos modos incluyen:<br>
+<br>&nbsp; &nbsp; <img alt="Pasted image 20240207155651.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207155651.png"><br><br><br><br><br>En Cisco Packet Tracer, un switch o router pueden ser configurado en varios modos para realizar tareas de configuración y administración. Estos modos incluyen:<br>
 <br>
 User EXEC Mode (Modo EXEC de Usuario): Modo por defecto al iniciar sesión en el switch, identificado por el prompt "&gt;". Permite ejecutar comandos de visualización básicos.
 
-<br>Foto de ejemplo real:<img alt="Pasted image 20240315093145.png" src="src/img/pasted-image-20240315093145.png">
+<br>Foto de ejemplo real:<img alt="Pasted image 20240315093145.png" src="manual_de_packet_tracer/src/img/pasted-image-20240315093145.png">
 
 
 <br>
 Privileged EXEC Mode (Modo EXEC con Privilegios): Se accede ingresando "enable" desde el modo User EXEC. Identificado por el prompt "#", permite ejecutar comandos de configuración y visualización avanzados.
 
-<br>Foto de ejemplo real:<img alt="Pasted image 20240315093221.png" src="src/img/pasted-image-20240315093221.png">
+<br>Foto de ejemplo real:<img alt="Pasted image 20240315093221.png" src="manual_de_packet_tracer/src/img/pasted-image-20240315093221.png">
 
 
 <br>
 Global Configuration Mode (Modo de Configuración Global): Accesible desde el modo Privileged EXEC con "configure terminal" o "conf t". Permite configurar parámetros globales del switch como interfaces, VLANs, protocolos de enrutamiento, etc.
 
-<br>Foto de ejemplo real: <img alt="Pasted image 20240315093307.png" src="src/img/pasted-image-20240315093307.png">
+<br>Foto de ejemplo real: <img alt="Pasted image 20240315093307.png" src="manual_de_packet_tracer/src/img/pasted-image-20240315093307.png">
 
 
 <br>
 Interface Configuration Mode (Modo de Configuración de Interfaz): Se accede desde el modo Global Configuration con "interface [interface-id]". Permite configurar parámetros específicos de una interfaz, como direcciones IP, velocidad, duplex, etc.
 
-<br>Foto de ejemplo real:<img alt="Pasted image 20240315093444.png" src="src/img/pasted-image-20240315093444.png">
+<br>Foto de ejemplo real:<img alt="Pasted image 20240315093444.png" src="manual_de_packet_tracer/src/img/pasted-image-20240315093444.png">
 
 
 <br>Estos son los modos básicos en un switch o router de Cisco de Packet Tracer, pudiendo existir modos adicionales o variantes según la versión del software y las características del dispositivo.<br><br>Existen comandos específicos para diferentes modos en el CLI de Cisco. Algunas abreviaturas y trucos comunes son:<br><br>Nota: Existen más abreviaturas, pero se han listado las más utilizadas.<br>Tabulación: Al igual que en Linux, se puede usar el tabulador para completar un comando.<br>
-<img alt="Pasted image 20240207163142.png" src="src/img/pasted-image-20240207163142.png"><br>]]></description><link>introducción.html</link><guid isPermaLink="false">Introducción.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="src/img/pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;src/img/pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[NAT]]></title><description><![CDATA[ 
+<img alt="Pasted image 20240207163142.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207163142.png"><br>]]></description><link>manual_de_packet_tracer/introducción.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Introducción.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="manual_de_packet_tracer/src/img/pasted-image-20240207154633.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer/src/img/pasted-image-20240207154633.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[NAT]]></title><description><![CDATA[ 
  <br><br>Este manual describe los pasos para configurar NAT (Network Address Translation) en un router utilizando Cisco Packet Tracer.<br>
 La configuración permite que una red privada tenga acceso a una red pública y también habilita servidores en la red privada para ser accesibles desde la red pública.<br>Tabla De direcciones ip wildcart <br><br><br>
 <br>Configurar la interfaz GigabitEthernet0/0/0 como interfaz externa:
@@ -5020,10 +5020,10 @@ ip nat inside
 <br>
 <br>Asignar la lista de acceso al pool de NAT con sobrecarga:
 <br>ip nat inside source list 99 pool CONJUNTO1 overload
-<br><img alt="Pasted image 20240526225159.png" src="src/nat/pasted-image-20240526225159.png"><br><br>
+<br><img alt="Pasted image 20240526225159.png" src="manual_de_packet_tracer/src/nat/pasted-image-20240526225159.png"><br><br>
 <br>Configurar NAT estático para permitir acceso a un servidor HTTP en la red privada:
 <br>ip nat inside source static tcp 192.168.200.100 80 10.0.0.1 80
-<br><img alt="Pasted image 20240526225244.png" src="src/nat/pasted-image-20240526225244.png"><br>
+<br><img alt="Pasted image 20240526225244.png" src="manual_de_packet_tracer/src/nat/pasted-image-20240526225244.png"><br>
 <br>Configurar NAT estático para permitir acceso a un servidor FTP en la red privada:
 <br>ip nat inside source static tcp 192.168.200.100 21 10.0.0.1 21
 <br>
@@ -5034,7 +5034,7 @@ ip nat inside
 Para verificar que la configuración de NAT está funcionando correctamente, puedes usar los siguientes comandos:
 <br>show ip nat translations
 show ip nat statistics
-<br><img alt="Pasted image 20240526225126.png" src="src/nat/pasted-image-20240526225126.png"><br>
+<br><img alt="Pasted image 20240526225126.png" src="manual_de_packet_tracer/src/nat/pasted-image-20240526225126.png"><br>
 <br>Guardar la Configuración:<br>
 No olvides guardar la configuración para que persista después de reiniciar el router:
 <br>end
@@ -5058,34 +5058,34 @@ ip nat pool CONJUNTO1 10.0.0.1 10.0.0.1 netmask 0.0.0.255
 access-list 99 permit 192.168.200.0 0.0.0.255
 ip nat inside source list 99 pool CONJUNTO1 overload
 ip nat inside source static tcp 192.168.200.100 80 10.0.0.1 80
-]]></description><link>nat.html</link><guid isPermaLink="false">NAT.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="src/nat/pasted-image-20240526225159.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;src/nat/pasted-image-20240526225159.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[10. <strong>PPPoE</strong>]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer/nat.html</link><guid isPermaLink="false">Manual_de_packet_tracer/NAT.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="manual_de_packet_tracer/src/nat/pasted-image-20240526225159.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer/src/nat/pasted-image-20240526225159.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[10. <strong>PPPoE</strong>]]></title><description><![CDATA[ 
  <br><br><br>PPPoE (Point-to-Point Protocol over Ethernet) es un protocolo de red que encapsula PPP dentro de tramas Ethernet. PPPoE se utiliza principalmente para establecer conexiones de internet sobre una infraestructura Ethernet, combinando las características de PPP, como autenticación y compresión, con la simplicidad y flexibilidad de Ethernet. PPPoE permite que múltiples usuarios en una red Ethernet compartan una conexión a internet a través de un único módem de banda ancha.<br>
-<br><a class="internal-link" data-href="Servidor.md" href="pppoe/servidor.html" target="_self" rel="noopener nofollow">Cómo Configurar PPPoE en un Router Como Servidor</a>
-<br><a class="internal-link" data-href="Cliente.md" href="pppoe/cliente.html" target="_self" rel="noopener nofollow">Cómo Configurar una Conexión PPPoE Como Cliente</a>
-]]></description><link>pppoe.html</link><guid isPermaLink="false">PPPoE.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate></item><item><title><![CDATA[Rastreo]]></title><description><![CDATA[ 
+<br><a class="internal-link" data-href="Servidor.md" href="manual_de_packet_tracer/pppoe/servidor.html" target="_self" rel="noopener nofollow">Cómo Configurar PPPoE en un Router Como Servidor</a>
+<br><a class="internal-link" data-href="Cliente.md" href="manual_de_packet_tracer/pppoe/cliente.html" target="_self" rel="noopener nofollow">Cómo Configurar una Conexión PPPoE Como Cliente</a>
+]]></description><link>manual_de_packet_tracer/pppoe.html</link><guid isPermaLink="false">Manual_de_packet_tracer/PPPoE.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate></item><item><title><![CDATA[Rastreo]]></title><description><![CDATA[ 
  <br><br>Cisco Packet Tracer es una herramienta de simulación de redes utilizada para diseñar y configurar redes, permitiendo visualizar y analizar el tráfico de red. En este manual, aprenderás a rastrear y visualizar tráfico de VLAN, PPPoE y tráfico IP normal.<br>
-<br><a class="internal-link" data-href="RAS-IP-NORMAL.md" href="rastreo/ras-ip-normal.html" target="_self" rel="noopener nofollow">Cómo Identificar Tráfico de una Red</a>
-<br><a class="internal-link" data-href="RAS-PPPoE.md" href="rastreo/ras-pppoe.html" target="_self" rel="noopener nofollow">Cómo Identificar Tráfico de PPPoE</a>
-<br><a class="internal-link" data-href="RAS-VLAN.md" href="rastreo/ras-vlan.html" target="_self" rel="noopener nofollow">Cómo Identificar Tráfico de una VLAN</a>
-]]></description><link>rastreo.html</link><guid isPermaLink="false">Rastreo.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate></item><item><title><![CDATA[6. <strong>Configuración de Dispositivos</strong>]]></title><description><![CDATA[ 
+<br><a class="internal-link" data-href="RAS-IP-NORMAL.md" href="manual_de_packet_tracer/rastreo/ras-ip-normal.html" target="_self" rel="noopener nofollow">Cómo Identificar Tráfico de una Red</a>
+<br><a class="internal-link" data-href="RAS-PPPoE.md" href="manual_de_packet_tracer/rastreo/ras-pppoe.html" target="_self" rel="noopener nofollow">Cómo Identificar Tráfico de PPPoE</a>
+<br><a class="internal-link" data-href="RAS-VLAN.md" href="manual_de_packet_tracer/rastreo/ras-vlan.html" target="_self" rel="noopener nofollow">Cómo Identificar Tráfico de una VLAN</a>
+]]></description><link>manual_de_packet_tracer/rastreo.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Rastreo.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate></item><item><title><![CDATA[6. <strong>Configuración de Dispositivos</strong>]]></title><description><![CDATA[ 
  <br><br><br>Estos comandos son universales<br><br>
 <br>Haz clic en el dispositivo.<br>
-<img alt="Pasted image 20240207162211.png" src="src/img/pasted-image-20240207162211.png">
+<img alt="Pasted image 20240207162211.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207162211.png">
 <br>Selecciona la pestaña "CLI" para acceder al modo de línea de comandos.<br>
-<img alt="Pasted image 20240207162222.png" src="src/img/pasted-image-20240207162222.png">
+<img alt="Pasted image 20240207162222.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207162222.png">
 <br>Puede que necesites presionar "Enter" para activar el prompt de comandos.<br>
-<img alt="Pasted image 20240207162236.png" src="src/img/pasted-image-20240207162236.png">
+<img alt="Pasted image 20240207162236.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207162236.png">
 <br>Escribir la palabra "enable" para entrar al modo administrador<br>
-<img alt="Pasted image 20240207162249.png" src="src/img/pasted-image-20240207162249.png">
+<img alt="Pasted image 20240207162249.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207162249.png">
 <br>Escribir el comando "Configure terminal" para empezar a configurar cosas varias del dispositivo .<br>
-<img alt="Pasted image 20240207162334.png" src="src/img/pasted-image-20240207162334.png">
+<img alt="Pasted image 20240207162334.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207162334.png">
 <br><br>
 <br>Accede al modo de configuración del router (CLI).
 <br>Entra en el modo de configuración global con el comando enable seguido de configure terminal (Visto anteriormente no realizar capturas)
 <br>Accede a la interfaz específica con el comando interface [tipo de interfaz][número de interfaz]. Por ejemplo, interface FastEthernet0/0.
 <br>Asigna la dirección IP con el comando ip address [dirección IP] [máscara de subred]. Por ejemplo, ip address 192.168.1.1 255.255.255.0.
 <br>Activa la interfaz con el comando no shutdown.<br>
-<img alt="Pasted image 20240207163030.png" src="src/img/pasted-image-20240207163030.png">
+<img alt="Pasted image 20240207163030.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207163030.png">
 <br><br><br><br>
 <br>Entrar al Modo de Configuración Global:
 <br>Activar el Servicio DHCP:
@@ -5108,7 +5108,7 @@ ip nat inside source static tcp 192.168.200.100 80 10.0.0.1 80
 <br>Excluir Direcciones IP:
 <br>
 <br>Para evitar conflictos de direcciones IP, puedes excluir direcciones IP específicas dentro del rango configurado con el comando ip dhcp excluded-address [primera_dirección_IP] [última_dirección_IP]. Esto es útil para direcciones IP que están estáticamente asignadas y no deben ser entregadas por el DHCP.<br>
-<img alt="Pasted image 20240207170945.png" src="src/img/pasted-image-20240207170945.png">
+<img alt="Pasted image 20240207170945.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207170945.png">
 <br>
 <br>Comandos usados - (por si quereis copiar y pegar)
 <br>service dhcp - Usamos el servicio DHCP
@@ -5125,7 +5125,7 @@ dns-server 192.168.90.1
 exit
 <br>
 <br>Resultado Final<br>
-<img alt="Pasted image 20240207171144.png" src="src/img/pasted-image-20240207171144.png">
+<img alt="Pasted image 20240207171144.png" src="manual_de_packet_tracer/src/img/pasted-image-20240207171144.png">
 <br><br>NOTA: Puede caer o no en el examen porque estos son parametros de un servidor dhcp, estas opciones se ven el segundo año del modulo mejor con mas tiempo y mejores herramientas.<br>
 <br>Especificar Servidores DNS:
 <br>
@@ -5142,8 +5142,8 @@ exit
 <br>Configurar el Tiempo de Asignación (Lease Time):
 <br>
 <br>Configura el tiempo de asignación de las direcciones IP con lease [días] [horas] [minutos]. Esto define cuánto tiempo un cliente puede mantener una dirección IP antes de que tenga que renovarla.
-]]></description><link>router-con-dhcp.html</link><guid isPermaLink="false">Router Con DHCP.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="src/img/pasted-image-20240207162211.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;src/img/pasted-image-20240207162211.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[8. <strong>VLANs</strong>]]></title><description><![CDATA[ 
+]]></description><link>manual_de_packet_tracer/router-con-dhcp.html</link><guid isPermaLink="false">Manual_de_packet_tracer/Router Con DHCP.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate><enclosure url="manual_de_packet_tracer/src/img/pasted-image-20240207162211.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_packet_tracer/src/img/pasted-image-20240207162211.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[8. <strong>VLANs</strong>]]></title><description><![CDATA[ 
  <br><br><br>Una VLAN (Virtual Local Area Network) es un método que se utiliza para crear redes logicas independientes (Capa 2 del Modelo OSI) dentro de una misma red física (Capa 1 del Modelo OSI), permitiendo segmentar grupos de dispositivos aunque estén interconectados físicamente. Las VLANs se utilizan para crear varias redes dentro de un mismo medio físico.<br>
-<br><a class="internal-link" data-href="Router.md" href="vlan/router.html" target="_self" rel="noopener nofollow">Como Configurar una VLAN en un Router</a>
-<br><a class="internal-link" data-href="Switch.md" href="vlan/switch.html" target="_self" rel="noopener nofollow">Como Hacer una VLAN en un Switch</a>
-]]></description><link>vlan.html</link><guid isPermaLink="false">VLAN.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate></item></channel></rss>
+<br><a class="internal-link" data-href="Router.md" href="manual_de_packet_tracer/vlan/router.html" target="_self" rel="noopener nofollow">Como Configurar una VLAN en un Router</a>
+<br><a class="internal-link" data-href="Switch.md" href="manual_de_packet_tracer/vlan/switch.html" target="_self" rel="noopener nofollow">Como Hacer una VLAN en un Switch</a>
+]]></description><link>manual_de_packet_tracer/vlan.html</link><guid isPermaLink="false">Manual_de_packet_tracer/VLAN.md</guid><pubDate>Thu, 18 Jul 2024 20:22:42 GMT</pubDate></item></channel></rss>
